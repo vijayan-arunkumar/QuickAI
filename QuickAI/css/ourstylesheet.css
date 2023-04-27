@@ -44,15 +44,6 @@ img{
     padding-top:5px;
     padding-left:5px;
 }
-.footer2 {
-    background: #303030;
-}
-
-.footer2 {
-    padding: 25px 0;
-    border-top: 1px solid #ff00dc;
-    text-align: center;
-}
 .btn span {
     cursor: pointer;
     display: inline-block;
@@ -73,12 +64,9 @@ img{
     padding-right: 25px;
 }
 
-    .button1:hover span:after {
-        opacity: 1;
-        right: 0;
-    }
+   
 .header {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     background: #fff;
     position: sticky;
 }
@@ -145,8 +133,6 @@ ul li {
 }
 .icons {
     font-size: 20px;
-    
-    border-left: 1px solid #808080;
 }
 .icons a{
     padding-left:15px;
@@ -154,7 +140,7 @@ ul li {
 .icons a i{
     color:grey;
 }
- a i:hover{
+a i:hover{
     color:white;
 }
 .copyfoot p{
@@ -194,28 +180,22 @@ option {
     box-sizing: border-box;
     color: black;
 }
-#getbtn{
-    width:100%;
-}
+
 .getstrtbtn a {
     background-color: #184698;
     width: 50px;
     box-shadow: 0 4px 12px var(--theme-color-0_15);
     padding: 16px 36px;
-    font-size: 18px;
+    font-size: 15px;
 }
     .getstrtbtn a:hover {
         color: white;
-        text-emphasis-position: under;
-        /*        margin: 1px;*/
- padding: 0.5em 0.5em;
-                width: 10em;
- border: 3px solid #000;
+        text-emphasis-position: right;
+       
         border-color: #184698;
-        font-size: 20px;
-        transition-duration: 0.1s;
+        font-size: 15px;
+        transition-duration: 0.3s;
         background-color: #184698;
-        font-family: 'FontAwesome' fa-solid fa-arrow-right;
         color: white;
     }
 .para p {
@@ -227,4 +207,12 @@ option {
 body p {
     font-size: 16px;
     line-height: 27px;
+}
+.getstrtbtn i{
+    visibility:hidden;
+}
+.getstrtbtn a:hover i{
+    visibility:visible;
+    top:4px;
+    font-size:15px;
 }

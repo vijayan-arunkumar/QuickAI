@@ -1,54 +1,89 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="QuickAI.WebForm2" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="register.aspx.cs" Inherits="QuickAI.WebForm7" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-  <div style="padding-top:100px; display:flex; /*flex-direction: unset*/;" class="row"><div class="col-md-2"></div>
-      <div class="col-md-2">
-   
-            <h3 class="container" > Register</h3>
+      <div class="container">
+      <div style="padding-top:100px;" class="row">
+          <div class="col-6">
+              <center>
+                <h3>Register</h3>
+              </center>
           </div>
-        <div class="col-md-2"></div><div class="col-md-2"></div>
-                <div class="col-md-2">
-
-        <div class="subcontainer">
-            <span class="suhome"><a href="homepage.aspx">Home</a></span>
-            <span class="icon"></span>
-            <span style="color:white;">Register</span>
-        </div><div class="col-md-2">           
-        </div>
-</div>
-    </div>
-     <div class="regform1">
-    <center>
-         <h1 class="let">Let's create your account!</h1>
-          <p>Already have an account?<a style="font-weight: 500;text-decoration:none;color:darkblue;" href="login.aspx">login</a></p>
-           <div class="input-with-icon-left">
-                <i class="la la-user"></i>
-                <input type="text" class="input-text with-border has-error mar-zero" placeholder="Full Name" value="" id="name" name="name" onblur="checkAvailabilityName()" required="name please">
+          <div class="col-6">
+            <center>
+              <div class="subcontainer">
+              <span class="suhome"><a href="homepage.aspx">Home</a></span>
+                   <span class="icon"></span>
+                <span style="color:white;">Register</span>
+              </div>  
+            </center>
            </div>
-        <div class="input-with-icon-left">
-             <i class="la la-user"></i>
-              <input type="text" class="input-text with-border" placeholder="Username" value="" id="Rusername" name="username" onblur="checkAvailabilityUsername()" required="">
-         </div>
-        <div class="input-with-icon-left">
-            <i class="la la-envelope"></i>
-             <input type="text" class="input-text with-border" placeholder="Email Address" value="" name="email" id="email" onblur="checkAvailabilityEmail()" required="">
-          </div>
-        <div class="input-with-icon-left">
-             <i class="la la-unlock"></i>
-            <input type="password" class="input-text with-border" placeholder="Password" id="Rpassword" name="password" onblur="checkAvailabilityPassword()" required="">
-         </div>
-              <%-- <div class="input-containe">
-             <div class="icon-wrapper"><i class="fa fa-user"></i></div>
-             <input required="required" placeholder="Username" maxlength="255" type="text" id="UserUsername">
-         </div>--%>
-       <button type="button" style="padding:10px 212px;" class="btn btn-primary btn-lg">Register</button>
+       </div>
+  </div>
+
+    <div class="container" >
+        
+           
+    <div class="col-md-6 mx-auto" style="padding-top=180px">
+                  <div style="padding-top:50px;" class="row">
+
+                      <div class="col">
+                          
+                  <center><h1>Let's create your account!</h1>
+                          <span>Already have an account? <a style="font-weight:500;text-decoration:none;color:darkblue;" href="login.aspx">Log In!</a></span>
+                          </center>
+                          </div>
+                      </div>
+                      </div>
+        <div class="row">
+         <div class="col-xl-4 offset-xl-4">
+                  <div class="row">
+                      <div style="display:flex" class="col">
+                                                       
+                              <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Full Name" ></asp:TextBox>
+                         
+                          </div>
+                  </div>
+<%--Mail address--%>
+                <div class="row">
+                      <div class="col">
+                         
+                              <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server" placeholder="Username"></asp:TextBox>
+                          </div>
+                          
+                  </div>
+
+               <div class="row">
+                      <div class="col">
+                         
+                          
+                              <asp:TextBox CssClass="form-control" ID="TextBox4" runat="server" placeholder="Email Address" TextMode="Email"></asp:TextBox>
+                          </div>
+                         
+                  </div>   
+
+                       <div class="row">
+                      <div class="col">
+                          
+                          
+                              <asp:TextBox CssClass="form-control" ID="TextBox5" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
+                          </div>
+                 <label><asp:CheckBox ID="CheckBox1" runat="server"></asp:CheckBox>
+                     <span class="checkbox-icon">By clicking on Register button you are agree to our Terms & Condition</span></label>
+                          
+                          <div  class="roe">
+                              <div class="col-md-12"></div>
+                              <center><asp:Button CssClass="form-control" class="regbtn123" ID="Button1" runat="server" Text="Signup" OnClick="Button1_Click" /></center>
+                              </div>
+
+                          </div>
+                       
+                  </div>
+                </div>
+            </div>
 
 
 
-
-    </center>
-</div>
+    <div style="padding:50px;"></div>
 
 </asp:Content>

@@ -1,180 +1,53 @@
-﻿.icon-wrapper {
-    background: #424874;
-    width: 30px;
-    height: 34px;
-    border-radius: 5px 0px 0px 5px;
-}
-
-    .icon-wrapper i {
-        font-size: 20px;
-        padding: 7px;
-        color: #F4EEFF;
-    }
-.input-containe{
-    display:inline-block;
-}
-input, input[type=text], input[type=password], input[type=email], input[typebutton=number], textarea, select {
-    height: 48px;
-    line-height: 48px;
-    padding: 0 20px;
-    outline: none;
-    font-size: 16px;
-     color: gray; 
-     margin: 0 0 16px; 
-     max-width: 100%; 
-     width: 100%; 
-     box-sizing: border-box; 
-     display: block; 
-     background-color: #fff; 
-    font-weight: 500;
-    opacity: 1;
-    border-radius: 4px;
-    border: none;
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .12);
-}
-.input-with-icon-left {
-    position: static;
-    width: 500px;
-    display:flex;
-}
-
-
-
-span.button, button.button, input[type=button], input[type=submit], a.button {
-    box-shadow: 0 4px 12px var(--theme-color-0_15);
-}
-    .input-with-icon-left i {
-        /*position: absolute;
-        top: 0;*/
-        color: #a0a0a0;
-        text-align: center;
-        line-height: 48px;
-        width: 48px;
-        height: 48px;
-        font-size: 19px;
-        background-color: #f8f8f8;
-        border: 1px solid #e0e0e0;
-        box-sizing: border-box;
-        display: block;
-        border-radius: 4px 0 0 4px;
-    }
-
-
-
-
-.fa {
-    font: normal normal normal 16px/1 LineAwesome;
-    font-size: inherit;
-    text-decoration: inherit;
-    text-rendering: optimizeLegibility;
-    text-transform: none;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-}
-
-.fa, .fa-stack {
-    display: inline-block;
-}
-
-input {
-    -webkit-transition: all .1s ease-in-out;
-    -moz-transition: all .1s ease-in-out;
-    -o-transition: all .1s ease-in-out;
-    transition: all .1s ease-in-out;
-}
-    input.with-border, input[type=text].with-border, input[type=password].with-border, input[type=email].with-border, input[type=number].with-border, textarea.with-border, select.with-border {
-        border: 1px solid #e0e0e0;
-        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05);
-    }
-.input-with-icon-left input {
-    padding-left: 65px;
-}
-#UserUsername, #UserPassword {
-    background: transparent;
-    border: 1px solid #424874;
+﻿.container {
     width: 100%;
-    padding: 0 10px;
-    font-size: 13px;
-    border-radius: 0px 5px 5px 0px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
-
-
-
-
-
-@media (min-width: 300px) {
-    .registerl {
-        padding-left: 20px;
-    }
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }
-@media (min-width: 600px) {
-    .registerl {
-        padding-left: 150px;
-    }
-}
-.container{
-   
-    display:inline-block;
-    
-}
-.registerl {
-    display: inline;
-    color: #333;
-    font-weight: 500;
-    float: left;
-    /*padding-left: 150px;*/
-    font-size: 30px;
-    line-height: 40px;
-    margin: 1px 0 3px;
-
-}
-.subcontainer {
-    display: inline-block;
-    background-color: #444444;
-    margin: 0;
-    padding: 12px 22px;
-    line-height: 23px;
-}
-.icon {
-    /*border-left: 4px solid rgba(255, 255, 255, .3);*/
+.icon{
+    border-left: 4px solid rgba(255, 255, 255, .3);
     content: "";
     display: inline-block;
-    height: 0;
-    width: 0;
+    height: 5px;
+    width: 5px;
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
     border-left: 4px solid #aaa;
     font-size: 14px;
     margin-right: 12px;
 }
-.suhome {
-
-    color: whitesmoke;
+.subcontainer{
+    background-color: #444444;
+    padding: 12px 22px;
+    margin: 0;
+    line-height: 23px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.suhome{
+    color: white;
     padding-right: 6px;
 }
-.suhome a {
-        color: whitesmoke;
-        text-decoration: none;
- }
-.suhome a:hover{
+.suhome a{
     color:white;
+    text-decoration:none;
 }
-.let {
-    font-size: 26px;
-    font-weight: 700;
-    color: #333;
+.regbtn123{
+    background-color:#184698;
 }
-.regform1{
-    padding:40px;
-}
-
-
-
-
-
-/*login page*/
-#loginform1{
-    padding-bottom:200px;
+#ContentPlaceHolder1_Button1 {
+    background-color: #184698;
+    color:white;
 }
 
 

@@ -2,26 +2,56 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div style="padding-top:100px;"></div>
-    <div class="regform1" id="loginform1">
-    <center>
-         <h1 class="let">Welcome Back!</h1>
-          <p>Don't have an account?<a style="font-weight: 500;text-decoration:none;color:darkblue;" href="register.aspx">Sign Up Now!</a></p>
-           <div style="padding-bottom:30px;"></div>
-        <div class="input-with-icon-left">
-            <i class="la la-envelope"></i>
-             <input type="text" class="input-text with-border" placeholder="Email Address" value="" name="email" id="email" onblur="checkAvailabilityEmail()" required="">
-          </div>
-        <div class="input-with-icon-left">
-             <i class="la la-unlock"></i>
-            <input type="password" class="input-text with-border" placeholder="Password" id="Rpassword" name="password" onblur="checkAvailabilityPassword()" required="">
-         </div>
-                 <a style="padding-right:400px;text-decoration:none;color:darkblue;" style="font-weight: 500;text-decoration:none;color:darkblue;" href="forgetpage.aspx">Forget Page?</a>
-        <br><br>
-           <button type="button" style="padding:10px 230px;" class="btn btn-primary btn-sm">Login</button>
+    <div style="padding:70px 100px;"></div>
+       <%-- <div class="row">
+
+             <div  class="regform1" id="loginform1">--%>
+             
+                   <div class="row">
+
+                         <div class="col-xl-4 offset-xl-4">
+
+                               <center>
+
+                                      <div style="padding-bottom:10px;">
+                                            <h1 class="let">Welcome Back!</h1>
+                                          <p>Don't have an account?<a style="font-weight:500;text-decoration:none;color:darkblue;" href="register.aspx">Sign Up Now!</a></p>
+                                      </div>
+
+                                      <div class="row">
+                                          <div class="col">
+                                                                               
+                                          <asp:TextBox  CssClass="form-control" placeholder="Email Address" value="" name="email" id="email" onblur="checkAvailabilityEmail()" required=""  runat="server"></asp:TextBox> 
+                                      </div>
+                                          </div>
+
+                                      <div class="row">                                        
+                                           <div class="col">
+                                           <asp:TextBox type="password" CssClass="form-control" placeholder="Password" id="Rpassword" name="password" onblur="checkAvailabilityPassword()" required="" runat="server"></asp:TextBox>
+                                      </div>
+                                      </div>
+
+                                   
+                                      <div class="row">
+                                          <div class="col-md-4">
+                                        <a style="padding:0 5px;font-size:16px;text-decoration:none;color:darkblue;font-weight:500" href="forgetpage.aspx">Forget Page?</a>
+                                      </div>
+                                      </div>
+                                   <br>
+                                   <div class="row">
+                                       <div class="col">
+                                      <asp:Button style="font-size:16px;"  CssClass="form-control" ID="Button1" runat="server" Text="Login" OnClick="Button1_Click" />
+                                       </div>
+                                    </div>
+                            </center>
+
+                         </div>
+
+                   </div>
+
+             </div>
+
+        </div>
 
 
-
-    </center>
-</div>
 </asp:Content>
