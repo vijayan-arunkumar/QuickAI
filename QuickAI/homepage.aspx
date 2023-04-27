@@ -14,8 +14,7 @@
     background-color: #fff;" class="text-justif--%>y" >
      Create SEO-optimized and unique content for your blogs, ads, emails, website 10X faster &amp; save hours of work.
        </p></div>
-         </center> 
-
+         </center>
          </div>
               <%-- <div style="padding-bottom:150px;padding-top:20px" class="getbtn" id="getbtnid">
                    <a  href="register.aspx" style="">
