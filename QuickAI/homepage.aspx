@@ -15,7 +15,6 @@
        </p></div>
          </center>
          </div>
-           
              <div class="getstrtbtn" style="text-align:center; padding:10px;">
    <a href="register.aspx" class="popup-with-zoom-anim button ripple-effect" id="getbtn">Get Started For Free <i class="fa-solid fa-arrow-right"></i></a>
         </div>
