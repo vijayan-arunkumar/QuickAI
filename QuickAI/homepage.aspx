@@ -1,43 +1,40 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="homepage.aspx.cs" Inherits="QuickAI.homepage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="homepage.aspx.cs" Inherits="QuickAI.homepage"%>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    
-        <div style="padding-top:100px;">
+    <div class="container">
+        <div style="padding-top:100px;box-sizing:border-box;">
      <div style="padding-top:60px;padding-bottom:5px" class="text-center hero-icon ">
      <img class="" width="180" src="img/home-hero-icon.png" />
       <h1 style="font-size:65px;" class="margin-bottom-10 text_gradient_animation">
                             <strong>Best AI Content Writer</strong>
       </h1></div>
          <center>
-     <div class="para"><p <%--style="color: #666;font-size: 20px;line-height: 27px;width:550px;
-    background-color: #fff;" class="text-justif--%>y" >
-     Create SEO-optimized and unique content for your blogs, ads, emails, website 10X faster &amp; save hours of work.
+     <div class="para">
+     <p>Create SEO-optimized and unique content for your blogs, ads, emails, website 10X faster &amp; save hours of work.
        </p></div>
          </center>
          </div>
-              <%-- <div style="padding-bottom:150px;padding-top:20px" class="getbtn" id="getbtnid">
-                   <a  href="register.aspx" style="">
-                       Get Started For Free
-                   </a>
-                   <br> 
-     
-                   </div>--%>
-    <div class="getstrtbtn" style="text-align:center; padding:10px;">
-   <a href="register.aspx" class="popup-with-zoom-anim button ripple-effect" id="getbtn">Get Started For Free <%--<i class="fa-solid fa-arrow-right"></i>--%></a>
+           
+             <div class="getstrtbtn" style="text-align:center; padding:10px;">
+   <a href="register.aspx" class="popup-with-zoom-anim button ripple-effect" id="getbtn">Get Started For Free <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-   <div style="padding:5px;"></div>
+                 <div style="padding:5px;"></div>
+
                    <div style="text-align:center;  ">
                    <small ;" >No credit card required.</small>
-                       </div>
+                   </div>
    
-        
+        </div>
+
+     <div style="background-color:#f9f9f9">
+         <div class="container">
 
 <section>
-<div style="padding-top:20px;padding-bottom:40px;background-color:#ebe1e1;">
+<div style="padding-top:20px;padding-bottom:40px;background-color:#f9f9f9;">
     <div style="padding-top:40px;padding-bottom:40px;">
     <div class="col-12">
-<div class="row" background-color="#f9f9f9;">
+<div class="row">
 <center>
    
 <h2>How It Works?
@@ -72,4 +69,6 @@
 </div>
 </div>
     </section>
+          </div>
+     </div>
 </asp:Content>
