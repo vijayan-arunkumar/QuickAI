@@ -27,7 +27,7 @@
    
         </div>
 
-     <div style="background-color:#f9f9f9">
+     <div style="background-color:#f9f9f9"> 
          <div class="container">
 
 <section>
