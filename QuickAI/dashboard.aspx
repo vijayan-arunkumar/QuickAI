@@ -43,24 +43,23 @@
                             <img src="img/hype.png" />
                     </div> 
                         <div></div> 
-                    <div class="dropdown">
+                    <div  class="btn-group">
                        <a class="btn " id="imgbtn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                            <asp:Image src="img/images.png"  ID="Image1" runat="server" ImageAlign="TextTop" />
                        </a>
-
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#"><i class ="fa fa-dashboard icons"></i>DashBoard</a></li>
-   <li><a class="dropdown-item" href="#"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
-   <li> <a class="dropdown-item" href="#"><i class="fa-regular fa-image"></i>AI Images</a></li>
-   <li>   <a class="dropdown-item" href="#"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
- <li>   <a class="dropdown-item" href="#"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
-  <li>  <a class="dropdown-item" href="#"><i class="fa-solid fa-code"></i>AI Code</a></li>
-  <li>    <a class="dropdown-item" href="#"><i class="fa-solid fa-file-lines"></i>All Documents</a></li>
-  <li>    <a class="dropdown-item" href="#"><i class="fa-solid fa-gift"></i>Membership</a></li>
- <li>   <a class="dropdown-item" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Account Setting</a></li>
-<li>    <a class="dropdown-item" href="#"><i class="fa-solid fa-power-off"></i>Logout</a></li>
-          </ul>
-</div>
+                       <ul class="dropdown-menu">
+                             <li><a class="dropdown-item" href="#"><i class ="fa fa-dashboard icons"></i>DashBoard</a></li>
+                             <li><a class="dropdown-item" href="#"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
+                             <li><a class="dropdown-item" href="#"><i class="fa-regular fa-image"></i>AI Images</a></li>
+                             <li><a class="dropdown-item" href="#"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
+                             <li><a class="dropdown-item" href="#"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
+                             <li><a class="dropdown-item" href="#"><i class="fa-solid fa-code"></i>AI Code</a></li>
+                             <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file-lines"></i>All Documents</a></li>
+                             <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gift"></i>Membership</a></li>
+                             <li><a class="dropdown-item" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Account Setting</a></li>
+                             <li><a class="dropdown-item" href="#"><i class="fa-solid fa-power-off"></i>Logout</a></li>
+                       </ul>
+                   </div>
                      
                      <div class="selectlang">
                          <select  id="langbtn" class="popup-with-zoom-anim button ripple-effect">
@@ -163,19 +162,15 @@
                      <div class="main">
                          
                          <div style="padding-top:80px;" class="row">
-                                    <div class="col-6">
-                                    
-                                      <h3 style="padding:15px;">Dashboard</h3>
-                                    
+                                    <div class="col-6">                                    
+                                     <h3 style="padding:15px;">Dashboard</h3>                                    
                                     </div>
-                             <div style="padding-right:40px;" class="col-6">
-                                  
+                             <div style="padding-right:40px;" class="col-6">                                 
                                      <div style="float:right;" class="subcontainer">
                                           <span class="suhome"><a href="homepage.aspx">Home</a></span>
                                           <span class="icon"></span>
                                           <span style="color:white;">Dashboard</span>
-                                       </div>  
-                                  
+                                     </div>                                    
                                </div>
                          </div>
                        <div  class="row">

@@ -3701,6 +3701,7 @@
     <Content Include="forgetpage.aspx" />
     <Content Include="register.aspx" />
     <Content Include="dashboard.aspx" />
+    <Content Include="accountsetting.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="homepage.aspx.cs">
@@ -3752,6 +3753,13 @@
     </Compile>
     <Compile Include="dashboard.aspx.designer.cs">
       <DependentUpon>dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="accountsetting.aspx.cs">
+      <DependentUpon>accountsetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="accountsetting.aspx.designer.cs">
+      <DependentUpon>accountsetting.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
