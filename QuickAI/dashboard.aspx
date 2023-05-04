@@ -29,6 +29,7 @@
     <script src="bootstrap/js/popper.min.js"></script>
     <%--bootstrap js--%>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="jquery/jquery.min.js"></script>
         
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -42,13 +43,13 @@
                     <div class="logo">
                             <img src="img/hype.png" />
                     </div> 
-                        <div></div> 
-                    <div  class="btn-group">
-                       <a class="btn " id="imgbtn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                           <asp:Image src="img/images.png"  ID="Image1" runat="server" ImageAlign="TextTop" />
-                       </a>
-                       <ul class="dropdown-menu">
-                             <li><a class="dropdown-item" href="#"><i class ="fa fa-dashboard icons"></i>DashBoard</a></li>
+                        <div class="side-toogle-icon"><span style="font-size:30px;cursor:pointer" id="btnHeader">&#9776;</span></div> 
+                      <div class="dropdown">
+                        <a class="btn " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img id="Image1" src="img/images.png" />
+                        </a>
+                            <ul class="dropdown-menu">
+                               <li><a class="dropdown-item" href="#"><i class ="fa fa-dashboard icons"></i>DashBoard</a></li>
                              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
                              <li><a class="dropdown-item" href="#"><i class="fa-regular fa-image"></i>AI Images</a></li>
                              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
@@ -56,10 +57,11 @@
                              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-code"></i>AI Code</a></li>
                              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file-lines"></i>All Documents</a></li>
                              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gift"></i>Membership</a></li>
-                             <li><a class="dropdown-item" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Account Setting</a></li>
-                             <li><a class="dropdown-item" href="#"><i class="fa-solid fa-power-off"></i>Logout</a></li>
-                       </ul>
-                   </div>
+                             <li><a class="dropdown-item" href="accountsetting.aspx"><i class="fa-solid fa-arrow-right-from-bracket"></i>Account Setting</a></li>
+                             <li><a class="dropdown-item" href="homepage.aspx"><i class="fa-solid fa-power-off"></i>Logout</a></li>
+                           </ul>
+                      </div>
+                    
                      
                      <div class="selectlang">
                          <select  id="langbtn" class="popup-with-zoom-anim button ripple-effect">
@@ -148,7 +150,7 @@
                               </a>
                            </li>
                               <li>
-                              <a href="#">
+                              <a href="accountsetting.aspx">
                                   <i class="fa-solid fa-right-from-bracket"></i><div>Account Setting</div>
                               </a>
                            </li>

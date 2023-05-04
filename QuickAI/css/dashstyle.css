@@ -40,6 +40,7 @@
     opacity: 1;
     visibility: visible;
     pointer-events: all;
+    margin-right: 0px;
 }
 
     .btn #imgbtn:hover {
@@ -77,9 +78,8 @@
 
 .selectlang {
     float: right;
-    padding:20px 20px;
+    padding: 20px 20px;
     border-left: 1px solid #e0e0e0;
-
 }
 
 #langbtn {
@@ -276,7 +276,7 @@ a i:hover {
         padding-right:10px;
         margin-left:10px;
         font-size:20px;
-      padding-top:10px;
+      padding-top:11px;
     }
         .icon_accset i{
             padding-right:10px;
@@ -285,6 +285,19 @@ a i:hover {
     font-weight: 700;
     color:darkblue;
     font-size:15px;
+}
+.avatar{
+    border-top:1px solid #929090;
+    padding:30px;
+    box-sizing:border-box;
+}
+.dashboard-box {
+    display: block;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+    margin-top: 30px;
+    position: relative;
 }
 
 
