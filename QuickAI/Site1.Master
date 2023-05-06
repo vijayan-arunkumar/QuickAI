@@ -4,7 +4,7 @@
 
 <html>
 <head runat="server">
-     <title>Quick AI</title>
+    <title>Quick AI</title>
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <%--bootstrap css--%>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -15,14 +15,14 @@
     <link href="fontawsome/css/fontawesome.min.css" rel="stylesheet" />
     <link href="lifont/css/line-awesome.css" rel="stylesheet" />
     <link href="lifont/css/line-awesome.min.css" rel="stylesheet" />
-    
-    
-    
-    
+
+
+
+
     <%--ourstylesheet css--%>
     <link href="css/ourstylesheet.css" rel="stylesheet" />
     <link href="css/regstylesheet.css" rel="stylesheet" />
-   
+
 
 
 
@@ -32,14 +32,14 @@
     <script src="bootstrap/js/popper.min.js"></script>
     <%--bootstrap js--%>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>     
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
 
-     <asp:ContentPlaceHolder ID="head" runat="server">
-     </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
 </head>
 <body style="padding: 0; margin: 0; box-sizing: border-box;">
     <form runat="server">
@@ -151,4 +151,4 @@
 
     </form>
 </body>
-</html> 
+</html>

@@ -3704,7 +3704,8 @@
     <Content Include="dashboard.aspx" />
     <Content Include="accountsetting.aspx" />
     <Content Include="membership.aspx" />
-    <Content Include="membershipplan.aspx" />
+    <Content Include="transaction.aspx" />
+    <Content Include="WebForm9.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="homepage.aspx.cs">
@@ -3771,12 +3772,19 @@
     <Compile Include="membership.aspx.designer.cs">
       <DependentUpon>membership.aspx</DependentUpon>
     </Compile>
-    <Compile Include="membershipplan.aspx.cs">
-      <DependentUpon>membershipplan.aspx</DependentUpon>
+    <Compile Include="transaction.aspx.cs">
+      <DependentUpon>transaction.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="membershipplan.aspx.designer.cs">
-      <DependentUpon>membershipplan.aspx</DependentUpon>
+    <Compile Include="transaction.aspx.designer.cs">
+      <DependentUpon>transaction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm9.aspx.cs">
+      <DependentUpon>WebForm9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm9.aspx.designer.cs">
+      <DependentUpon>WebForm9.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

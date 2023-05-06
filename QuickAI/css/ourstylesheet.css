@@ -20,30 +20,36 @@
 
 .footerlinks {
     color: #fff;
-   text-decoration: none !important;
+    text-decoration: none !important;
 }
-ul{
-    display:list-item;
-    text-align:center;
+
+ul {
+    display: list-item;
+    text-align: center;
 }
 
 
 h1 {
     font-size: 42px;
 }
-ul li{
-    list-style-type:none;
+
+ul li {
+    list-style-type: none;
 }
+
 .footerlinks:hover {
     color: #fff;
 }
+
 #footer1 {
     background: #303030;
 }
-img{
-    padding-top:5px;
-    padding-left:5px;
+
+img {
+    padding-top: 5px;
+    padding-left: 5px;
 }
+
 .btn span {
     cursor: pointer;
     display: inline-block;
@@ -64,7 +70,7 @@ img{
     padding-right: 25px;
 }
 
-   
+
 .header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     background: #fff;
@@ -74,14 +80,13 @@ img{
 
 h6 {
     padding: 0;
-    padding-right:0;
+    padding-right: 0;
     color: azure;
-    padding-left:37PX;
+    padding-left: 37PX;
 }
 
 .footer-col1 {
     padding-top: 50px;
-   
 }
 
 ul li {
@@ -93,9 +98,9 @@ ul li {
         text-decoration: none;
         color: whitesmoke
     }
+
 .footer-col2 {
     padding-top: 50px;
-    
 }
 
 ul li {
@@ -107,65 +112,74 @@ ul li {
         text-decoration: none;
         color: whitesmoke
     }
+
 .footer-col3 {
     padding-top: 50px;
-  
 }
 
 ul li {
     padding: 5px;
     list-style: none;
-    text-align:left;
+    text-align: left;
 }
 
     ul li a {
         text-decoration: none;
         color: grey;
-       
     }
-    ul li a:hover{
-        color:white;
-    }
+
+        ul li a:hover {
+            color: white;
+        }
+
 .logofoot {
-    padding-left:15px;
+    padding-left: 15px;
     padding-top: 50px;
-    padding-right:0px;
+    padding-right: 0px;
 }
+
 .icons {
     font-size: 20px;
 }
-.icons a{
-    padding-left:15px;
+
+    .icons a {
+        padding-left: 15px;
+    }
+
+        .icons a i {
+            color: grey;
+        }
+
+a i:hover {
+    color: white;
 }
-.icons a i{
-    color:grey;
+
+.copyfoot p {
 }
-a i:hover{
-    color:white;
-}
-.copyfoot p{
-   
-}
+
 .popup-with-zoom-anim {
-    background-color:#314cc6;
+    background-color: #314cc6;
     color: white;
     padding: 13px 18px 13px 18px;
     box-shadow: 0 4px 12px var(--theme-color-0_15);
     text-decoration: none;
-    border-radius: 5px;    
+    border-radius: 5px;
 }
-#joinbtn{
-    background-color:#184698;
+
+#joinbtn {
+    background-color: #184698;
 }
+
 #langbtn {
     border: none;
-    background-color:#444444;
+    background-color: #444444;
     width: 120px;
 }
- #langbtn:hover {
+
+    #langbtn:hover {
         background-color: #314cc6;
-       
-}
+    }
+
 .langcls {
     float: right;
     padding-right: 30px;
@@ -173,8 +187,8 @@ a i:hover{
     padding-top: 20px;
     padding-left: 30px;
     height: 82px;
-   
 }
+
 option {
     background-color: white;
     box-sizing: border-box;
@@ -188,31 +202,35 @@ option {
     padding: 16px 36px;
     font-size: 15px;
 }
+
     .getstrtbtn a:hover {
         color: white;
         text-emphasis-position: right;
-       
         border-color: #184698;
         font-size: 15px;
         transition-duration: 0.3s;
         background-color: #184698;
         color: white;
     }
+
 .para p {
     font-size: 20px;
     width: 60%;
     line-height: 32px;
     margin: 0 auto 1.5rem
 }
+
 body p {
     font-size: 16px;
     line-height: 27px;
 }
-.getstrtbtn i{
-    visibility:hidden;
+
+.getstrtbtn i {
+    visibility: hidden;
 }
-.getstrtbtn a:hover i{
-    visibility:visible;
-    top:4px;
-    font-size:15px;
+
+.getstrtbtn a:hover i {
+    visibility: visible;
+    top: 4px;
+    font-size: 15px;
 }

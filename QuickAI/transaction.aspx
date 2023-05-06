@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="membershipplan.aspx.cs" Inherits="QuickAI.WebForm8" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="transaction.aspx.cs" Inherits="QuickAI.WebForm8" %>
 
 <!DOCTYPE html>
 
@@ -32,6 +32,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        
         <%-------------------- top header ------------------%>
         <div class="topbar">
             <div class="logo">
@@ -70,13 +71,13 @@
             <div class="goodlook">
                 <div style="padding-top: 80px; margin-left: 30px; margin-right: 30px;" class="row">
                     <div class="col-6">
-                        <h3 style="padding: 15px;">Membership Plan</h3>
+                        <h3 style="padding: 15px;">Transaction</h3>
                     </div>
                     <div class="col-6">
                         <div style="float: right;" class="subcontainer">
                             <span class="suhome"><a href="homepage.aspx">Home</a></span>
                             <span class="icon"></span>
-                            <span style="color: white;">Membership Plan</span>
+                            <span style="color: white;">Transaction</span>
                         </div>
                     </div>
                 </div>
@@ -174,7 +175,6 @@
                 </div>
             </div>
         </div>
-
     </form>
 </body>
 </html>
