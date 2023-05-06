@@ -76,6 +76,7 @@
     <Content Include="bootstrap\js\jquery-3.3.1.slim.min.js" />
     <Content Include="bootstrap\js\popper.min.js" />
     <Content Include="css\dashstyle.css" />
+    <Content Include="css\memberstyle.css" />
     <Content Include="css\regstylesheet.css" />
     <Content Include="css\ourstylesheet.css" />
     <Content Include="css\tempstyle.css" />
@@ -3702,6 +3703,8 @@
     <Content Include="register.aspx" />
     <Content Include="dashboard.aspx" />
     <Content Include="accountsetting.aspx" />
+    <Content Include="membership.aspx" />
+    <Content Include="membershipplan.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="homepage.aspx.cs">
@@ -3760,6 +3763,20 @@
     </Compile>
     <Compile Include="accountsetting.aspx.designer.cs">
       <DependentUpon>accountsetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membership.aspx.cs">
+      <DependentUpon>membership.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership.aspx.designer.cs">
+      <DependentUpon>membership.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membershipplan.aspx.cs">
+      <DependentUpon>membershipplan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membershipplan.aspx.designer.cs">
+      <DependentUpon>membershipplan.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

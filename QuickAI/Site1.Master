@@ -33,142 +33,122 @@
     <%--bootstrap js--%>
     <script src="bootstrap/js/bootstrap.min.js"></script>
      <script src="bootstrap/js/bootstrap.min.js"></script>
-        <meta charset="UTF-8"/> <meta http-equiv="X-UA-Compatible" content="IE=edge"/> <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
-    
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>     
 
 
      <asp:ContentPlaceHolder ID="head" runat="server">
      </asp:ContentPlaceHolder>
 </head>
-<body style="padding:0;margin:0;box-sizing:border-box;">
-
-  <form runat="server">
-         <div style="position:fixed;width:100%;height:82px" class="header" >
-            <div style="display:inline-block;border-right: 2px solid #e0e0e0;padding-right:10px;height:82px;padding-top:15px;padding-left:20px;padding-right:20px;" class="logo">
-               <a  class="navbar-brand" href="homepage.aspx"><img  src="img/hype.png" height="42"  /></a>
+<body style="padding: 0; margin: 0; box-sizing: border-box;">
+    <form runat="server">
+        <div style="position: fixed; width: 100%; height: 82px" class="header">
+            <div style="display: inline-block; border-right: 2px solid #e0e0e0; padding-right: 10px; height: 82px; padding-top: 15px; padding-left: 20px; padding-right: 20px;" class="logo">
+                <a class="navbar-brand" href="homepage.aspx">
+                    <img src="img/hype.png" height="42" /></a>
             </div>
-       
             <div class="langcls">
-                <select  id="langbtn" class="popup-with-zoom-anim button ripple-effect">
+                <select id="langbtn" class="popup-with-zoom-anim button ripple-effect">
                     <option value="EN">English</option>
-                     <option value="Ta">Tamil</option>
-                     <option value="Te">Telugu</option>
-                     <option value="HI">Hindi</option>
+                    <option value="Ta">Tamil</option>
+                    <option value="Te">Telugu</option>
+                    <option value="HI">Hindi</option>
                 </select>
-             </div> 
-    
-            <div style="float:right;padding-right:30px;border-left: 2px solid #e0e0e0;padding-top:30px;padding-left:30px;height:82px;">
+            </div>
+            <div style="float: right; padding-right: 30px; border-left: 2px solid #e0e0e0; padding-top: 30px; padding-left: 30px; height: 82px;">
                 <a href="https://localhost:44370/login.aspx" class="popup-with-zoom-anim button ripple-effect" id="joinbtn">Join Now</a>
-            </div>  
-            
-         </div>
+            </div>
+        </div>
 
 
         <!-- main content placeholder-->
         <div>
-             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-
-             </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
         </div>
-           
+
         <!-- main content placeholder-->
-        
 
 
-<!----------------footer ----------------------------------->
 
-      <div style="background-color:#303030">
-      <div class="container">
-    <footer style="background-color:#303030;box-sizing:border-box;" >
-                   <div class="row">
+        <!----------------footer ----------------------------------->
 
-                       <div class="col-md-6">                           
-                              <div class="logofoot">
+        <div style="background-color: #303030">
+            <div class="container">
+                <footer style="background-color: #303030; box-sizing: border-box;">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="logofoot">
                                 <img src="img/hype.png" />
-                                 <p style="color:silver">
-                                        Aenean sodales mattis augue. Morbi euismod, felis at volutpat volutpat, quam lectus porttitor massa, tur ex a neque pulvinar pulvinar.
-                                       </p>
+                                <p style="color: silver">
+                                    Aenean sodales mattis augue. Morbi euismod, felis at volutpat volutpat, quam lectus porttitor massa, tur ex a neque pulvinar pulvinar.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="foot">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class=" footer-col1">
+                                            <h6>My Account</h6>
+                                            <ul style="list-style: none;">
+                                                <li><a href="#">Login</a></li>
+                                                <li><a href="#">Register</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="footer-col2">
+                                            <h6>Helpful Links</h6>
+                                            <ul style="list-style: none;">
+                                                <li><a href="#">Blog</a></li>
+                                                <li><a href="#">Feedback</a></li>
+                                                <li><a href="#">Contact</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="footer-col3">
+                                            <h6>Information</h6>
+                                            <ul style="list-style: none;">
+                                                <li><a href="#">FAQ</a></li>
+                                                <li><a href="#">Testinomials</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
-                         </div>
-                                        
-                             
-                      
-        
-                       <div class="col-md-6">
-                           <div class="foot">
-                               <div class="row">
-                          <div class="col-md-4">
-                          <div class=" footer-col1">			
-				             <h6> My Account</h6>
-				              <ul style="list-style:none;">
-					           <li><a href="#">Login</a></li>
-					           <li><a href="#">Register</a></li>
-				                </ul>
-                          </div>
-			              </div>
-                           <div class="col-md-4">
-			                   <div class="footer-col2">
-				                 <h6>Helpful Links</h6>
-				                  <ul style="list-style:none;">
-					                <li><a href="#">Blog</a></li>
-					                 <li><a href="#">Feedback</a></li>
-					                      <li><a href="#">Contact</a></li>
-				                      </ul>
-			                       </div>
-                                 </div>
-                         <div class="col-md-4">
-			                    <div class="footer-col3">
-				                   <h6>Information</h6>
-				                    <ul style="list-style:none;">
-					                 <li><a href="#">FAQ</a></li>
-					                 <li><a href="#">Testinomials</a></li>
-				                   </ul>
-			                   </div>
-                         </div>
-                      </div>
-                   </div>
-               </div>
-             </div>
-        </footer>
-      </div> 
-          </div>
-          <div  style="background-color:#303030;border-top: 1px solid #808080">
-          <div style="padding-top:20px;" class="container">
-                    <div  style="background-color:#303030;">
-
-                           <div class="row">
-                              <div style="border-right: 1px solid #808080;" class="col-md-8">
-
-                                           <div class="copyfoot">
-     
-                                               <p style="color:silver">2023 Socius IGB Pvt Ltd, All right reserved</p>
-                                          </div>
-                                      </div>
-
-                                   
-                                     
-
-                                            <div class="col-md-4">
-                                                  <div class="icons">
-		                                              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-		                                              <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-		                                              <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-		                                              <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
-	                                                  <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
-		                                              <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-	                                              </div>
-                                             </div> 
-
-                                                                          
-                                      </div>
-                                   
-                                     
+                            </div>
+                        </div>
                     </div>
-    
-           </div>
+                </footer>
+            </div>
+        </div>
+        <div style="background-color: #303030; border-top: 1px solid #808080">
+            <div style="padding-top: 20px;" class="container">
+                <div style="background-color: #303030;">
+                    <div class="row">
+                        <div style="border-right: 1px solid #808080;" class="col-md-8">
+                            <div class="copyfoot">
+                                <p style="color: silver">2023 Socius IGB Pvt Ltd, All right reserved</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="icons">
+                                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+                                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-          
- </form>
+
+    </form>
 </body>
 </html> 
