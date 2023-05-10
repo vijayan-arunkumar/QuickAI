@@ -10,8 +10,13 @@ namespace QuickAI
     public partial class WebForm6 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
+        
         {
 
+        }
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("membershipplan.aspx");
         }
     }
 }

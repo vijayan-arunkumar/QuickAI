@@ -4,13 +4,23 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-.container-fluid {
-    margin: 0px;
-    padding: 0px;
+.mailverify {
+    background-color: #fdf7e9;
+    width: 100%;
+    overflow:hidden;
 }
-
-
+.Everify {
+    background-color: #fdf9e7;
+    align-content: center;
+    padding-left: 80px;
+    width: 100%;
+}
+.Everifybutton {
+    background-color: #666;
+    font-size: 16px;
+    color: white;
+    border-radius: 8px;
+}
 .topbar {
     position: fixed;
     background-color: #fff;
@@ -38,8 +48,10 @@
 }
 
 .btn {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
     background-color: white;
-    border: none;
     transform: scale(1);
     opacity: 1;
     visibility: visible;
@@ -161,6 +173,7 @@ h11 {
 
 
 
+
 /*---------------------main content------------*/
 .main {
     padding: 0px;
@@ -267,6 +280,11 @@ h11 {
 
 a i:hover {
     color: black;
+}
+
+.charts {
+    width: calc(100%-250px);
+    position: relative;
 }
 
 .chart {
@@ -415,6 +433,10 @@ ListItem {
         position: fixed;
     }
 
+    .btn {
+        width: auto;
+    }
+
     .logo {
         border-right: none;
         width: auto;
@@ -432,6 +454,28 @@ ListItem {
 
     #Table1 {
         width: auto;
+    }
+
+    #footmedia {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #footcopy {
+        text-align: center;
+        border: none;
+        margin:0px;
+        padding:0px;
+    }
+
+    #footicon {
+        text-align: center;
+        margin: 0px;
+        padding-bottom: 20px;
+    }
+    .container-foot {
+        margin: 0px;
+        padding: 0px;
     }
 }
 
@@ -454,6 +498,10 @@ ListItem {
         position: fixed;
     }
 
+    .btn {
+        width: auto;
+    }
+
     .main {
         position: absolute;
         left: 0;
@@ -470,6 +518,28 @@ ListItem {
 
     #Table1 {
         width: auto;
+    }
+
+    #footmedia {
+        display: flex;
+        flex-direction: row;
+    }
+    .container-foot {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #footcopy {
+        text-align: center;
+        border: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #footicon {
+        text-align: center;
+        margin: 0px;
+        padding-bottom: 20px;
     }
 }
 
@@ -498,7 +568,32 @@ ListItem {
         position: fixed;
     }
 
+    .btn {
+        width: auto;
+    }
+
     #Table1 {
         width: auto;
+    }
+
+    #footmedia {
+        display: flex;
+        flex-direction: row;
+    }
+    .container-foot {
+        margin: 0px;
+        padding:0px;
+    }
+    #footcopy {
+        text-align: center;
+        border: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #footicon {
+        text-align: center;
+        margin: 0px;
+        padding-bottom: 20px;
     }
 }

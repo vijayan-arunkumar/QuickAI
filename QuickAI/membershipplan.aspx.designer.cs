@@ -11,7 +11,7 @@ namespace QuickAI
 {
 
 
-    public partial class WebForm8
+    public partial class WebForm9
     {
 
         /// <summary>
@@ -24,21 +24,30 @@ namespace QuickAI
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Table1 control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Table Table1;
+        protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
-        /// result control.
+        /// Button2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TableCell result;
+        protected global::System.Web.UI.WebControls.Button Button2;
+
+        /// <summary>
+        /// Button4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button4;
     }
 }

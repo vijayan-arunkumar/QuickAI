@@ -139,7 +139,7 @@
                                 <asp:TableCell runat="server"></asp:TableCell>
                                 <asp:TableCell runat="server"></asp:TableCell>
                                 <asp:TableCell ID="rowbtn" runat="server">
-                                    <asp:LinkButton Class="btn1" ID="LinkButton1" runat="server">Changes Plan</asp:LinkButton></asp:TableCell>
+                                    <asp:LinkButton Class="btn1" ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Changes Plan</asp:LinkButton></asp:TableCell>
                             </asp:TableRow>
                         </asp:Table>
                     </div>
@@ -147,13 +147,13 @@
                 </div>
                 <div class="dummy"></div>
                 <%------------------------ footer ------------------------------%>
-                <div style="border-top: 1px solid #e0e0e0; margin: 40px 2px; margin-bottom: 0px;" class="row">
-                    <div class="col-md-8">
+                <div style="border-top: 1px solid #e0e0e0; margin: 40px 2px; margin-bottom: 0px;" class="row" id="footmedia">
+                    <div class="col-md-8" id="footcopy">
                         <div class="copyfoot">
                             <p style="color: grey; margin: 20px 30px;">2023 Socius IGB Pvt Ltd, All right reserved</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="footicon">
                         <div style="margin: 20px 20px;" class="icons">
                             <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
                             <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>

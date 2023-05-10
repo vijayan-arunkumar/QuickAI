@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="transaction.aspx.cs" Inherits="QuickAI.WebForm8" %>
+﻿    <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="transaction.aspx.cs" Inherits="QuickAI.WebForm8" %>
 
 <!DOCTYPE html>
 
@@ -32,39 +32,40 @@
 </head>
 <body>
     <form id="form1" runat="server">
+       
         
         <%-------------------- top header ------------------%>
         <div class="topbar">
-            <div class="logo">
-                <img src="img/hype.png" />
-            </div>
-            <div class="side-toogle-icon"><span style="font-size: 30px; cursor: pointer" id="btnHeader">&#9776;</span></div>
-            <div class="dropdown">
-                <a class="btn " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img id="Image1" src="img/images.png" />
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#"><i class="fa fa-dashboard icons"></i>DashBoard</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fa-regular fa-image"></i>AI Images</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-code"></i>AI Code</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file-lines"></i>All Documents</a></li>
-                    <li><a class="dropdown-item" href="membership.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
-                    <li><a class="dropdown-item" href="accountsetting.aspx"><i class="fa-solid fa-arrow-right-from-bracket"></i>Account Setting</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-power-off"></i>Logout</a></li>
-                </ul>
-            </div>
-            <div class="selectlang">
-                <select id="langbtn" class="popup-with-zoom-anim button ripple-effect">
-                    <option value="EN">English</option>
-                    <option value="Ta">Tamil</option>
-                    <option value="Te">Telugu</option>
-                    <option value="HI">Hindi</option>
-                </select>
-            </div>
-        </div>
+                    <div class="logo">
+                       <img src="img/hype.png" />
+                    </div> 
+                    <div></div> 
+                    <div class="dropdown">
+                        <a class="btn " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img id="Image1" src="img/images.png" />
+                        </a>
+                            <ul class="dropdown-menu">
+                             <li><a class="dropdown-item" href="#"><i class ="fa fa-dashboard icons"></i>DashBoard</a></li>
+                             <li><a class="dropdown-item" href="#"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
+                             <li><a class="dropdown-item" href="#"><i class="fa-regular fa-image"></i>AI Images</a></li>
+                             <li><a class="dropdown-item" href="#"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
+                             <li><a class="dropdown-item" href="#"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
+                             <li><a class="dropdown-item" href="#"><i class="fa-solid fa-code"></i>AI Code</a></li>
+                             <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file-lines"></i>All Documents</a></li>
+                             <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gift"></i>Membership</a></li>
+                             <li><a class="dropdown-item" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Account Setting</a></li>
+                             <li><a class="dropdown-item" href="#"><i class="fa-solid fa-power-off"></i>Logout</a></li>
+                           </ul>
+                      </div>
+                     <div class="selectlang">
+                         <select  id="langbtn" class="popup-with-zoom-anim button ripple-effect">
+                                     <option value="EN">English</option>
+                                     <option value="Ta">Tamil</option>
+                                     <option value="Te">Telugu</option>
+                                     <option value="HI">Hindi</option>
+                         </select>
+                    </div>
+                 </div>
 
         <%----------------------------------- main body --------------------------------------%>
         <div class="main1">
@@ -83,8 +84,8 @@
                 </div>
             </div>
             <div class="dummy"></div>
-            <div class="table-responsive " id="tabl-2">
-                <asp:Table ID="Table2" runat="server" BorderStyle="Ridge" CellPadding="20" CellSpacing="20" GridLines="Both" HorizontalAlign="Center" Width="100%">
+            <div  class="table-responsive" id="tabl-2">
+                <asp:Table ID="Table1" runat="server" BorderStyle="Ridge" CellPadding="20" CellSpacing="20" GridLines="Both" HorizontalAlign="Center" Width="100%">
                     <asp:TableRow runat="server" BorderStyle="Groove">
                         <asp:TableCell runat="server">Title</asp:TableCell>
                         <asp:TableCell runat="server">Amount</asp:TableCell>
@@ -150,16 +151,15 @@
                         </div>
                     </footer>
                 </div>
-                <div style="background-color: #303030; border-top: 1px solid #808080">
-                    <div style="padding-top: 20px;" class="container-foot">
-                        <div style="background-color: #303030;">
+                  <div style="border-top: 1px solid #e0e0e0; margin: 40px 2px; margin-bottom: 0px;" class="row" id="footmedia">
+                        <div style="background-color: #303030;padding-top:20px">
                             <div class="row">
-                                <div style="border-right: 1px solid #808080;" class="col-md-8">
+                                <div class="col-md-8" id="footcopy">
                                     <div class="copyfoot">
                                         <p style="color: silver">2023 Socius IGB Pvt Ltd, All right reserved</p>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4" id="footicon">
                                     <div class="icons">
                                         <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
                                         <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
@@ -172,7 +172,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     </form>

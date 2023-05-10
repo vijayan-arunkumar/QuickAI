@@ -75,6 +75,7 @@ img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     background: #fff;
     position: sticky;
+    z-index:1;
 }
 
 
@@ -233,4 +234,209 @@ body p {
     visibility: visible;
     top: 4px;
     font-size: 15px;
+}
+/*---------------member ship plan-----------------*/
+.homeplan {
+    background-color:#fff;
+    border-top: 1px solid #e0e0e0;
+}
+
+
+.goodlook1 {
+   
+    padding-bottom: 50px;
+}
+
+.radform {
+    text-align: center;
+}
+
+.radiobtn {
+    padding-top: 40px;
+    display: flex;
+}
+
+.radio {
+    padding-bottom: 100px;
+    padding-top: 50px;
+    width: 100%;
+}
+
+.labl {
+    background: #f6f6f6;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #888;
+    text-align: center;
+    line-height: 24px;
+    padding: 15px;
+    margin: 0px 0;
+    width: 100%;
+}
+
+#input-field {
+    border: none;
+    background-color: #f6f6f6;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+.plan {
+    position: relative;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 5px 3px 4px 0px rgba(0, 0,0, 0.08);
+}
+
+.plan1 {
+    position: relative;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 1px 0 3px 2px rgba(0, 0,0, 0.08);
+}
+
+    .plan1 .recommended-badge {
+        background-color: #184698;
+        box-sizing: border-box;
+        color: #fff;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        height: 45px;
+        top: -45px;
+        text-align: center;
+        border-radius: 4px 4px 0 0;
+        font-weight: 600;
+        line-height: 45px;
+    }
+
+.planlist ul {
+    list-style: none;
+    text-align: center;
+}
+
+.planlist strong {
+    list-style: none;
+    text-align: center;
+}
+
+.planList u1 li {
+    text-align: center;
+}
+
+.planbutton {
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid;
+    border-color: #184698;
+    margin-bottom:30px;
+}
+
+    .planbutton:hover {
+        background-color: #184698;
+        color: white;
+    }
+
+value {
+    font-weight: bold;
+}
+/*--------------testimonial--------*/
+.testimonials{
+    background-color:#f9f9f9;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.testimonialtext {
+    text-align: center;
+   
+}
+    .testimonialtext h3 {
+        color: black;
+    }
+.testimage {
+    border-radius: 100px;
+    margin-top: -50px;
+    height:100px;
+    width:100px;
+}
+.designerbtn{
+    background-color: #184698;
+    border-radius:5px;
+    color:white;
+    padding:5px;
+}
+.carousel-item {
+    text-align: center;
+    align-content: center;
+    padding: 90px 250px;
+    
+}
+
+.carcard {
+    background-color: #fff;
+    box-shadow: 0px 10px 25px 10px rgb(0,0,0,0.08);
+    width: 850px;
+    height: 300px;
+    border: none !important;
+    color: #666;
+}
+
+
+.carousel-control-prev{
+    color: white;
+    background-color: #333333;
+    height: 50px;
+    width: 50px;
+    margin: 200px 100px;
+    z-index: 0;
+    padding: 0px;
+}
+.carousel-control-next {
+    color: white;
+    background-color: #333333;
+    height: 50px;
+    width: 50px;
+    margin: 200px 100px;
+    z-index: 0;
+    padding: 0px;
+}
+
+/*           media             */
+
+
+
+@media(max-width:990px) {
+    .goodlook1 {
+        margin: 0px;
+    }
+
+    .plan1 {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .plan {
+        margin-top: 50px;
+        width: 100%;
+    }
+    .carousel-item{
+        padding:0px;
+    }
+    .carcard{
+        width:100%;
+        height:auto;
+        
+    }
+    .carousel-control-prev {
+        margin:0px;
+    }.carousel-control-next {
+        margin:0px;
+    }
+    .testimage {
+        margin: 0px;
+        height:auto;
+    }
 }

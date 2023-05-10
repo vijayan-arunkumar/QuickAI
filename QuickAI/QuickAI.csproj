@@ -74,6 +74,7 @@
     <Content Include="bootstrap\js\bootstrap.bundle.min.js" />
     <Content Include="bootstrap\js\bootstrap.min.js" />
     <Content Include="bootstrap\js\jquery-3.3.1.slim.min.js" />
+    <Content Include="bootstrap\js\jquery-3.6.0.min.js" />
     <Content Include="bootstrap\js\popper.min.js" />
     <Content Include="css\dashstyle.css" />
     <Content Include="css\memberstyle.css" />
@@ -2146,6 +2147,7 @@
     <Content Include="img\images.png" />
     <Content Include="img\layers icon.png" />
     <Content Include="img\logo.png" />
+    <Content Include="img\testimonial user.png" />
     <Content Include="lifont\css\line-awesome.css" />
     <Content Include="lifont\css\line-awesome.min.css" />
     <Content Include="lifont\fonts\la-brands-400.svg" />
@@ -3705,7 +3707,7 @@
     <Content Include="accountsetting.aspx" />
     <Content Include="membership.aspx" />
     <Content Include="transaction.aspx" />
-    <Content Include="WebForm9.aspx" />
+    <Content Include="membershipplan.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="homepage.aspx.cs">
@@ -3779,12 +3781,12 @@
     <Compile Include="transaction.aspx.designer.cs">
       <DependentUpon>transaction.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm9.aspx.cs">
-      <DependentUpon>WebForm9.aspx</DependentUpon>
+    <Compile Include="membershipplan.aspx.cs">
+      <DependentUpon>membershipplan.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm9.aspx.designer.cs">
-      <DependentUpon>WebForm9.aspx</DependentUpon>
+    <Compile Include="membershipplan.aspx.designer.cs">
+      <DependentUpon>membershipplan.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
