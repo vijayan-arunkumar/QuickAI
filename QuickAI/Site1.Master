@@ -44,9 +44,9 @@
 <body style="padding: 0; margin: 0; box-sizing: border-box;">
     <form runat="server">
         <div style="position: fixed; width: 100%; height: 82px" class="header">
-            <div style="display: inline-block; border-right: 2px solid #e0e0e0; padding-right: 10px; height: 82px; padding-top: 15px; padding-left: 20px; padding-right: 20px;" class="logo">
+            <div class="logo">
                 <a class="navbar-brand" href="homepage.aspx">
-                    <img src="img/hype.png" height="42" /></a>
+                    <img class="logo1" src="img/hype.png" height="42" /></a>
             </div>
             <div class="langcls">
                 <select id="langbtn" class="popup-with-zoom-anim button ripple-effect">
@@ -56,8 +56,8 @@
                     <option value="HI">Hindi</option>
                 </select>
             </div>
-            <div style="float: right; padding-right: 30px; border-left: 2px solid #e0e0e0; padding-top: 30px; padding-left: 30px; height: 82px;">
-                <a href="https://localhost:44370/login.aspx" class="popup-with-zoom-anim button ripple-effect" id="joinbtn">Join Now</a>
+            <div class="join">
+                <a href="https://localhost:44370/login.aspx" class="join1" id="joinbtn">Join Now</a>
             </div>
         </div>
 
@@ -113,7 +113,7 @@
                                             <h6>Information</h6>
                                             <ul style="list-style: none;">
                                                 <li><a href="#">FAQ</a></li>
-                                                <li><a href="#">Testinomials</a></li>
+                                                <li><a href="testimonial.aspx">Testinomials</a></li>
                                             </ul>
                                         </div>
                                     </div>

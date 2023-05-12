@@ -81,6 +81,7 @@
     <Content Include="css\regstylesheet.css" />
     <Content Include="css\ourstylesheet.css" />
     <Content Include="css\tempstyle.css" />
+    <Content Include="css\blogstyle.css" />
     <Content Include="datatables\css\jquery.dataTables.min.css" />
     <Content Include="datatables\js\jquery.dataTables.min.js" />
     <Content Include="fontawsome\css\all.css" />
@@ -2140,6 +2141,7 @@
     <Content Include="fontawsome\svgs\solid\yin-yang.svg" />
     <Content Include="fontawsome\svgs\solid\z.svg" />
     <Content Include="homepage.aspx" />
+    <Content Include="img\blog1.png" />
     <Content Include="img\content icon.png" />
     <Content Include="img\file icon.png" />
     <Content Include="img\home-hero-icon.png" />
@@ -3708,6 +3710,8 @@
     <Content Include="membership.aspx" />
     <Content Include="transaction.aspx" />
     <Content Include="membershipplan.aspx" />
+    <Content Include="testimonial.aspx" />
+    <Content Include="blog.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="homepage.aspx.cs">
@@ -3787,6 +3791,20 @@
     </Compile>
     <Compile Include="membershipplan.aspx.designer.cs">
       <DependentUpon>membershipplan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="testimonial.aspx.cs">
+      <DependentUpon>testimonial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testimonial.aspx.designer.cs">
+      <DependentUpon>testimonial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="blog.aspx.cs">
+      <DependentUpon>blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="blog.aspx.designer.cs">
+      <DependentUpon>blog.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
