@@ -1,4 +1,46 @@
-﻿
+﻿.upmainrow {
+    padding-top: 150px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.icon {
+    border-left: 4px solid rgba(255, 255, 255, .3);
+    content: "";
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #aaa;
+    font-size: 14px;
+    margin-right: 12px;
+}
+
+.subcontainer {
+    background-color: #444444;
+    padding: 12px 22px;
+    margin: 0;
+    line-height: 23px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.suhome {
+    color: white;
+    padding-right: 6px;
+}
+
+    .suhome a {
+        color: white;
+        text-decoration: none;
+    }
+.subcontainer {
+    float: right;
+}
+
+
+
 .blogmain {
     padding: 0px;
     margin: 0;
@@ -65,7 +107,19 @@
     width: auto;
     height: 30px;
 }
+.with-border {
+    width: 100%;
+    border-radius:40vh;
+    border-style:none;
+    padding:10px;
+}
 /*--------testimonals blog page---------*/
+.with-border {
+    width: 100%;
+    border-radius: 40vh;
+    border-style: none;
+    padding: 10px;
+}
 .bloghm {
     padding-top: 150px;
     margin-left: 50px;
@@ -74,6 +128,7 @@
 
 .blogrow {
     margin-left: 50px;
+    margin-top: 50px;
     margin-right: 50px;
 }
 
@@ -193,93 +248,6 @@
 .carousel-indicators{
     z-index:1;
 }
-/*---------------footer----------------*/
-h6 {
-    padding: 0;
-    padding-right: 0;
-    color: azure;
-    padding-left: 37PX;
-}
-
-.footer-col1 {
-    padding-top: 50px;
-}
-
-ul li {
-    padding: 5px;
-    list-style: none;
-}
-
-    ul li a {
-        text-decoration: none;
-        color: whitesmoke
-    }
-
-.footer-col2 {
-    padding-top: 50px;
-}
-
-ul li {
-    padding: 5px;
-    list-style: none;
-}
-
-    ul li a {
-        text-decoration: none;
-        color: whitesmoke
-    }
-
-.footer-col3 {
-    padding-top: 50px;
-}
-
-ul li {
-    padding: 5px;
-    list-style: none;
-    text-align: left;
-}
-
-    ul li a {
-        text-decoration: none;
-        color: grey;
-    }
-
-        ul li a:hover {
-            color: white;
-        }
-
-.logofoot {
-    padding-left: 15px;
-    padding-top: 50px;
-    padding-right: 0px;
-}
-.footcopy{
-    padding-top:10px;
-    margin:10px 0px;
-}
-#border-right-line {
-    border-right: 1px solid #484848;
-}
-.icons {
-    font-size: 20px;
-}
-
-    .icons a {
-        padding-left: 15px;
-    }
-
-        .icons a i {
-            color: grey;
-        }
-
-a i:hover {
-    color: white;
-}
-
-
-
-
-
 /*-------------media-------------*/
 @media(max-width:1100px){
     .tag {
@@ -307,5 +275,10 @@ a i:hover {
     }
     .icons {
         padding-bottom: 20px;
+    }
+}
+@media(max-width:1000px){
+    .subcontainer{
+        float:none;
     }
 }

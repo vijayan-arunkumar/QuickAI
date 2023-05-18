@@ -1,4 +1,10 @@
-﻿.icon {
+﻿.upmainrow {
+    padding-top: 150px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.icon {
     border-left: 4px solid rgba(255, 255, 255, .3);
     content: "";
     display: inline-block;
@@ -29,22 +35,9 @@
         color: white;
         text-decoration: none;
     }
-
-
-
-
-
-
-.accform {
-    margin-top: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 1px 0px 8px 2px rgba(0,0,0,0.09);
+.subcontainer {
+    float: right;
 }
-
 .icon_accset {
     display: flex;
     font-weight: 500;
@@ -74,6 +67,7 @@
     box-sizing: border-box;
 }
 
+
 #roow {
     padding-top: 30px;
     display: flex;
@@ -97,8 +91,8 @@
 
 .accform1 {
     margin-top: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -114,7 +108,6 @@
 .parabill {
     margin-top: 20px;
     background-color: #e9f7fe;
-    height: 60px;
     text-align: center;
     width: 100%;
 }
@@ -156,4 +149,11 @@
 
 ListItem {
     height: 50px;
+}
+
+@media(max-width:1000px){
+    .subcontainer {
+        float: left;
+        margin-top: 20px;
+    }
 }

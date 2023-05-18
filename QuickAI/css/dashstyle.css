@@ -459,9 +459,10 @@ ListItem {
      margin-top:100px;
     }
 }
-
-@media(min-width:1200px) {
-    .icons {
-        float: right;
+@media(min-width:1000px){
+    .icons{
+        float:right;
     }
 }
+
+

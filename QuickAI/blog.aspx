@@ -15,8 +15,9 @@
     <link href="fontawsome/css/fontawesome.min.css" rel="stylesheet" />
 
     <%--ourstylesheet css--%>
-    <link href="css/dashstyle.css" rel="stylesheet" />
     <link href="css/blogstyle.css" rel="stylesheet" />
+    <link href="css/header-2-dashtype.css" rel="stylesheet" />
+    <link href="css/footertype1.css" rel="stylesheet" />
     <%--jquery--%>
     <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
     <%--popper js--%>
@@ -64,16 +65,16 @@
         <%-------------------------- mani page -----------------------%>
         <div class="blogmain">
             <div class="goodlook3-blog">
-                <div class="row bloghm">
-                    <div class="col-6">
-                        <h3 style="padding: 15px;">Blog</h3>
-                        <h4 style="color: #888888">Recent Blogs</h4>
+                <div class="row upmainrow">
+                    <div class="col-lg-5 col-md-12 col-sm-12">
+                        <h3>Billing Details</h3>
                     </div>
-                    <div class="col-6">
-                        <div style="float: right;" class="subcontainer">
+
+                    <div class="col-lg-7 col-md-12 col-sm-12">
+                        <div class="subcontainer">
                             <span class="suhome"><a href="homepage.aspx">Home</a></span>
                             <span class="icon"></span>
-                            <span style="color: white;">Blog</span>
+                            <span style="color: white;">Billing Details</span>
                         </div>
                     </div>
                 </div>
@@ -202,12 +203,12 @@
                 </div>
             </div>
             <%---------------------- footer --------------------%>
+            <footer>
             <div style="background-color: #303030">
-                <div class="container-foot">
-                    <footer style="background-color: #303030; box-sizing: border-box;">
+                <div class="container">
+                    <div class="foot-cont-1">
                         <div class="row">
-
-                            <div class="col-md-6">
+                            <div class="col-sm-12 col-md-12 col-lg-6">
                                 <div class="logofoot">
                                     <img src="img/hype.png" />
                                     <p style="color: silver">
@@ -215,65 +216,62 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="foot">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class=" footer-col1">
-                                                <h6>My Account</h6>
-                                                <ul style="list-style: none;">
-                                                    <li><a href="#">Login</a></li>
-                                                    <li><a href="#">Register</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="footer-col2">
-                                                <h6>Helpful Links</h6>
-                                                <ul style="list-style: none;">
-                                                    <li><a href="#">Blog</a></li>
-                                                    <li><a href="#">Feedback</a></li>
-                                                    <li><a href="#">Contact</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="footer-col3">
-                                                <h6>Information</h6>
-                                                <ul style="list-style: none;">
-                                                    <li><a href="#">FAQ</a></li>
-                                                    <li><a href="#">Testinomials</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="col-sm-12 col-md-4 col-lg-2">
+                                <div class=" footer-col1">
+                                    <h6 class="foth6">My Account</h6>
+                                    <ul class="footli">
+                                        <li><a href="dashboard.aspx">Dashboard</a></li>
+                                        <li><a href="Templates.aspx">Templates</a></li>
+                                        <li><a href="AIimages.aspx">AI Images</a></li>
+                                        <li><a href="home">Log Out</a></li>
+                                    </ul>
                                 </div>
                             </div>
-                        </div>
-                    </footer>
-                </div>
-                <div style="border-top: 1px solid #484848; margin: 40px 2px; margin-bottom: 0px;" class="row" id="footmedia">
-                    <div style="background-color: #303030;">
-                        <div class="row">
-                            <div class="col-md-8 footcopy" id="border-right-line">
-                                <div class="copyfoot">
-                                    <p style="color: silver">2023 Socius IGB Pvt Ltd, All right reserved</p>
+                            <div class="col-sm-12 col-md-4 col-lg-2">
+                                <div class="footer-col2">
+                                    <h6 class="foth6">Helpful Links</h6>
+                                    <ul class="footli">
+                                        <li><a href="blog.aspx">Blog</a></li>
+                                        <li><a href="Feedback.aspx">Feedback</a></li>
+                                        <li><a href="Contact.aspx">Contact</a></li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="col-md-4 footcopy">
-                                <div class="icons">
-                                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
-                                    <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
-                                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                            <div class="col-sm-12 col-md-4 col-lg-2">
+                                <div class="footer-col3">
+                                    <h6 class="foth6">Information</h6>
+                                    <ul class="footli" style="list-style: none;">
+                                        <li><a href="Faq.aspx">FAQ</a></li>
+                                        <li><a href="testimonial.aspx">Testinomials</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div style="background-color: #303030; border-top: 1px solid #484848; padding: 20px 0 0px;">
+                <div class="container">
+                    <div class="row lastfoot">
+                        <div class="col-sm-12 col-md-12 col-lg-8">
+                            <div class="copyfoot">
+                                <p style="color: silver">2023 Socius IGB Pvt Ltd, All right reserved</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-4">
+                            <div class="icons">
+                                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+                                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
         </div>
     </form>
 </body>
