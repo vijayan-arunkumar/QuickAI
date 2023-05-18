@@ -11,7 +11,7 @@ namespace QuickAI
 {
 
 
-    public partial class WebForm6
+    public partial class AllAIimages
     {
 
         /// <summary>
@@ -60,30 +60,12 @@ namespace QuickAI
         protected global::System.Web.UI.WebControls.TableCell rowtb1;
 
         /// <summary>
-        /// row2 control.
+        /// result control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TableRow row2;
-
-        /// <summary>
-        /// rowbtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TableCell rowbtn;
-
-        /// <summary>
-        /// LinkButton1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
+        protected global::System.Web.UI.WebControls.TableCell result;
     }
 }

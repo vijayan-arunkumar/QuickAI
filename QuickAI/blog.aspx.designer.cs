@@ -11,7 +11,7 @@ namespace QuickAI
 {
 
 
-    public partial class WebForm11
+    public partial class blog1
     {
 
         /// <summary>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="blog.aspx.cs" Inherits="QuickAI.blog1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Love.aspx.cs" Inherits="QuickAI.Love" %>
 
 <!DOCTYPE html>
 
@@ -30,7 +30,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="topbar">
+       <div class="topbar">
             <div class="logo">
                 <img src="img/hype.png" />
             </div>
@@ -61,15 +61,15 @@
                 </select>
             </div>
         </div>
-        <%-------------------------- mani page -----------------------%>
-        <div class="blogmain">
+                <%-------------------------- mani page -----------------------%>
+<div class="blogmain">
             <div class="goodlook3-blog">
                 <div class="row bloghm">
-                    <div class="col-6">
-                        <h3 style="padding: 15px;">Blog</h3>
+                    <div class="col-md-6">
+                        <h1 style="font-weight:200">Search Results for “love”</h1>
                         <h4 style="color: #888888">Recent Blogs</h4>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <div style="float: right;" class="subcontainer">
                             <span class="suhome"><a href="homepage.aspx">Home</a></span>
                             <span class="icon"></span>
@@ -100,10 +100,6 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="input-with-icon">
-                            <input class="with-border" type="text" placeholder="Search..." name="s" id="search-widget" />
-                            <i class="icon-material-outline-search"></i>
-                        </div>
                         <div class="carouselpg">
                             <div id="demo" class="carousel slide" data-bs-ride="carousel">
                                 <!-- Indicators/dots -->
@@ -181,9 +177,9 @@
                         <div class="tag">
                             <h3>tags</h3>
                             <span>
-                                <a href="TravelFun.aspx" class="travelbtn">Travel Fun</a></span>
+                                    <asp:LinkButton class="travelbtn" ID="travelButton"  onclick="travelFunction" runat="server" >Travel Fun</asp:LinkButton></span>
                             <span>
-                                <a href="Love.aspx" class="lovebtn">Love</a></span>
+                                    <asp:LinkButton class="lovebtn" ID="loveButton"  onclick="loveFunction"  runat="server" >Love</asp:LinkButton></span>
                         </div>
                         <div class="social-profile">
                             <h3>Social Profile</h3>
@@ -200,6 +196,7 @@
                         </div>
                     </div>
                 </div>
+                </a>
             </div>
             <%---------------------- footer --------------------%>
             <div style="background-color: #303030">

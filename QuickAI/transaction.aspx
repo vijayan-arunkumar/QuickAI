@@ -151,7 +151,7 @@
                         </div>
                     </footer>
                 </div>
-                  <div style="border-top: 1px solid #e0e0e0; margin: 40px 2px; margin-bottom: 0px;" class="row" id="footmedia">
+                  <div style="border-top: 1px solid #484848; margin: 40px 2px; margin-bottom: 0px;" class="row" id="footmedia">
                         <div style="background-color: #303030;padding-top:20px">
                             <div class="row">
                                 <div class="col-md-8" id="footcopy">

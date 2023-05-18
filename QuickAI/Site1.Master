@@ -22,8 +22,7 @@
     <%--ourstylesheet css--%>
     <link href="css/ourstylesheet.css" rel="stylesheet" />
     <link href="css/regstylesheet.css" rel="stylesheet" />
-
-
+    <link href="css/templates_style.css" rel="stylesheet" />
 
 
     <%--jquery--%>
@@ -91,8 +90,8 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class=" footer-col1">
-                                            <h6>My Account</h6>
-                                            <ul style="list-style: none;">
+                                            <h6 class="foth6">My Account</h6>
+                                            <ul class="footli" style="list-style: none;">
                                                 <li><a href="#">Login</a></li>
                                                 <li><a href="#">Register</a></li>
                                             </ul>
@@ -100,8 +99,8 @@
                                     </div>
                                     <div class="col-md-4">
                                         <div class="footer-col2">
-                                            <h6>Helpful Links</h6>
-                                            <ul style="list-style: none;">
+                                            <h6 class="foth6">Helpful Links</h6>
+                                            <ul class="footli" style="list-style: none;">
                                                 <li><a href="#">Blog</a></li>
                                                 <li><a href="#">Feedback</a></li>
                                                 <li><a href="#">Contact</a></li>
@@ -110,8 +109,8 @@
                                     </div>
                                     <div class="col-md-4">
                                         <div class="footer-col3">
-                                            <h6>Information</h6>
-                                            <ul style="list-style: none;">
+                                            <h6 class="foth6">Information</h6>
+                                            <ul class="footli" style="list-style: none;">
                                                 <li><a href="#">FAQ</a></li>
                                                 <li><a href="testimonial.aspx">Testinomials</a></li>
                                             </ul>
@@ -133,7 +132,7 @@
                                 <p style="color: silver">2023 Socius IGB Pvt Ltd, All right reserved</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 iconfoot">
                             <div class="icons">
                                 <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
                                 <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>

@@ -46,6 +46,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -70,16 +71,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AllAIimages.aspx" />
+    <Content Include="Alldocuments.aspx" />
+    <Content Include="blog.aspx" />
     <Content Include="bootstrap\css\bootstrap.min.css" />
     <Content Include="bootstrap\js\bootstrap.bundle.min.js" />
     <Content Include="bootstrap\js\bootstrap.min.js" />
     <Content Include="bootstrap\js\jquery-3.3.1.slim.min.js" />
     <Content Include="bootstrap\js\jquery-3.6.0.min.js" />
     <Content Include="bootstrap\js\popper.min.js" />
+    <Content Include="css\AllAIimages.css" />
+    <Content Include="css\alldocument.css" />
+    <Content Include="css\billingdetails.css" />
     <Content Include="css\dashstyle.css" />
+    <Content Include="css\footertype1.css" />
+    <Content Include="css\header-2-dashtype.css" />
     <Content Include="css\memberstyle.css" />
     <Content Include="css\regstylesheet.css" />
     <Content Include="css\ourstylesheet.css" />
+    <Content Include="css\sidebar.css" />
+    <Content Include="css\templates_style.css" />
     <Content Include="css\tempstyle.css" />
     <Content Include="css\blogstyle.css" />
     <Content Include="datatables\css\jquery.dataTables.min.css" />
@@ -3700,8 +3711,11 @@
     <Content Include="lifont\svg\youtube-square.svg" />
     <Content Include="lifont\svg\youtube.svg" />
     <Content Include="lifont\svg\zhihu.svg" />
+    <Content Include="Love.aspx" />
+    <Content Include="scripts\membershipplan.js" />
+    <Content Include="scripts\sidebarthings.js" />
+    <Content Include="scripts\templates.js" />
     <Content Include="Web.config" />
-    <Content Include="check.aspx" />
     <Content Include="login.aspx" />
     <Content Include="forgetpage.aspx" />
     <Content Include="register.aspx" />
@@ -3711,15 +3725,44 @@
     <Content Include="transaction.aspx" />
     <Content Include="membershipplan.aspx" />
     <Content Include="testimonial.aspx" />
-    <Content Include="blog.aspx" />
+    <Content Include="TravelFun.aspx" />
+    <Content Include="billingdetails.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllAIimages.aspx.cs">
+      <DependentUpon>AllAIimages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllAIimages.aspx.designer.cs">
+      <DependentUpon>AllAIimages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Alldocuments.aspx.cs">
+      <DependentUpon>Alldocuments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Alldocuments.aspx.designer.cs">
+      <DependentUpon>Alldocuments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="blog.aspx.cs">
+      <DependentUpon>blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="blog.aspx.designer.cs">
+      <DependentUpon>blog.aspx</DependentUpon>
+    </Compile>
     <Compile Include="homepage.aspx.cs">
       <DependentUpon>homepage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="homepage.aspx.designer.cs">
       <DependentUpon>homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Love.aspx.cs">
+      <DependentUpon>Love.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Love.aspx.designer.cs">
+      <DependentUpon>Love.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">
@@ -3728,13 +3771,6 @@
     </Compile>
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
-    </Compile>
-    <Compile Include="check.aspx.cs">
-      <DependentUpon>check.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="check.aspx.designer.cs">
-      <DependentUpon>check.aspx</DependentUpon>
     </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
@@ -3799,12 +3835,19 @@
     <Compile Include="testimonial.aspx.designer.cs">
       <DependentUpon>testimonial.aspx</DependentUpon>
     </Compile>
-    <Compile Include="blog.aspx.cs">
-      <DependentUpon>blog.aspx</DependentUpon>
+    <Compile Include="TravelFun.aspx.cs">
+      <DependentUpon>TravelFun.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="blog.aspx.designer.cs">
-      <DependentUpon>blog.aspx</DependentUpon>
+    <Compile Include="TravelFun.aspx.designer.cs">
+      <DependentUpon>TravelFun.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="billingdetails.aspx.cs">
+      <DependentUpon>billingdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="billingdetails.aspx.designer.cs">
+      <DependentUpon>billingdetails.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

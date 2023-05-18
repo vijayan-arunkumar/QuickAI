@@ -11,8 +11,11 @@
     -webkit-tap-highlight-color: transparent;
 }
 /*------------header---------------*/
+.header{
+    z-index:999;
+}
 .popup-with-zoom-anim {
-    background-color: #314cc6;
+    background-color: #184698;
     color: white;
     padding: 13px 18px 13px 18px;
     box-shadow: 0 4px 12px var(--theme-color-0_15);
@@ -33,9 +36,9 @@
     height: 82px;
 }
 .join1 {
-    padding: 10px;
+    padding: 13.5px;
     border-radius:5px;
-    background-color: #314cc6;
+    background-color: #184698;
     width: 90px;
     text-decoration:none;
     color:white;
@@ -55,7 +58,7 @@
 .langcls {
     float: right;
     border-left: 1px solid #e0e0e0;
-    padding: 20px;
+    padding: 15px 10px;
     height: 82px;
 }
 
@@ -72,8 +75,8 @@ option {
     z-index: 1;
 }
 
-/*-------------footrr----------*/
-h6 {
+/*-------------footer----------*/
+.foth6 {
     padding: 0;
     padding-right: 0;
     color: azure;
@@ -84,53 +87,58 @@ h6 {
     padding-top: 50px;
 }
 
-ul li {
+.footer-col1 ul li {
     padding: 5px;
     list-style: none;
 }
 
-    ul li a {
+    .footer-col1 ul li a {
         text-decoration: none;
-        color: whitesmoke
+        color: grey;
     }
+.footer-col1 ul li a:hover {
+    color: white;
+}
 
 .footer-col2 {
     padding-top: 50px;
 }
 
-ul li {
+.footer-col2 ul li {
     padding: 5px;
     list-style: none;
 }
 
-    ul li a {
+    .footer-col2 ul li a {
         text-decoration: none;
-        color: whitesmoke
+        color: grey;
     }
+.footer-col2 ul li a:hover {
+    color: white;
+}
+
 
 .footer-col3 {
     padding-top: 50px;
 }
 
-ul li {
+.footer-col3 ul li {
     padding: 5px;
     list-style: none;
     text-align: left;
 }
 
-    ul li a {
+    .footer-col3 ul li a {
         text-decoration: none;
         color: grey;
     }
 
-        ul li a:hover {
+        .footer-col3 ul li a:hover {
             color: white;
         }
 
 .logofoot {
-    padding-left: 15px;
     padding-top: 50px;
-    padding-right: 0px;
 }
 
 .icons {
@@ -145,7 +153,7 @@ ul li {
             color: grey;
         }
 
-a i:hover {
+.icons a i:hover {
     color: white;
 }
 
@@ -157,17 +165,17 @@ a i:hover {
     text-decoration: none !important;
 }
 
-ul {
+.footerlinks ul {
     display: list-item;
     text-align: center;
 }
 
 
-h1 {
+.footerlinks h1 {
     font-size: 42px;
 }
 
-ul li {
+.footerlinks ul li {
     list-style-type: none;
 }
 
@@ -183,7 +191,9 @@ img {
     padding-top: 5px;
     padding-left: 5px;
 }
-
+.iconfoot{
+    text-align:center;
+}
 
 
 
@@ -226,6 +236,16 @@ body p {
     top: 4px;
     font-size: 15px;
 }
+/*---------------templates-----------------*/
+
+
+
+
+
+
+
+
+
 /*---------------member ship plan-----------------*/
 .homeplan {
     background-color: #fff;
@@ -336,6 +356,9 @@ value {
     font-weight: bold;
 }
 /*--------------testimonial--------*/
+.testimonialmain {
+    background-color: #f9f9f9;
+}
 .testimonials {
     background-color: #f9f9f9;
     padding-top: 50px;
@@ -660,4 +683,6 @@ span.blog-tag {
         padding:0px;
 
     }
+   
+    
 }

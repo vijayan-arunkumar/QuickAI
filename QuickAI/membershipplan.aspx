@@ -164,7 +164,7 @@
                                     <li><span><i class="fa-regular fa-circle-check" style="color: #2ed219;">&nbsp; </i></span>Free Support</li>
                                 </ul>
                             </div>
-                            <asp:Button ID="Button4" Style="background-color: #184698; color: #fff" runat="server" Text="Upgrade" CssClass="planbutton" />
+                            <asp:Button ID="Button4" Style="background-color: #184698; color: #fff" runat="server" Text="Upgrade" CssClass="planbutton" OnClick="Button4_Click" />
                         </div>
                     </div>
                 </div>

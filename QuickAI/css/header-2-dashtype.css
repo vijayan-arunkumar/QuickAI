@@ -1,0 +1,139 @@
+﻿.topbar {
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgb(0,0,0,0.08);
+    width: 100%;
+    height: 85px;
+    display: grid;
+    grid-template-columns: 1fr 8fr 0fr 1fr;
+    align-items: center;
+    z-index: 999;
+}
+
+.logo {
+    border-right: 1px solid #e0e0e0;
+    justify-content: center;
+    height: 80px;
+    width: 200px;
+    margin:auto;
+}
+.logoimg{
+    margin:10px;
+}
+.avatarimg {
+    margin: 10px;
+}
+#avtrbtn{
+    margin:auto;
+   
+}
+#Image1 {
+    height: 50px;
+    width: 50px;
+}
+
+.btn {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: white;
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    margin-right: 0px;
+}
+.dropdown {
+    border-left: 1px solid #e0e0e0;
+}
+    .btn #imgbtn:hover {
+        background-color: blue;
+        border: none;
+    }
+
+.dropdown-menu {
+    width: 30px;
+    right: 0px;
+}
+
+    .dropdown-menu li {
+        font-size: 12px;
+        margin-left: 5px;
+        width: 30px;
+    }
+
+        .dropdown-menu li a {
+            margin-left: 0px;
+            color: grey;
+            display: block;
+            padding: 2px 0;
+            font-size: 12px;
+            color: #666;
+            transition: .3s;
+        }
+
+            .dropdown-menu li a i {
+                font-size: 15px;
+                margin-left: 5px;
+                color: grey;
+                padding-right: 10px;
+            }
+
+
+
+.selectlang {
+    float: right;
+    padding: 20px 20px;
+    border-left: 1px solid #e0e0e0;
+}
+
+#langbtn {
+    border: none;
+    background-color: #444444;
+    width: 70px;
+    height: 40px;
+    border-radius: 4px 4px;
+    color: white;
+}
+
+option {
+    background-color: white;
+    box-sizing: border-box;
+    color: black;
+}
+
+#langbtn:hover {
+    background-color: #314cc6;
+}
+
+
+
+
+@media(max-width:990px) {
+    .topbar {
+        border-right: none;
+        width: auto;
+        position: fixed;
+        
+    }
+    .logo{
+        border-right:none;
+        width:auto;
+    }
+   
+}
+@media(max-width:300px) {
+    .openbtn {
+        visibility: collapse;
+        width: 0px;
+    }
+
+    .logo {
+        width: auto;
+    }
+
+    .logoimg {
+        width: 50px;
+        height: 50px;
+    }
+}

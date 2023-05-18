@@ -1,18 +1,63 @@
 ﻿
 
 
-.container {
+/*.container {
     padding: 0px;
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+}*/
+.goodmargin {
+    margin: 0px 5%;
 }
+.upmainrow {
+    padding-top: 50px;
+    margin: 0;
+}
+.subcontainer {
+    float: right;
+}
+
+.icon {
+    border-left: 4px solid rgba(255, 255, 255, .3);
+    content: "";
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #aaa;
+    font-size: 14px;
+    margin-right: 12px;
+}
+
+.subcontainer {
+    background-color: #444444;
+    padding: 12px 22px;
+    margin: 0;
+    line-height: 23px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.suhome {
+    color: white;
+    padding-right: 6px;
+}
+
+    .suhome a {
+        color: white;
+        text-decoration: none;
+    }
+
+
+
+
 
 
 .member1 {
     margin-top: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
+
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -263,7 +308,7 @@ a i:hover {
 }
 
 #footcopy {
-    border-right: 1px solid #808080;
+    border-right: 1px solid #484848;
 }
 
 /*---------------plan-------------*/
@@ -574,5 +619,37 @@ value {
     .plan {
         margin-top: 50px;
         width: 100%;
+    }
+}
+@media(max-width:1000px) {
+    .footicon {
+        text-align: center;
+    }
+
+    .footpara {
+        text-align: center;
+    }
+
+    .copyfoot {
+        text-align: center;
+    }
+
+    .icons {
+        float: none;
+    }
+
+    .subcontainer {
+        float: left;
+        margin-top: 20px;
+    }
+
+    .upmainrow {
+        margin-top: 100px;
+    }
+}
+
+@media(min-width:1200px) {
+    .icons {
+        float: right;
     }
 }

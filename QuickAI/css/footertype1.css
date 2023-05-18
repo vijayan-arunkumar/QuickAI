@@ -1,0 +1,163 @@
+﻿.container {
+    width: 100%;
+      padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.footermain {
+    background-color: #303030
+}
+
+.foot-cont-1 {
+    background-color: #303030;
+    box-sizing: border-box;
+}
+
+
+
+.foth6 {
+    padding: 0;
+    padding-right: 0;
+    color: azure;
+    padding-left: 0px;
+}
+
+.footer-col1 {
+    padding-top: 50px;
+}
+
+    .footer-col1 ul li {
+        list-style: none;
+        line-height: 30px;
+    }
+
+        .footer-col1 ul li a {
+            text-decoration: none;
+            color: grey;
+        }
+
+            .footer-col1 ul li a:hover {
+                color: white;
+            }
+
+.footer-col2 {
+    padding-top: 50px;
+    text-align: left;
+}
+
+    .footer-col2 ul {
+        text-align: left;
+    }
+
+        .footer-col2 ul li {
+            padding: 0px;
+            list-style: none;
+            line-height: 30px;
+        }
+
+            .footer-col2 ul li a {
+                text-decoration: none;
+                color: grey;
+            }
+
+                .footer-col2 ul li a:hover {
+                    color: white;
+                }
+
+
+.footer-col3 {
+    padding-top: 50px;
+    text-align: left;
+}
+
+    .footer-col3 ul li {
+        padding: 0px;
+        list-style: none;
+    }
+
+        .footer-col3 ul li a {
+            text-decoration: none;
+            color: grey;
+        }
+
+            .footer-col3 ul li a:hover {
+                color: white;
+            }
+
+.footli {
+    text-align: left;
+    padding: 0px;
+}
+
+.logofoot {
+    padding-top: 50px;
+}
+
+.icons {
+    font-size: 20px;
+    width: auto;
+    margin-top: -5px;
+}
+
+    .icons a {
+        padding-left: 15px;
+    }
+
+        .icons a i {
+            color: grey;
+        }
+
+            .icons a i:hover {
+                color: white;
+            }
+
+.copyfoot {
+    border-right: 1px solid #808080;
+}
+
+
+#footer1 {
+    background: #303030;
+}
+
+
+
+.iconfoot {
+    text-align: left;
+}
+
+
+@media(max-width:760px) {
+    .foot {
+        text-align: left;
+        margin: 0px;
+    }
+
+    .copyfoot {
+        text-align: center;
+        border-right: none;
+    }
+
+    .iconfoot {
+        text-align: center;
+    }
+}
+
+@media(max-width:1000px) {
+    .lastfoot {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .copyfoot {
+        padding: 0px;
+    }
+
+    .iconfoot {
+        padding: 0px;
+    }
+}

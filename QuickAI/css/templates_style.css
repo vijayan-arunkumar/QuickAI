@@ -1,0 +1,150 @@
+﻿.templ-lis {
+  width:100%;
+   
+}
+.nav {
+    justify-content: space-between;
+    width:100%;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: #184698;
+}
+.temp-list-center {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.templ-lis ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+    .templ-lis ul li button {
+        font-size: 14px;
+        text-align: center;
+        color: #66676b;
+    }
+
+
+
+   
+
+.templ-cont {
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 26px;
+    box-shadow: 0 7px 25px 0 rgb(0,0,0,0.08);
+    border-radius: 10px;
+    word-wrap: break-word;
+    transition: .4s;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.atemp {
+    text-decoration: none;
+    color: black;
+}
+
+.templ-cont:hover {
+    transform: translate(0,-8px);
+}
+
+
+.templ-cont i {
+    padding: 8px;
+    margin: 0 0 8px;
+    font-size: 16px;
+    background: #ffffff;
+    box-shadow: 5px 7px 25px 8px rgb(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.templ-cont p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6b7280;
+    display: inline;
+    overflow-wrap: break-word;
+}
+
+
+    .templ1-lis ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+        .templ1-lis ul li {
+            padding: 10px;
+            font-size: 14px;
+            color: #666666;
+        }
+
+.templ1-cont {
+    padding: 20px;
+    background-color: #fffef7;
+    margin-bottom: 26px;
+    box-shadow: 0 7px 25px 0 rgb(0,0,0,0.08);
+    border-radius: 10px;
+    word-wrap: break-word;
+    border: 1px solid #ffd700;
+    transition: .4s;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+    .templ1-cont:hover {
+        transform: translate(0,-8px);
+    }
+
+    .templ1-cont i {
+        padding: 8px;
+        margin: 0 0 8px;
+        font-size: 16px;
+        background: #ffffff;
+        box-shadow: 5px 7px 25px 8px rgb(0,0,0,0.1);
+        border-radius: 10px;
+    }
+
+    .templ1-cont p {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #6b7280;
+        display: inline;
+        overflow-wrap: break-word;
+    }
+
+
+
+@media(max-width:990px) {
+    .templ-lis {
+        width: fit-content;
+        margin: 0px;
+    }
+
+    .templ-cont {
+        height: auto;
+    }
+    .nav {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+}
+
+
+@media(min-width:1200px) {
+    .templ-cont {
+        height: 180px;
+    }
+
+    .templ1-cont {
+        height: 180px;
+    }
+    
+}

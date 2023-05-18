@@ -1,0 +1,159 @@
+﻿.icon {
+    border-left: 4px solid rgba(255, 255, 255, .3);
+    content: "";
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #aaa;
+    font-size: 14px;
+    margin-right: 12px;
+}
+
+.subcontainer {
+    background-color: #444444;
+    padding: 12px 22px;
+    margin: 0;
+    line-height: 23px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.suhome {
+    color: white;
+    padding-right: 6px;
+}
+
+    .suhome a {
+        color: white;
+        text-decoration: none;
+    }
+
+
+
+
+
+
+.accform {
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 0px 8px 2px rgba(0,0,0,0.09);
+}
+
+.icon_accset {
+    display: flex;
+    font-weight: 500;
+}
+
+.icon_accset {
+    padding-right: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+    .icon_accset i {
+        padding-right: 10px;
+    }
+
+    .icon_accset h6 {
+        font-weight: 700;
+        color: darkblue;
+        font-size: 15px;
+        padding-top: 2px;
+    }
+
+.avatar {
+    border-top: 1px solid #929090;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#roow {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+#roow1 {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.wid {
+    width: 100%;
+    height: 40px;
+}
+
+#saveid {
+    padding: 20px 0px;
+}
+
+.accform1 {
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 0px 8px 2px rgba(0,0,0,0.09);
+}
+
+.billing {
+    border-top: 1px solid #929090;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.parabill {
+    margin-top: 20px;
+    background-color: #e9f7fe;
+    height: 60px;
+    text-align: center;
+    width: 100%;
+}
+
+    .parabill p {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #3184ae;
+    }
+
+.col-md-12-bill {
+    padding-top: 40px;
+}
+
+#roow3 {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.wid1 {
+    width: 100%;
+    height: 40px;
+}
+
+#saveid1 {
+    padding: 20px 0px;
+}
+
+.savebtn {
+    height: 50px;
+    width: 150px;
+    background-color: #184698;
+    color: white;
+    border-radius: 5px 5px;
+    padding: 10px 5px;
+    box-shadow: 0 4px 12px;
+}
+
+ListItem {
+    height: 50px;
+}

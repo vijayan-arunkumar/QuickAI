@@ -17,8 +17,13 @@
     <link href="lifont/css/line-awesome.min.css" rel="stylesheet" />
         
     <%--ourstylesheet css--%>
-    <link href="css/dashstyle.css" rel="stylesheet" />
     <link href="css/memberstyle.css" rel="stylesheet" />
+    <link href="css/header-2-dashtype.css" rel="stylesheet" />
+    <link href="css/sidebar.css" rel="stylesheet" />
+
+    <%-- our custom javascript --%>
+    <script src="scripts/sidebarthings.js"></script>
+
     <%--jquery--%>
     <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
     <%--popper js--%>
@@ -37,12 +42,14 @@
 <%-------------------- top header ------------------%>
         <div class="topbar">
             <div class="logo">
-                <img src="img/hype.png" />
+                <img class="logoimg" src="img/hype.png" />
             </div>
-            <div class="side-toogle-icon"><span style="font-size: 30px; cursor: pointer" id="btnHeader">&#9776;</span></div>
+            <div>
+                <button class="openbtn" onclick="openNav()">☰</button>
+            </div>
             <div class="dropdown">
-                <a class="btn " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img id="Image1" src="img/images.png" />
+                <a class="btn" id="avtrbtn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img class="avatarimg" id="Image1" src="img/images.png" />
                 </a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#"><i class="fa fa-dashboard icons"></i>DashBoard</a></li>
@@ -54,7 +61,7 @@
                     <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file-lines"></i>All Documents</a></li>
                     <li><a class="dropdown-item" href="membership.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
                     <li><a class="dropdown-item" href="accountsetting.aspx"><i class="fa-solid fa-arrow-right-from-bracket"></i>Account Setting</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-power-off"></i>Logout</a></li>
+                    <li><a class="dropdown-item" href="homepage.aspx"><i class="fa-solid fa-power-off"></i>Logout</a></li>
                 </ul>
             </div>
             <div class="selectlang">
@@ -66,47 +73,48 @@
                 </select>
             </div>
         </div>
-        <div class="container">
+   
 
  <%--------------------------- side bar --------------------------%>
 
-                     <div  class="sidebar">
-                         <ul>
-                             <li "><div style="color:darkblue;font-weight:600;"><h11> My Account</h11> </div></li>                             
-                             <li><a href="dashboard.aspx"><i class="fa fa-th-large"></i> <div>Dashboard</div></a></li>
-                             <li><a href="#"><i class="fa-solid fa-file"></i> <div>
-                                 <asp:DropDownList ID="DropDownList1" runat="server">
-                                     <asp:ListItem>All Documents</asp:ListItem>
-                                     <asp:ListItem>All AI Images</asp:ListItem>
-                                 </asp:DropDownList> </div>
-                                 </a></li>
-                                 
-                         </ul>
-                         <ul>
-                             <li><div style="color:darkblue;font-weight:600;"><h11>  Organize And Manage</h11></div></li>
-                             <li><a href="check.aspx"><i class="fa-solid fa-layer-group"></i> <div>Templates</div></a></li>
-                             <li><a href="#"><i class="fa-solid fa-image"></i> <div>AI Imagesa</div></a></li>
-                             <li><a href="#"><i class="fa-solid fa-comment-dots"></i> <div>AI Chats</div></a></li>                    
-                             <li><a href="#"><i class="fa-solid fa-headphones"></i> <div>Speech To Text</div></a></li>
-                             <li><a href="#"><i class="fa-solid fa-code"></i><div>AI Code</div></a></li> 
-                          </ul>
-                          <ul>
-                             <li><div style="color:darkblue;font-weight:600;"><h11>  Account</h11></div></li>
-                             <li><a href="#"><i class="fa fa-th-large"></i> <div>Affiliate Program</div></a></li>
-                             <li><a href="#"><i class="fa-solid fa-gift"></i> <div>Membership</div></a></li>
-                             <li><a href="#"><i class="fa-solid fa-file"></i> <div>Transaction</div></a></li>
-                             <li><a href="accountsetting.aspx"><i class="fa-solid fa-right-from-bracket"></i><div>Account Setting</div></a></li>
-                             <li><a href="homepage.aspx"><i class="fa-solid fa-power-off"></i> <div>Log Out</div></a></li>
-                          </ul>                                               
-                   </div>
-<%----------------------------------- main body --------------------------------------%>
-            <div class="main">
-                <div style="padding-top: 80px; margin-left: 30px; margin-right: 30px;" class="row">
-                    <div class="col-6">
-                        <h3 style="padding: 15px;">Current Plan</h3>
+                     <div class="sidebar"id="mySidebar">
+             <a style="margin-left:168px;" href="javascript:void(0)" onclick="closeNav()"><i class="fa-solid fa-arrow-left" style="background-color:#fff;color:#184698;font-size:30px"></i></a>
+            <ul>
+                <li><div style="color: darkblue; font-weight: 600;"><h11>My Account</h11></div></li>
+                <li><a href="dashboard.aspx"><i class="fa fa-th-large"></i><div>Dashboard</div> </a></li>
+                <li><a id="btn1"><i class="fa-solid fa-file"></i><div class="alldoc">All Documents</div></a>
+                    <div id="div22" style="display:none;background-color:lightblue;;margin-left:-15px">
+                    <a style="padding-left:60px" href="Alldocuments.aspx"><div>All Document</div></a>
+                    <a style="padding-left:60px;" href="AllAIimages.aspx"><div>All AI Image</div></a>
                     </div>
-                    <div class="col-6">
-                        <div style="float: right;" class="subcontainer">
+                </li>
+            </ul>
+            <ul>
+                <li><div style="color: darkblue; font-weight: 600;"> <h11>Organize And Manage</h11> </div></li>
+                <li><a href="check.aspx"><i class="fa-solid fa-layer-group"></i><div>Templates</div></a></li>
+                <li><a href="#"><i class="fa-solid fa-image"></i><div>AI Images</div></a></li>
+                <li><a href="#"><i class="fa-solid fa-comment-dots"></i><div>AI Chats</div> </a></li>
+                <li><a href="#"><i class="fa-solid fa-headphones"></i> <div>Speech To Text</div></a></li>
+                <li><a href="#"><i class="fa-solid fa-code"></i><div>AI Code</div></a></li>
+            </ul>
+            <ul>
+                <li><div style="color: darkblue; font-weight: 600;"><h11>Account</h11> </div></li>
+                <li><a href="#"><i class="fa fa-th-large"></i><div>Affiliate Program</div> </a></li>
+                <li><a href="membership.aspx"><i class="fa-solid fa-gift"></i> <div>Membership</div> </a></li>
+                <li><a href="transaction.aspx"><i class="fa-solid fa-file"></i> <div>Transaction</div> </a></li>
+                <li><a href="accountsetting.aspx"><i class="fa-solid fa-right-from-bracket"></i><div>Account Setting</div> </a></li>
+                <li><a href="homepage.aspx"><i class="fa-solid fa-power-off"></i><div>Log Out</div></a></li>
+            </ul>
+        </div>
+<%----------------------------------- main body --------------------------------------%>
+        <div class="main" id="mainid">
+            <div class="goodmargin">
+                <div style="padding-top: 50px; margin: 0;" class="row upmainrow">
+                    <div class="col-lg-5 col-md-12 col-sm-12">
+                        <h3>Current Plan</h3>
+                    </div>
+                    <div class="col-lg-7 col-md-12 col-sm-12">
+                        <div class="subcontainer">
                             <span class="suhome"><a href="homepage.aspx">Home</a></span>
                             <span class="icon"></span>
                             <span style="color: white;">Current Plan</span>
@@ -139,33 +147,35 @@
                                 <asp:TableCell runat="server"></asp:TableCell>
                                 <asp:TableCell runat="server"></asp:TableCell>
                                 <asp:TableCell ID="rowbtn" runat="server">
-                                    <asp:LinkButton Class="btn1" ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Changes Plan</asp:LinkButton></asp:TableCell>
+                                    <asp:LinkButton Class="btn1" ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Changes Plan</asp:LinkButton>
+                                </asp:TableCell>
                             </asp:TableRow>
                         </asp:Table>
                     </div>
 
                 </div>
                 <div class="dummy"></div>
-                <%------------------------ footer ------------------------------%>
-                <div style="border-top: 1px solid #e0e0e0; margin: 40px 2px; margin-bottom: 0px;" class="row" id="footmedia">
-                    <div class="col-md-8" id="footcopy">
-                        <div class="copyfoot">
-                            <p style="color: grey; margin: 20px 30px;">2023 Socius IGB Pvt Ltd, All right reserved</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4" id="footicon">
-                        <div style="margin: 20px 20px;" class="icons">
-                            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                            <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
-                            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-                        </div>
+            </div>
+            <%------------------------ footer ------------------------------%>
+            <div style="border-top: 1px solid #e0e0e0; margin: 40px 2px; margin-bottom: 0px;" class="row footrow">
+                <div class="col-md-12 col-sm-12 col-lg-7 footpara">
+                    <div class="copyfoot">
+                        <p style="color: grey; margin: 20px 30px;">2023 Socius IGB Pvt Ltd, All right reserved</p>
                     </div>
                 </div>
-            </div>                  
-        </div>
+                <div class="col-md-12 col-sm-12 col-lg-5 footicon">
+                    <div style="margin: 20px 40px;" class="icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>                  
+        
     </form>
 </body>
 </html>

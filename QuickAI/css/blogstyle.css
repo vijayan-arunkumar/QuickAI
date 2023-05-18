@@ -1,4 +1,5 @@
-﻿.blogmain {
+﻿
+.blogmain {
     padding: 0px;
     margin: 0;
     width: auto;
@@ -154,14 +155,17 @@
     background-color: #18469812;
     color: blue;
     border-radius: 5px;
-
+    text-decoration: none;
+    padding: 5px;
 }
 
 .lovebtn {
-    border-style: none;
+    border-style:none;
     background-color: #18469812;
     color: blue;
     border-radius: 5px;
+    text-decoration: none;
+    padding: 5px;
 }
 
 .social-profile {
@@ -186,7 +190,9 @@
             .blogicons a i:hover {
                 color: black;
             }
-
+.carousel-indicators{
+    z-index:1;
+}
 /*---------------footer----------------*/
 h6 {
     padding: 0;
@@ -247,7 +253,13 @@ ul li {
     padding-top: 50px;
     padding-right: 0px;
 }
-
+.footcopy{
+    padding-top:10px;
+    margin:10px 0px;
+}
+#border-right-line {
+    border-right: 1px solid #484848;
+}
 .icons {
     font-size: 20px;
 }
@@ -264,35 +276,7 @@ a i:hover {
     color: white;
 }
 
-.copyfoot p {
-}
 
-.footerlinks {
-    color: #fff;
-    text-decoration: none !important;
-}
-
-ul {
-    display: list-item;
-    text-align: center;
-}
-
-
-h1 {
-    font-size: 42px;
-}
-
-ul li {
-    list-style-type: none;
-}
-
-.footerlinks:hover {
-    color: #fff;
-}
-
-#footer1 {
-    background: #303030;
-}
 
 
 
@@ -312,5 +296,16 @@ ul li {
          margin-left: 0px; 
          margin-right: 0px; 
          height:auto;
+    }
+    .footcopy {
+        text-align: center;
+        padding:0;
+        margin:0px;
+    }
+    #border-right-line {
+        padding-top: 20px;
+    }
+    .icons {
+        padding-bottom: 20px;
     }
 }
