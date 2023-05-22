@@ -11,10 +11,10 @@
 
     <div class="container">
         <div style="padding-top: 100px; box-sizing: border-box;">
-            <div style="padding-top: 60px; padding-bottom: 5px" class="text-center hero-icon ">
+            <div style="padding-top: 60px; padding-bottom: 5px" class="text-center img-with-grtstrtbtn ">
                 <img class="" width="180" src="img/home-hero-icon.png" />
                 <h1 style="font-size: 65px;" class="margin-bottom-10 text_gradient_animation">
-                    <strong>Best AI Content Writer</strong>
+                    Best AI Content Writer
                 </h1>
             </div>
             <center>

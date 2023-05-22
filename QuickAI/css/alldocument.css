@@ -103,6 +103,7 @@ TableFooter {
     padding-bottom: 100px;
     margin-top:10%;
     margin-bottom:20%;
+   cursor:grab;
 }
 
 

@@ -35,7 +35,7 @@ namespace QuickAI
                     Response.Write("<script>alert('Invalid Credentials 🧐 ');</script>");
                 }
             }
-            catch (Exception ex)
+            catch (Exception )
             {
 
             }

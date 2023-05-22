@@ -1,13 +1,10 @@
-﻿
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="dashboard.aspx.cs" Inherits="QuickAI.WebForm2" %>
-
-<%@ Register Assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI.DataVisualization.Charting" TagPrefix="asp" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="new.aspx.cs" Inherits="QuickAI._new" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Quick AI</title>
+     <title>Quick AI</title>
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
     <%--bootstrap css--%>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -19,10 +16,9 @@
     <link href="lifont/css/line-awesome.css" rel="stylesheet" />
     <link href="lifont/css/line-awesome.min.css" rel="stylesheet" />
     <%--ourstylesheet css--%>
-    <link href="css/dashstyle.css" rel="stylesheet" />
     <link href="css/header-2-dashtype.css" rel="stylesheet" />
-    <link href="css/sidebar.css" rel="stylesheet" />
-
+    <link href="css/new.css" rel="stylesheet" />
+    <link href="css/dashstyle.css" rel="stylesheet" />
     <%--jquery--%>
     <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
     <%--popper js--%>
@@ -31,7 +27,6 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
     <%-- our custom javascript --%>
-    <script src="scripts/sidebarthings.js"></script>
 
     <script src="jquery/jquery.min.js"></script>
     <script src="bootstrap/js/jquery-3.6.0.min.js"></script>
@@ -41,8 +36,6 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    
 </head>
 <body>
     <form id="form1" runat="server">
@@ -61,8 +54,8 @@
             <div class="logo">
                 <img class="logoimg" src="img/hype.png" />
             </div>
-            <div>
-                <button class="openbtn" onclick="openNav()">☰</button>
+            <div  id="bar">
+                <span class="top-br-btn" style="font-size: 30px; cursor: pointer" id="btnHeader">&#9776;</span>
             </div>
             <div class="dropdown">
                 <a class="btn" id="avtrbtn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -91,9 +84,11 @@
             </div>
         </div>
         </div>
-        <%------------------------- side bar --------------------%>
+        <div class="container-fluid">
+        <div class="row">
+           <div class="col-md-2" id="side1" style="padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px">
 
-        <div class="sidebar"id="mySidebar">
+           <div class="sidebar"id="mySidebar">
             <div style="margin-top:30px;"></div>
              <a style="margin-left:168px;" href="javascript:void(0)" onclick="closeNav()"><i class="fa-solid fa-arrow-left" style="background-color:#fff;color:#184698;font-size:30px"></i></a>
             <ul>
@@ -123,13 +118,10 @@
                 <li><a href="homepage.aspx"><i class="fa-solid fa-power-off"></i><div>Log Out</div></a></li>
             </ul>
         </div>
-
-
-        <%--------------------------------- main body -----------------------------------%>
-
-
-        <div class="main" id="mainid">
-            <div class="goodmargin">
+         </div>
+      
+            <div class="col-md-10"  id="main1"> 
+                <div class="goodmargin">
                 <div class="row upmainrow">
                     <div class="col-lg-5 col-md-12 col-sm-12">
                         <h3>Dash Board</h3>
@@ -191,28 +183,24 @@
                     </div>
                 </div>
             </div>
-            <%-- -----------------------------------footer------------------------------- --%>
-
-            <div style="border-top: 1px solid #e0e0e0; margin: 40px 2px; margin-bottom: 0px;" class="row footrow">
-                <div class="col-md-12 col-sm-12 col-lg-7 footpara">
-                    <div class="copyfoot">
-                        <p style="color: grey; margin: 20px 30px;">2023 Socius IGB Pvt Ltd, All right reserved</p>
-                    </div>
                 </div>
-                <div class="col-md-12 col-sm-12 col-lg-5 footicon">
-                    <div style="margin: 20px 40px;" class="icons">
-                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
-                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
+       
             </div>
-
-        </div>
+            </div>
     </form>
+    <script type="text/javascript">
+
+        $("#btnHeader").on("click", function () {
+            setTimeout(function () {
+                $("#side1").toggle()
+            }, 200);
+            setTimeout(function () {
+                $("#main1").toggleClass('col-md-12 ')
+            }, 200);
+           
+
+        });
+    </script>
     <script>
         const ctx = document.getElementById('myChart');
         new Chart(ctx, {
@@ -243,6 +231,5 @@
             }
         });
     </script>
-    
 </body>
 </html>

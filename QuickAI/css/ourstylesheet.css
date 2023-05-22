@@ -14,6 +14,26 @@
 .header{
     z-index:999;
 }
+.img-with-grtstrtbtn h1 {
+    background-image:linear-gradient(90deg,#ccc 0px,rgba(229 229 / 90%)40px,#ccc 80px);
+    background-size: 500%;
+    background-position: 100% 0;
+    border-radius: inherit;
+    animation: shimmer 1.5s infinite;
+   /* background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent*/
+}
+@keyframes shimmer{
+    to{
+        background-position: -100% 0;
+    }
+}
+
+
+
+
+
 .popup-with-zoom-anim {
     background-color: #184698;
     color: white;

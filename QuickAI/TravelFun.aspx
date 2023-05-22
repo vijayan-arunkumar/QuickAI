@@ -102,6 +102,10 @@
                         </div>
                     </div>
                     <div class="col-md-4">
+                        <div class="input-with-icon">
+                            <input class="with-border" type="text" placeholder="Search..." name="s" id="search-widget" />
+                            <i class="icon-material-outline-search"></i>
+                        </div>
                         <div class="carouselpg">
                             <div id="demo" class="carousel slide" data-bs-ride="carousel">
                                 <!-- Indicators/dots -->

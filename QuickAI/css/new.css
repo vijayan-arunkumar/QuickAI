@@ -1,29 +1,22 @@
-﻿body {
-    font-family: nunito, helveticaneue, helvetica neue, Helvetica, Arial, sans-serif;
-}
-
-
-.sidebar {
+﻿.sidebar {
     position: fixed;
     top: 85px;
-    width: 260px;
-    height: calc(100% - 85px);
+  height: calc(100% - 85px);
     background: #fff;
     overflow-x: hidden;
     box-shadow: 0px 0px 5px 1px rgb(0,0,0,0.4);
 }
-
     .sidebar ul {
         margin-top: 20px;
         margin-bottom: 20px;
         width: 100%;
     }
-        .sidebar ul h11{
-            font-size:15px;
-          padding-bottom:40px;
-          cursor: default;
 
+        .sidebar ul h11 {
+            font-size: 15px;
+            padding-bottom: 40px;
         }
+
         .sidebar ul li {
             width: 100%;
             list-style: none;
@@ -66,23 +59,26 @@ h11 {
 .alldoc-main:hover {
     background-color: lightblue;
 }
-#btn1{
-    cursor:pointer;
+
+#btn1 {
+    cursor: pointer;
 }
+
 .alldoc {
     cursor: pointer;
 }
-.main {
+
+/*#main1 {
     padding: 0px;
     margin: 0;
     box-sizing: border-box;
     position: absolute;
     top: 85px;
-    width: calc(100% - 200px);
-    left: 200px;
+    width: calc(100% - 260px);
+    left: 260px;
     min-height: calc(100vh - 85px);
     background-color: #f5f5f5;
-}
+}*/
 
 /*footer*/
 .icons {
@@ -108,8 +104,8 @@ h11 {
     }
 
     .main {
-        position:absolute;
+        position: absolute;
         left: 0;
-        width:100%;
+        width: 100%;
     }
 }

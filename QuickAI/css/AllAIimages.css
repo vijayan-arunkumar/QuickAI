@@ -119,6 +119,7 @@ TableFooter {
 
 
 
+
 @media(max-width:1000px) {
     .footicon {
         text-align: center;
@@ -139,5 +140,11 @@ TableFooter {
     .subcontainer {
         float: left;
         margin-top: 20px;
+    }
+}
+
+@media(min-width:1200px) {
+    .icons {
+        float: right;
     }
 }

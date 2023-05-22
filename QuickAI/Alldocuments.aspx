@@ -45,7 +45,7 @@
                 <img class="logoimg" src="img/hype.png" />
             </div>
             <div>
-                <button class="openbtn" onclick="openNav()">☰</button>
+                <button href="javascript:void(0)" class="openbtn" onclick="openNav()">☰</button>
             </div>
             <div class="dropdown">
                 <a class="btn" id="avtrbtn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

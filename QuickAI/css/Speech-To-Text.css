@@ -1,0 +1,195 @@
+﻿body {
+    font-family: nunito;
+}
+.icon {
+    border-left: 4px solid rgba(255, 255, 255, .3);
+    content: "";
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #aaa;
+    font-size: 14px;
+    margin-right: 12px;
+}
+
+.subcontainer {
+    background-color: #444444;
+    padding: 12px 22px;
+    margin: 0;
+    line-height: 23px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.suhome {
+    color: white;
+    padding-right: 6px;
+}
+
+    .suhome a {
+        color: white;
+        text-decoration: none;
+    }
+
+.goodmargin {
+    margin: 0px 5%;
+}
+
+.subcontainer {
+    float: right;
+}
+
+.doccount {
+    background-color: #18469833;
+    padding: 5px 10px ;
+    border-radius: 50vh;
+    height:30px;
+}
+.Speech-to-text-cont{
+    margin-top:50px;
+}
+.Speech-left-cont{
+    width:100%;
+   
+}
+.Speech-left-inner-cont {
+    margin: 0px 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.09)
+}
+.speech-with-icon{
+    padding:10px;
+    border-bottom:1px solid #eaeaea;    
+}
+.speech-with-icon span h7{
+    padding-left:5px;
+}
+.speech-icon {
+    color: blue;
+}
+.speech-with-inner-cont {
+    margin: 0px 10px;
+    background-color: #fff;
+    padding: 10px;
+    color: #666666;
+}
+
+.speech-para {
+    margin: 10px 10px 0px 10px;
+    background-color: #e9f7fe;
+    color: #3184ae
+}
+.speech-text-box {
+    margin: 10px 10px 10px 10px;
+}
+.speech-text-inner-box{
+    width:100%;
+    border:1px solid #eaeaea;
+    outline:none;
+    padding:5px;
+}
+.speech-inner-uploadfile {
+    margin: 10px 10px 10px 10px;
+}
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    color:#666666;
+}
+
+.uploadfile {
+    color: #fff;
+    background-color:#184698;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    border:1px solid #184698;
+}
+
+.upload-btn-wrapper input[type=file] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.speech-generate{
+    background-color:#184698;
+    padding:5px;
+    border:none;
+    border-radius:5px;
+    color:#fff;
+    width:100%;
+    margin-top:30px;
+}
+.speech-sec-para{
+    background-color:#e9f7fe;
+    color:#3184ae;
+    margin-top:20px;
+
+}
+.speech-right-cont {
+    width: 100%;
+}
+.speech-right-inner-cont {
+    margin: 0px 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.09)
+}
+.right-speech-with-icon {
+    padding: 20px;
+}
+.speech-right-3btn{
+    float:right;
+}
+  
+    .spech-right-btn {
+        border: none;
+        background-color: #184698;
+        color: #fff;
+        padding:2px 10px;
+        border-radius:5px;
+    }
+.speech-icon-2 {
+    color: #184698;
+    font-weight: 900;
+}
+.right-speech-with-icon h7{
+    padding-left:5px;
+}
+
+
+
+
+
+
+@media(max-width:1000px) {
+    .footicon {
+        text-align: center;
+    }
+
+    .footpara {
+        text-align: center;
+    }
+
+    .copyfoot {
+        text-align: center;
+    }
+
+    .icons {
+        float: none;
+    }
+
+    .subcontainer {
+        float: left;
+        margin-top: 20px;
+    }
+}
+
+@media(min-width:1200px) {
+    .icons {
+        float: right;
+    }
+}   

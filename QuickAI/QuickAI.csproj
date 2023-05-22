@@ -71,6 +71,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AI-chat.aspx" />
+    <Content Include="AIimages.aspx" />
     <Content Include="AllAIimages.aspx" />
     <Content Include="Alldocuments.aspx" />
     <Content Include="blog.aspx" />
@@ -80,16 +82,23 @@
     <Content Include="bootstrap\js\jquery-3.3.1.slim.min.js" />
     <Content Include="bootstrap\js\jquery-3.6.0.min.js" />
     <Content Include="bootstrap\js\popper.min.js" />
+    <Content Include="check.aspx" />
+    <Content Include="css\AI-Chat.css" />
+    <Content Include="css\AI-images.css" />
     <Content Include="css\AllAIimages.css" />
     <Content Include="css\alldocument.css" />
+    <Content Include="css\balajibro.css" />
     <Content Include="css\billingdetails.css" />
     <Content Include="css\dashstyle.css" />
     <Content Include="css\footertype1.css" />
     <Content Include="css\header-2-dashtype.css" />
     <Content Include="css\memberstyle.css" />
+    <Content Include="css\new.css" />
+    <Content Include="css\newdash.css" />
     <Content Include="css\regstylesheet.css" />
     <Content Include="css\ourstylesheet.css" />
     <Content Include="css\sidebar.css" />
+    <Content Include="css\Speech-To-Text.css" />
     <Content Include="css\templates_style.css" />
     <Content Include="css\tempstyle.css" />
     <Content Include="css\blogstyle.css" />
@@ -3712,9 +3721,12 @@
     <Content Include="lifont\svg\youtube.svg" />
     <Content Include="lifont\svg\zhihu.svg" />
     <Content Include="Love.aspx" />
+    <Content Include="new.aspx" />
     <Content Include="scripts\membershipplan.js" />
     <Content Include="scripts\sidebarthings.js" />
     <Content Include="scripts\templates.js" />
+    <Content Include="Speech-To-Text.aspx" />
+    <Content Include="templates.aspx" />
     <Content Include="Web.config" />
     <Content Include="login.aspx" />
     <Content Include="forgetpage.aspx" />
@@ -3729,6 +3741,20 @@
     <Content Include="billingdetails.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AI-chat.aspx.cs">
+      <DependentUpon>AI-chat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AI-chat.aspx.designer.cs">
+      <DependentUpon>AI-chat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AIimages.aspx.cs">
+      <DependentUpon>AIimages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AIimages.aspx.designer.cs">
+      <DependentUpon>AIimages.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AllAIimages.aspx.cs">
       <DependentUpon>AllAIimages.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3750,6 +3776,13 @@
     <Compile Include="blog.aspx.designer.cs">
       <DependentUpon>blog.aspx</DependentUpon>
     </Compile>
+    <Compile Include="check.aspx.cs">
+      <DependentUpon>check.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="check.aspx.designer.cs">
+      <DependentUpon>check.aspx</DependentUpon>
+    </Compile>
     <Compile Include="homepage.aspx.cs">
       <DependentUpon>homepage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3763,6 +3796,13 @@
     </Compile>
     <Compile Include="Love.aspx.designer.cs">
       <DependentUpon>Love.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="new.aspx.cs">
+      <DependentUpon>new.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="new.aspx.designer.cs">
+      <DependentUpon>new.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">
@@ -3813,6 +3853,20 @@
     </Compile>
     <Compile Include="membership.aspx.designer.cs">
       <DependentUpon>membership.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Speech-To-Text.aspx.cs">
+      <DependentUpon>Speech-To-Text.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Speech-To-Text.aspx.designer.cs">
+      <DependentUpon>Speech-To-Text.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="templates.aspx.cs">
+      <DependentUpon>templates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates.aspx.designer.cs">
+      <DependentUpon>templates.aspx</DependentUpon>
     </Compile>
     <Compile Include="transaction.aspx.cs">
       <DependentUpon>transaction.aspx</DependentUpon>

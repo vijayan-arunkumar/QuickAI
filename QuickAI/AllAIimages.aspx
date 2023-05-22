@@ -19,8 +19,7 @@
     <%--ourstylesheet css--%>
     <link href="css/header-2-dashtype.css" rel="stylesheet" />
     <link href="css/sidebar.css" rel="stylesheet" />
-    <link href="css/alldocument.css" rel="stylesheet" />
-
+    <link href="css/AllAIimages.css" rel="stylesheet" />
     <%--jquery--%>
     <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
     <%--popper js--%>
@@ -76,7 +75,7 @@
         <div class="sidebar"id="mySidebar">
              <a style="margin-left:168px;" href="javascript:void(0)" onclick="closeNav()"><i class="fa-solid fa-arrow-left" style="background-color:#fff;color:#184698;font-size:30px"></i></a>
             <ul>
-                <li><div style="color: darkblue; font-weight: 600;"><h11>My Account</h11></div></li>
+                <li><div style="color: darkblue; font-weight:600;"><h11>My Account</h11></div></li>
                 <li><a href="dashboard.aspx"><i class="fa fa-th-large"></i><div>Dashboard</div> </a></li>
                 <li><a id="btn1"><i class="fa-solid fa-file"></i><div class="alldoc">All Documents</div></a>
                     <div id="div22" style="display:none;background-color:lightblue;;margin-left:-15px">

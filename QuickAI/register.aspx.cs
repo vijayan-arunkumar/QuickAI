@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.Windows;
 
 namespace QuickAI
 {
@@ -17,7 +18,7 @@ namespace QuickAI
 
             if (checkuserexists())
             {
-                Response.Write("<script>alert('E-mail Already  Exists Try with other E-Mail ID 🧐 ');</script>");
+               Response.Write("<script>alert('E-mail Already  Exists Try with other E-Mail ID 🧐 ');</script>");
 
             }
             else

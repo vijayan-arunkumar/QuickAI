@@ -1,13 +1,10 @@
-﻿
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="dashboard.aspx.cs" Inherits="QuickAI.WebForm2" %>
-
-<%@ Register Assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI.DataVisualization.Charting" TagPrefix="asp" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AI-chat.aspx.cs" Inherits="QuickAI.AI_chat" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Quick AI</title>
+     <title>Quick AI</title>
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
     <%--bootstrap css--%>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -18,11 +15,11 @@
     <link href="fontawsome/css/fontawesome.min.css" rel="stylesheet" />
     <link href="lifont/css/line-awesome.css" rel="stylesheet" />
     <link href="lifont/css/line-awesome.min.css" rel="stylesheet" />
+
     <%--ourstylesheet css--%>
-    <link href="css/dashstyle.css" rel="stylesheet" />
     <link href="css/header-2-dashtype.css" rel="stylesheet" />
     <link href="css/sidebar.css" rel="stylesheet" />
-
+    <link href="css/AI-Chat.css" rel="stylesheet" />
     <%--jquery--%>
     <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
     <%--popper js--%>
@@ -30,7 +27,7 @@
     <%--bootstrap js--%>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
-    <%-- our custom javascript --%>
+    <%-- custom javascript --%>
     <script src="scripts/sidebarthings.js"></script>
 
     <script src="jquery/jquery.min.js"></script>
@@ -38,31 +35,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    
 </head>
 <body>
     <form id="form1" runat="server">
-        <div style="position: fixed; z-index: 1; width: 100%;">
-            <div class="mailverify">
-                <div class="row Everify">
-                    <div class="col-md-8">
-                        <i class="fa-solid fa-lock"></i><span>Your email address is not verified. Please verify your email address to use all the features.</span>
-                    </div>
-                    <div class="col-md-4">
-                        <asp:Button Style="float: right" ID="Button3" CssClass="Everifybutton" runat="server" Text="Verify E-Mail" />
-                    </div>
-                </div>
-            </div>
-            <div class="topbar">
+       <div class="topbar">
             <div class="logo">
                 <img class="logoimg" src="img/hype.png" />
             </div>
             <div>
-                <button class="openbtn" onclick="openNav()">☰</button>
+                <button class="openbtn"  onclick="openNav()">☰</button>
             </div>
             <div class="dropdown">
                 <a class="btn" id="avtrbtn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -71,8 +52,8 @@
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#"><i class="fa fa-dashboard icons"></i>DashBoard</a></li>
                     <li><a class="dropdown-item" href="#"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fa-regular fa-image"></i>AI Images</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
+                    <li><a class="dropdown-item" href="AIimages.aspx"><i class="fa-regular fa-image"></i>AI Images</a></li>
+                    <li><a class="dropdown-item" href="AI-chat.aspx"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
                     <li><a class="dropdown-item" href="#"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
                     <li><a class="dropdown-item" href="#"><i class="fa-solid fa-code"></i>AI Code</a></li>
                     <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file-lines"></i>All Documents</a></li>
@@ -90,14 +71,11 @@
                 </select>
             </div>
         </div>
-        </div>
-        <%------------------------- side bar --------------------%>
-
+        <%-- side-bar --%>
         <div class="sidebar"id="mySidebar">
-            <div style="margin-top:30px;"></div>
              <a style="margin-left:168px;" href="javascript:void(0)" onclick="closeNav()"><i class="fa-solid fa-arrow-left" style="background-color:#fff;color:#184698;font-size:30px"></i></a>
             <ul>
-                <li><div style="color: darkblue; font-weight: 600;"><h11>My Account</h11></div></li>
+                <li><div style="color: darkblue; font-weight:600;"><h11>My Account</h11></div></li>
                 <li><a href="dashboard.aspx"><i class="fa fa-th-large"></i><div>Dashboard</div> </a></li>
                 <li><a id="btn1"><i class="fa-solid fa-file"></i><div class="alldoc">All Documents</div></a>
                     <div id="div22" style="display:none;background-color:lightblue;;margin-left:-15px">
@@ -109,8 +87,8 @@
             <ul>
                 <li><div style="color: darkblue; font-weight: 600;"> <h11>Organize And Manage</h11> </div></li>
                 <li><a href="templates.aspx"><i class="fa-solid fa-layer-group"></i><div>Templates</div></a></li>
-                <li><a href="#"><i class="fa-solid fa-image"></i><div>AI Images</div></a></li>
-                <li><a href="#"><i class="fa-solid fa-comment-dots"></i><div>AI Chats</div> </a></li>
+                <li><a href="AIimages.aspx"><i class="fa-solid fa-image"></i><div>AI Images</div></a></li>
+                <li><a href="AI-chat.aspx"><i class="fa-solid fa-comment-dots"></i><div>AI Chats</div> </a></li>
                 <li><a href="#"><i class="fa-solid fa-headphones"></i> <div>Speech To Text</div></a></li>
                 <li><a href="#"><i class="fa-solid fa-code"></i><div>AI Code</div></a></li>
             </ul>
@@ -123,75 +101,67 @@
                 <li><a href="homepage.aspx"><i class="fa-solid fa-power-off"></i><div>Log Out</div></a></li>
             </ul>
         </div>
-
-
-        <%--------------------------------- main body -----------------------------------%>
-
-
-        <div class="main" id="mainid">
+        <%-- main body --%>
+        <div class="main"  id="mainid">
             <div class="goodmargin">
-                <div class="row upmainrow">
+                <div style="padding-top: 50px; margin: 0;" class="row upmainrow">
                     <div class="col-lg-5 col-md-12 col-sm-12">
-                        <h3>Dash Board</h3>
+                     <h3> AI Chat <span class="doccount"> 
+                            <span><i class="fa-solid fa-chart-simple" style="color: #184698;"></i></span>
+                            <span style="color: #184698;">0/10,000</span>
+                            <span><strong> Words Used </strong></span>
+                        </span> </h3>
+                       
                     </div>
-
+                   
                     <div class="col-lg-7 col-md-12 col-sm-12">
                         <div class="subcontainer">
                             <span class="suhome"><a href="homepage.aspx">Home</a></span>
                             <span class="icon"></span>
-                            <span style="color: white;">Dash Board</span>
+                            <span style="color: white;"> AI Chat</span>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="cards">
-                        <div class="col-md-04">
-                            <div class="card">
-                                <div class="card-content">
-                                    <div class="detail">Words Used</div>
-                                    <div class="count">0/10,000</div>
-                                </div>
-                                <div class="icon-box1">
-                                    <i class="fa-solid fa-arrow-trend-up" style="color: #b81b7f;"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-04">
-                            <div class="card">
-                                <div class="card-content">
-                                    <div class="detail">Image Used</div>
-                                    <div class="count">0/100</div>
-                                </div>
-                                <div class="icon-box2">
-                                    <i class="fa-solid fa-chart-simple" style="color: #36bd78;"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-04">
-                            <div class="card">
-                                <div class="card-content">
-                                    <div class="detail">Speech To Text</div>
-                                    <div class="count">0/0</div>
-                                </div>
-                                <div class="icon-box3">
-                                    <i class="fa-solid fa-headphones" style="color: #efa80f;"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="AI-chat-main-para">
+                    <p class="AI-chat-para">You can not use the chat feature with your OpenAI model. Upgrade your membership plan to use this feature.</p>
                 </div>
-                <div class="charts">
-                    <div class="chart">
-                        <center>
-                            <h4>Word used this month</h4>
-                            <div>
-                                <canvas id="myChart"></canvas>
+                <div class="AI-chat-box">
+                    <div class="AI-chat-1st-div">
+                        <div class="img-with-chat-bot">
+                            <img class="AI-chat-bot-img" src="img/testimonial%20user.png" />
+                            <span><h7>AI Chat Bot</h7></span>
+                            <div class="AI-chat-bot-right">
+                                <span class="ai-chat-span" >
+                                    <button class="AI-chat_dwnbtn" id="data1" type="button"><i class="fa-solid fa-download" style="color:#fff"></i></button>
+                                </span>
+                                <span class="ai-chat-span" >
+                                    <button class="AI-chat_delbtn" id="data2" type="button" ><i class="fa-solid fa-trash" style="color:#fff"></i></button>
+                                </span>
                             </div>
-                        </center>
+
+                        </div>
+                        <div class="AI-chat-2nd-div">
+                            <div class="AI-chat-placeholder">
+
+                            </div>
+                            <div class="AI-chat-input-area">
+                                <div class="AI-chat-input-holder">
+                                    <div class="row">
+                                        <div class="col-lg-11 col-md-10 col-sm-10">
+                                            <asp:TextBox placeholder="Type your message here" CssClass="AI-chat_iput-box" ID="TextBox1" runat="server"></asp:TextBox>
+                                        </div>
+                                        <div class="col-lg-1 col-md-1 col-sm-1">
+                                            <button class="AI-chat-send-btn ripple-effect" id="ai-chat-sndbtn" type="button" text="Send" >Send</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <%-- -----------------------------------footer------------------------------- --%>
+
+            <%-------------------------------------- footer ----------------------------------%>
 
             <div style="border-top: 1px solid #e0e0e0; margin: 40px 2px; margin-bottom: 0px;" class="row footrow">
                 <div class="col-md-12 col-sm-12 col-lg-7 footpara">
@@ -210,39 +180,20 @@
                     </div>
                 </div>
             </div>
-
         </div>
+    
     </form>
     <script>
-        const ctx = document.getElementById('myChart');
-        new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: ["01 May", "02 May", "03 May", "04 May", "05 May", "06 May", "07 May", "08 May", "09 May", "10 May", "11 May", "12 May", "13 May", "14 May", "15 May", "16 May", "17 May", "18 May", "19 May", "20 May", "21 May", "22 May", "23 May", "24 May", "25 May", "26 May", "27 May", "28 May", "29 May", "30 May", "31 May"],
-                // Information about the dataset
-                datasets: [{
-                    label: "Words Used",
-                    backgroundColor: '#18469815',
-                    borderColor: '#184698',
-                    borderWidth: "3",
-                    data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                    pointRadius: 5,
-                    pointHoverRadius: 5,
-                    pointHitRadius: 10,
-                    pointBackgroundColor: "#fff",
-                    pointHoverBackgroundColor: "#fff",
-                    pointBorderWidth: "2",
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
+        document.getElementById('data1').addEventListener("click", function(){
+    this.classList.add("loading");
+    this.innerHTML = "↻";
+});
+    </script>
+    <script>
+        document.getElementById('data2').addEventListener("click", function() {
+            this.classList.add("loading");
+            this.innerHTML = "↻";
         });
     </script>
-    
 </body>
 </html>
