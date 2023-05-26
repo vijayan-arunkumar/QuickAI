@@ -1,4 +1,6 @@
-﻿
+﻿body {
+    font-family: nunito;
+} 
 
 
 /*.container {
@@ -176,7 +178,7 @@
     border-radius: 0px 5px 5px 0px;
 }
 
-.btn1 {
+.btn12 {
     height: 50px;
     background-color: #184698;
     color: white;

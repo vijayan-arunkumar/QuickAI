@@ -1,7 +1,6 @@
 ﻿body {
-    font-family:nunito;
+    font-family: nunito;
 }
-
 .icon {
     border-left: 4px solid rgba(255, 255, 255, .3);
     content: "";
@@ -41,7 +40,9 @@
 .subcontainer {
     float: right;
 }
-
+.main{
+    margin-top:85px;
+}
 .doccount {
     background-color: #18469833;
     padding: 10px 10px;

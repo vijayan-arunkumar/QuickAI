@@ -1,4 +1,8 @@
-﻿.upmainrow {
+﻿body {
+    font-family: nunito;
+}
+
+.upmainrow {
     padding-top: 150px;
     margin-left: 5%;
     margin-right: 5%;

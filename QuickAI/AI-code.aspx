@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Alldocuments.aspx.cs" Inherits="QuickAI.Alldocuments" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AI-code.aspx.cs" Inherits="QuickAI.AI_code" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-      <title>Quick AI</title>
+    <title>Quick AI</title>
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
     <%--bootstrap css--%>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -15,11 +15,10 @@
     <link href="fontawsome/css/fontawesome.min.css" rel="stylesheet" />
     <link href="lifont/css/line-awesome.css" rel="stylesheet" />
     <link href="lifont/css/line-awesome.min.css" rel="stylesheet" />
-
     <%--ourstylesheet css--%>
     <link href="css/header-2-dashtype.css" rel="stylesheet" />
+    <link href="css/AI-code.css" rel="stylesheet" />
     <link href="css/sidebar.css" rel="stylesheet" />
-    <link href="css/alldocument.css" rel="stylesheet" />
 
     <%--jquery--%>
     <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
@@ -28,7 +27,7 @@
     <%--bootstrap js--%>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
-    <%-- custom javascript --%>
+    <%-- our custom javascript --%>
     <script src="scripts/sidebarthings.js"></script>
 
     <script src="jquery/jquery.min.js"></script>
@@ -36,11 +35,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="topbar">
+       <div class="topbar">
             <div class="logo">
                 <img class="logoimg" src="img/hype.png" />
             </div>
@@ -73,9 +71,9 @@
                 </select>
             </div>
         </div>
-        <%--  sidebar --%>
+
         <div class="row">
-        <div class="col-lg-2" id="side1">
+                <div class="col-lg-2" id="side1">
                     <div class="sidebar" id="mySidebar">
                         <div style="margin-top: 30px;"></div>
                         <ul class="pad-0">
@@ -146,68 +144,100 @@
                     </div>
                 </div>
 
-<%---------------------- main body ------------------------%>
-        <div class="col-lg-10" id="main1">
-        <div class="main" >
-            <div class="goodmargin">
-                <div class="row upmainrow">
+
+                <%--------------------------------- main body -----------------------------------%>
+
+                <div class="col-lg-10" id="main1">
+                    <div class="main">
+                        <div class="goodmargin">
+                            <div class="row upmainrow">
                                 <div class="col-lg-5 col-md-5 col-sm-12 main-indicate">
-                                    <h6>All Documents</h6>
+                                    <h6>AI Code</h6>
                                 </div>
 
                                 <div class="col-lg-7 col-md-7 col-sm-12">
                                     <div class="subcontainer">
                                         <span class="suhome"><a href="homepage.aspx">Home</a></span>
                                         <span class="icon"></span>
-                                        <span style="color: white;">All Documents</span>
+                                        <span style="color: white;">AI Code</span>
                                     </div>
                                 </div>
                             </div>
-                <div class="table-holder">
-                     <div class="icon_alldoc">
-                        <i class="fa-regular fa-file" style="color: #520ca1;"></i>
-                        <h6>All Documents</h6>
+                            <div class="Speech-to-text-cont">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="Speech-left-cont">
+                            <div class="Speech-left-inner-cont">
+                                <div class="speech-with-icon">
+                                    <span><i class="fa-solid fa-code speech-icon"></i></span>
+                                    <span>
+                                        <h7 class="speech-text">AI code</h7></span>
+                                </div>
+                                <div class="speech-with-inner-cont">
+                                    <div class="speech-para">
+                                        <p>
+                                           Use this code generator to create code in any programming language.
+                                        </p>
+                                    </div>
+                                    <div class="speech-text-box">
+                                        <label>Title</label><br />
+                                        <asp:TextBox CssClass="speech-text-inner-box" ID="TextBox1" placeholder="New Code" runat="server"></asp:TextBox>
+                                    </div>
+                                    <div class="speech-inner-uploadfile">
+                                        <label>Description*</label><br />
+                                        <asp:TextBox CssClass="ai-code-description" ID="TextBox3" runat="server" TextMode="MultiLine"></asp:TextBox>
+                                        <button class="speech-generate" type="submit" text="Generate &#8594">Generate &#10140</button>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                 <div class="table-responsive" id="tabl-1">
-                        <asp:Table ID="Table1" runat="server">
-                            <asp:TableRow ID="row1" runat="server">
-                                <asp:TableCell class="tabcont" ID="rowtb" runat="server">Document</asp:TableCell>
-                                <asp:TableCell class="tabcont" runat="server">Content</asp:TableCell>
-                                <asp:TableCell class="tabcont" runat="server">Data</asp:TableCell>
-                                <asp:TableCell class="tabcont" ID="rowtb1" runat="server">Action</asp:TableCell>
-                            </asp:TableRow>
-                           
-                            <asp:TableRow  runat="server" TableSection="TableFooter">
-                                <asp:TableCell ID="result" runat="server"  ColumnSpan="100">No Documents Found</asp:TableCell>
-                            </asp:TableRow>
-                           
-                        </asp:Table>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <div class="speech-right-cont">
+                            <div class="speech-right-inner-cont">
+                                <div class="right-speech-with-icon">
+                                     <span><i class="speech-icon-2">☰</i></span>
+                                    <span>
+                                        <h7 class="speech-text">Generated Result</h7>
+                                    </span>
+                                    
+                                </div>
+                                <div class="speech-right-sec-div">
+                                    <div class="ai-code-rite-para">
+                                        <p>Generated code will appear here.</p>
+                                    </div>
+                                </div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                            
+                        </div>
+                        <%-- -----------------------------------footer------------------------------- --%>
+
+                        <div style="border-top: 1px solid #e0e0e0; margin: 40px 2px; margin-bottom: 0px;" class="row footrow">
+                            <div class="col-md-12 col-sm-12 col-lg-7 footpara">
+                                <div class="copyfoot">
+                                    <p style="color: grey; margin: 20px 30px;">2023 Socius IGB Pvt Ltd, All right reserved</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-lg-5 footicon">
+                                <div class="icons-2">
+                                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+                                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-            </div>
-
-
-            <%-------------------------------------- footer ----------------------------------%>
-
-            <div style="border-top: 1px solid #e0e0e0; margin: 40px 2px; margin-bottom: 0px;" class="row footrow">
-                <div class="col-md-12 col-sm-12 col-lg-7 footpara">
-                    <div class="copyfoot">
-                        <p style="color: grey; margin: 20px 30px;">2023 Socius IGB Pvt Ltd, All right reserved</p>
-                    </div>
-                </div>
-                <div class="col-md-12 col-sm-12 col-lg-5 footicon">
-                    <div style="margin: 20px 40px;" class="icons-2">
-                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
-                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-            </div>
             </div>
     </form>
 </body>

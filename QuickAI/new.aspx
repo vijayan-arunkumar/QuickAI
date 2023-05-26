@@ -86,11 +86,10 @@
         </div>
         <div class="container-fluid">
         <div class="row">
-           <div class="col-md-2" id="side1" style="padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px">
-
+           <div class="col-md-2" id="side1">
+               <div class="main-side">
            <div class="sidebar"id="mySidebar">
             <div style="margin-top:30px;"></div>
-             <a style="margin-left:168px;" href="javascript:void(0)" onclick="closeNav()"><i class="fa-solid fa-arrow-left" style="background-color:#fff;color:#184698;font-size:30px"></i></a>
             <ul>
                 <li><div style="color: darkblue; font-weight: 600;"><h11>My Account</h11></div></li>
                 <li><a href="dashboard.aspx"><i class="fa fa-th-large"></i><div>Dashboard</div> </a></li>
@@ -118,6 +117,7 @@
                 <li><a href="homepage.aspx"><i class="fa-solid fa-power-off"></i><div>Log Out</div></a></li>
             </ul>
         </div>
+                   </div>
          </div>
       
             <div class="col-md-10"  id="main1"> 

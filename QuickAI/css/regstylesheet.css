@@ -1,4 +1,9 @@
-﻿.container {
+﻿body {
+    font-family: nunito;
+}
+
+
+.container {
     width: 100%;
     padding-right: 0px;
     padding-left: 0px;

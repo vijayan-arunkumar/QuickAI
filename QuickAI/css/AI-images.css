@@ -1,4 +1,13 @@
-﻿.icon {
+﻿
+body {
+    font-family: nunito;
+}
+.main{
+    margin-top:85px;
+}
+
+
+.icon {
     border-left: 4px solid rgba(255, 255, 255, .3);
     content: "";
     display: inline-block;

@@ -1,58 +1,19 @@
 ﻿body {
     font-family: nunito;
 }
+.main {
+    margin-top: 84px;
+}
 
-/*.contaner-fluid{
-    margin:0px;
-    padding:0px;
-    box-sizing:border-box;
-}
-.container {
-    padding: 0px;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}*/
-.mailverify {
-    background-color: #fdf7e9;
-    width: 100%;
-    overflow:hidden;
-}
-.Everify {
-    background-color: #fdf9e7;
-    align-content: center;
-    padding-left: 80px;
-    width: 100%;
-}
-.Everifybutton {
-    background-color: #666;
-    font-size: 16px;
-    color: white;
-    border-radius: 8px;
-}
-.top-br-btn{
-    border:1px solid #e0e0e0;
-    border-radius:50vh;
-    background-color:lightblue;
-    padding: 5px 7px;
-    font-size:15px;
-    cursor:pointer;
-}
-/*---------------------main content------------*/
-.main{
-    margin-top:84px;
-}
 .goodmargin {
     margin: 0px 5%;
 }
+
 .wid {
     width: 100%;
     min-height: 30px;
-    border: 1px solid #e0e0e0;
-    outline: none;
-    border-radius: 5px;
-    padding:5px 10px;
 }
+
 .cards {
     width: 100%;
     padding: 20px 30px;
@@ -98,12 +59,14 @@
     text-align: center;
     font-weight: 900;
 }
+
 .upmainrow {
     padding-top: 50px;
     margin: 0;
 }
-.main-indicate h6{
-    padding:20px 10px;
+
+.main-indicate h6 {
+    padding: 20px 10px;
 }
 
 .icon {
@@ -117,7 +80,6 @@
     border-left: 4px solid #aaa;
     font-size: 14px;
     margin-right: 12px;
-   
 }
 
 .subcontainer {
@@ -166,140 +128,69 @@ a i:hover {
     width: calc(100%-250px);
     position: relative;
 }
-/*------------account setting page style------------------*/
-.accform {
+.aff-prog-sec-div {
     margin-top: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 1px 0px 8px 2px rgba(0,0,0,0.09);
+    background-color: #fff;
+    box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.08);
+    border: 1px solid #e0e0e0;
+    padding:0px 0px 50px 0px;
 }
-
-.icon_accset {
-    display: flex;
-    font-weight: 500;
+.aff-inner-1{
+    padding:20px 20px;
+    border-bottom:1px solid #e0e0e0;
 }
-
-.icon_accset {
-    padding-right: 10px;
-    margin-left: 10px;
-    font-size: 20px;
-    padding: 20px 0;
-}
-
-    .icon_accset i {
-        padding-right: 10px;
-    }
-
-    .icon_accset h6 {
-        font-weight: 700;
-        color: darkblue;
-        font-size: 15px;
-        padding-top: 2px;
-    }
-
-.avatar {
-    border-top: 1px solid #929090;
-    padding: 30px;
-    box-sizing: border-box;
-}
-
-#roow {
-    padding-top: 30px;
-    display: flex;
-    flex-direction: row;
-}
-
-#roow1 {
-    padding-top: 50px;
-    display: flex;
-    flex-direction: row;
-}
-
-
-
-#saveid {
-    padding: 20px 0px;
-}
-
-.accform1 {
-    margin-top: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 1px 0px 8px 2px rgba(0,0,0,0.09);
-}
-
-.billing {
-    border-top: 1px solid #929090;
-    padding: 30px;
-    box-sizing: border-box;
-}
-
-.parabill {
-    margin-top: 20px;
+.aff-inner-2-para {
+    margin: 20px 30px;
     background-color: #e9f7fe;
-    height: 60px;
-    text-align: center;
-    width: 100%;
+    color: #3184ae;
+   
 }
-
-    .parabill p {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        color: #3184ae;
-    }
-
-.col-md-12-bill {
-    padding-top: 40px;
+.aff-inner-2-para p{
+    padding:20px 10px;
 }
-
-#roow3 {
-    padding-top: 40px;
-    display: flex;
-    flex-direction: row;
+.aff-inner-3{
+    margin:0px 30px;
 }
-
-.wid1 {
-    width: 100%;
-    height: 40px;
-    border:1px solid #eaeaea;
+.copy-textbox{
+    margin-top:20px;
+}
+.copy-link{
+    width:80%;
     outline:none;
+    border:1px solid #e0e0e0;
     border-radius:5px;
+    height:40px;
 }
-
-#saveid1 {
-    padding: 20px 0px;
+.copy-right-btn{
+    background-color:#184698;
+    border-style:none;
+    border-radius:5px;
+    color:#fff;
+    padding:8px 10px;
 }
-
-.savebtn {
-    height: 50px;
-    width: 150px;
-    background-color: #184698;
-    color: white;
-    border-radius: 5px 5px;
-    padding: 10px 5px;
-    box-shadow: 0 4px 12px;
+.aff-prog-third-div {
+    margin-top: 40px;
+    background-color: #fff;
+    box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.08);
+    border: 1px solid #e0e0e0;
+    padding: 0px 0px 50px 0px;
 }
-
-ListItem {
-    height: 50px;
-}
-.pad-0{
-    padding:0px;
+.aff-third-in{
+    padding:20px;
+    border-bottom:1px solid #e0e0e0;
     margin:0px;
 }
-
-
-
-
-
-/*-----media query-----*/
-
+.celleid{
+    width:auto;
+    align-content:center;
+    margin:0px;
+}
+table{
+    margin:0px;
+}
+.tab-foot{
+    text-align:center;
+}
 @media(max-width:1100px) {
     .cards {
         grid-template-columns: repeat(1,1fr);
@@ -317,8 +208,8 @@ ListItem {
     #footcopy {
         text-align: center;
         border: none;
-        margin:0px;
-        padding:0px;
+        margin: 0px;
+        padding: 0px;
     }
 
     #footicon {
@@ -326,6 +217,7 @@ ListItem {
         margin: 0px;
         padding-bottom: 20px;
     }
+
     .container-foot {
         margin: 0px;
         padding: 0px;
@@ -333,7 +225,7 @@ ListItem {
 }
 
 @media(max-width:1100px) {
-  
+
 
     .cards {
         grid-template-columns: repeat(1,1fr);
@@ -343,21 +235,16 @@ ListItem {
         grid-template-columns: 1fr;
     }
 
-  
+
     .cards {
         grid-template-columns: repeat(1,1fr);
     }
 
-   
+
 
     #Table1 {
         width: auto;
     }
-
-   
-   
-
-   
 }
 
 @media(max-width:300px) {
@@ -368,6 +255,7 @@ ListItem {
     .cards {
         grid-template-columns: repeat(1,1fr);
     }
+
     #Table1 {
         width: auto;
     }
@@ -376,17 +264,14 @@ ListItem {
         display: flex;
         flex-direction: row;
     }
+
     .container-foot {
         margin: 0px;
-        padding:0px;
-    }
-  
-}
-
-@media(min-width:1100px){
-    .icons-2{
-        float:right;
+        padding: 0px;
     }
 }
-
-
+@media(min-width:1100px) {
+    .icons-2 {
+        float: right;
+    }
+}

@@ -71,7 +71,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Affiliate-program.aspx" />
     <Content Include="AI-chat.aspx" />
+    <Content Include="AI-code.aspx" />
     <Content Include="AIimages.aspx" />
     <Content Include="AllAIimages.aspx" />
     <Content Include="Alldocuments.aspx" />
@@ -83,7 +85,9 @@
     <Content Include="bootstrap\js\jquery-3.6.0.min.js" />
     <Content Include="bootstrap\js\popper.min.js" />
     <Content Include="check.aspx" />
+    <Content Include="css\Affiliated-program.css" />
     <Content Include="css\AI-Chat.css" />
+    <Content Include="css\AI-code.css" />
     <Content Include="css\AI-images.css" />
     <Content Include="css\AllAIimages.css" />
     <Content Include="css\alldocument.css" />
@@ -102,6 +106,7 @@
     <Content Include="css\templates_style.css" />
     <Content Include="css\tempstyle.css" />
     <Content Include="css\blogstyle.css" />
+    <Content Include="css\worddoc.css" />
     <Content Include="datatables\css\jquery.dataTables.min.css" />
     <Content Include="datatables\js\jquery.dataTables.min.js" />
     <Content Include="fontawsome\css\all.css" />
@@ -3741,12 +3746,26 @@
     <Content Include="billingdetails.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Affiliate-program.aspx.cs">
+      <DependentUpon>Affiliate-program.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Affiliate-program.aspx.designer.cs">
+      <DependentUpon>Affiliate-program.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AI-chat.aspx.cs">
       <DependentUpon>AI-chat.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AI-chat.aspx.designer.cs">
       <DependentUpon>AI-chat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AI-code.aspx.cs">
+      <DependentUpon>AI-code.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AI-code.aspx.designer.cs">
+      <DependentUpon>AI-code.aspx</DependentUpon>
     </Compile>
     <Compile Include="AIimages.aspx.cs">
       <DependentUpon>AIimages.aspx</DependentUpon>

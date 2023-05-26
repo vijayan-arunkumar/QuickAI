@@ -1,58 +1,76 @@
 ﻿body {
-    font-family: nunito, helveticaneue, helvetica neue, Helvetica, Arial, sans-serif;
+    font-family: nunito;
+}
+.contaner-fluid {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
+.container {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 .sidebar {
     position: fixed;
     top: 85px;
-    width: 260px;
-    height: calc(100% - 85px);
+    width: 220px;
+    height: calc(100vh - 100px);
     background: #fff;
     overflow-x: hidden;
+    text-align: left;
     box-shadow: 0px 0px 5px 1px rgb(0,0,0,0.4);
+    padding-bottom:200px;
 }
-
-    .sidebar ul {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        width: 100%;
-    }
-        .sidebar ul h11{
-            font-size:15px;
-          padding-bottom:40px;
-          cursor: default;
-
-        }
+.sid-cont h11 {
+    color:#184698; 
+   font-weight:bold;
+}
         .sidebar ul li {
             width: 100%;
             list-style: none;
-            margin-left: -20px;
-            margin-right: 0px;
+            margin:0px;
+            padding-left:10px;
+            font-size:12px;
+            line-height:30px;
         }
 
             .sidebar ul li a {
-                margin-left: -20px;
                 margin-right: 0px;
+                padding: 20px;
                 width: 100%;
                 text-decoration: none;
                 color: grey;
                 height: 40px;
                 display: flex;
                 align-items: center;
-                font-size: 13px;
+                font-size: 12px;
             }
 
                 .sidebar ul li a i {
-                    min-width: 60PX;
                     font-size: 15PX;
-                    text-align: center;
+                    padding-right:10px;
                 }
-
-h11 {
-    font-size: 12px;
+.btn1{
+    color:grey;
+}
+.sid-cont {
+    padding: 15px;
+}
+ListItem {
+    height: 50px;
 }
 
+.pad-0 {
+    padding: 0px;
+    margin: 0px;
+}
+.main-indicate h6 {
+    padding: 20px 10px;
+}
 .sidebar ul li a:hover {
     background-color: lightblue;
 }
@@ -72,44 +90,104 @@ h11 {
 .alldoc {
     cursor: pointer;
 }
-.main {
+
+#main1 {
     padding: 0px;
-    margin: 0;
-    box-sizing: border-box;
-    position: absolute;
-    top: 85px;
-    width: calc(100% - 200px);
-    left: 200px;
-    min-height: calc(100vh - 85px);
-    background-color: #f5f5f5;
+}
+#side1 {
+    padding:0;
 }
 
 /*footer*/
-.icons {
+.icons-2 {
     font-size: 20px;
+    margin: 20px 40px;
 }
 
-    .icons a {
+    .icons-2 a {
         padding-left: 15px;
     }
 
-        .icons a i {
+        .icons-2 a i {
             color: grey;
         }
 
-            .icons a i:hover {
+            .icons-2 a i:hover {
                 color: black;
             }
 
 
-@media(max-width:990px) {
-    .sidebar {
-        width: 0px;
+@media(max-width:1100px) {
+    #side1 {
+        display: none;
+    }
+    .topbar{
+        position:fixed;
+        margin:auto;
+        top:0px;
+    }
+    #main1 {
+        width:100%;
+    }
+    .icons-2 {
+        text-align:center;
+        padding:0px;
+        margin:0px;
+    justify-content:space-between;
+    }
+    .copyfoot {
+        text-align: center;
+    }
+    .top-br-btn {
+        display:none;
     }
 
-    .main {
-        position:absolute;
-        left: 0;
-        width:100%;
+}
+
+.icon {
+    border-left: 4px solid rgba(255, 255, 255, .3);
+    content: "";
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #aaa;
+    font-size: 14px;
+    margin-right: 12px;
+}
+
+.subcontainer {
+    background-color: #444444;
+    padding: 12px 22px;
+    margin: 0;
+    line-height: 23px;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 12px;
+    float: right;
+}
+
+.suhome {
+    color: white;
+    padding-right: 6px;
+}
+
+    .suhome a {
+        color: white;
+        text-decoration: none;
+    }
+.main{
+    margin-top:85px;
+}
+
+@media(max-width:767px){
+    .subcontainer {
+        float: none;
+    }
+}
+@media(min-width:1000px){
+    .icons-2{
+        float: right;
     }
 }

@@ -1,4 +1,7 @@
-﻿.icon {
+﻿body {
+    font-family: nunito;
+}
+.icon {
     border-left: 4px solid rgba(255, 255, 255, .3);
     content: "";
     display: inline-block;
@@ -61,15 +64,17 @@
         padding: 0px 10px;
         color:#520ca1;
     }
+.upmainrow{
+   padding-top:30px;
+}
 
 
-
-    #Table1 {
-        margin-left: 30px;
-        margin-right: 30px;
-        margin-top: 30px;
-        width: 100%;
-    }
+#Table1 {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+    width: 100%;
+}
 
 #row1 {
     background-color: #66676b;

@@ -1,4 +1,8 @@
-﻿.icon {
+﻿body {
+    font-family: nunito;
+}
+
+.icon {
     border-left: 4px solid rgba(255, 255, 255, .3);
     content: "";
     display: inline-block;

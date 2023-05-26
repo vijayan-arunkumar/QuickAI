@@ -1,7 +1,4 @@
-﻿
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="dashboard.aspx.cs" Inherits="QuickAI.WebForm2" %>
-
-<%@ Register Assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI.DataVisualization.Charting" TagPrefix="asp" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Affiliate-program.aspx.cs" Inherits="QuickAI.Affiliate_program" %>
 
 <!DOCTYPE html>
 
@@ -19,8 +16,8 @@
     <link href="lifont/css/line-awesome.css" rel="stylesheet" />
     <link href="lifont/css/line-awesome.min.css" rel="stylesheet" />
     <%--ourstylesheet css--%>
-    <link href="css/dashstyle.css" rel="stylesheet" />
     <link href="css/header-2-dashtype.css" rel="stylesheet" />
+    <link href="css/Affiliated-program.css" rel="stylesheet" />
     <link href="css/sidebar.css" rel="stylesheet" />
 
     <%--jquery--%>
@@ -38,11 +35,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-
 </head>
 <body>
     <form id="form1" runat="server">
@@ -79,9 +71,8 @@
                 </select>
             </div>
         </div>
-        <%------------------------- side bar --------------------%>
-        <div class="containe-fluid">
-            <div class="row">
+
+        <div class="row">
                 <div class="col-lg-2" id="side1">
                     <div class="sidebar" id="mySidebar">
                         <div style="margin-top: 30px;"></div>
@@ -177,48 +168,93 @@
                                     <div class="col-md-04">
                                         <div class="card">
                                             <div class="card-content">
-                                                <div class="detail">Words Used</div>
-                                                <div class="count">0/10,000</div>
+                                                <div class="detail">Wallet</div>
+                                                <div class="count">0.00</div>
                                             </div>
                                             <div class="icon-box1">
-                                                <i class="fa-solid fa-arrow-trend-up" style="color: #b81b7f;"></i>
+                                                <i class="fa-brands fa-get-pocket" style="color: #b81b7f;background-color: #b81b7f12;padding:28px;font-size:48px;"></i>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-04">
                                         <div class="card">
                                             <div class="card-content">
-                                                <div class="detail">Image Used</div>
-                                                <div class="count">0/100</div>
+                                                <div class="detail">Total Refered</div>
+                                                <div class="count">0</div>
                                             </div>
                                             <div class="icon-box2">
-                                                <i class="fa-solid fa-chart-simple" style="color: #36bd78;"></i>
+                                                 <i class="fa-solid fa-user-plus" style="color: #36bd78;background-color: #36bd7812;padding:28px;font-size:48px;"></i>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-04">
                                         <div class="card">
                                             <div class="card-content">
-                                                <div class="detail">Speech To Text</div>
-                                                <div class="count">0/0</div>
+                                                <div class="detail">Total Earning</div>
+                                                <div class="count">0</div>
                                             </div>
                                             <div class="icon-box3">
-                                                <i class="fa-solid fa-headphones" style="color: #efa80f;"></i>
+                                                <i class="fa-solid fa-money-bill-1" style="color: #ef9e10; padding:28px;font-size:48px;background-color:#efa80f12"></i>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="charts">
-                                <div class="chart">
-                                    <center>
-                                        <h4>Word used this month</h4>
-                                        <div>
-                                            <canvas id="myChart"></canvas>
+                            <div class="aff-prog-sec-div">
+                                <div class="aff-inner-1">
+                                    <span><i class="fa-solid fa-share-nodes" style="color: #184698;"></i></span>&nbsp;
+                                    <span>Start earning with the affiliate program</span>
+                                </div>
+                                <div class="aff-iiner-2">
+                                    <div class="aff-inner-2-para">
+                                        <p>Invite new customers to our site using your affiliate link and when they purchase any membership plan, you will get a commission.</p>
+                                    </div>
+                                </div>
+                                <div class="aff-inner-3">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <span style="color:grey" >Current </span>
+                                            <span>Commission Rate</span>
+                                            <div style="font-size:25px;">30%</div>
                                         </div>
-                                    </center>
+                                        <div class="col-lg-6">
+                                             <span style="color:grey" >Affiliate</span>
+                                            <span>Rule</span>
+                                            <div style="font-size:20px;">First Subscription <i class="fa-regular fa-circle-question" style="color: #111212;"></i></div>
+                                        </div>
+                                        <div class="col-lg-6 copy-textbox">
+                                             <lable>Affiliate URL</lable><br />
+                                            <asp:TextBox CssClass="copy-link" ID="TextBox1" runat="server" value="http//44370/Affiliate-program.aspx" ReadOnly="true"></asp:TextBox>
+                                           <span><button type="button"  class="copy-right-btn"><i class="las la-copy"></i></button></span>
+                                        </div>
+                                    </div>
+                                   
+
                                 </div>
                             </div>
+                            <div class="aff-prog-third-div">
+                                <div class="aff-third-in">
+                                    <span><i class="fa-solid fa-money-bill-1" style="color:#184698;" ></i></span>&nbsp;
+                                    <span>Commissions</span>
+                                </div>
+                                <div class="aff-third-in-2">
+                                    <div class="table-responsive">
+                                    <asp:Table ID="Table1" CssClass="aff-pro-table" runat="server">
+                                        <asp:TableRow runat="server">
+                                            <asp:TableCell CssClass="celleid" runat="server">Commission</asp:TableCell>
+                                            <asp:TableCell CssClass="celleid" runat="server">Total Amount</asp:TableCell>
+                                            <asp:TableCell CssClass="celleid" runat="server">Commission Rate</asp:TableCell>
+                                            <asp:TableCell CssClass="celleid" runat="server">Transaction ID</asp:TableCell>
+                                            <asp:TableCell CssClass="celleid" runat="server">Date</asp:TableCell>
+                                        </asp:TableRow>
+                                        <asp:TableRow CssClass="tab-foot" runat="server" TableSection="TableFooter">
+                                            <asp:TableCell CssClass="tab-foot" runat="server">No result found.</asp:TableCell>
+                                        </asp:TableRow>
+                                    </asp:Table>
+                                        </div>
+                                </div>
+                            </div>
+                            
                         </div>
                         <%-- -----------------------------------footer------------------------------- --%>
 
@@ -243,38 +279,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-          
     </form>
-    <script>
-        const ctx = document.getElementById('myChart');
-        new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: ["01 May", "02 May", "03 May", "04 May", "05 May", "06 May", "07 May", "08 May", "09 May", "10 May", "11 May", "12 May", "13 May", "14 May", "15 May", "16 May", "17 May", "18 May", "19 May", "20 May", "21 May", "22 May", "23 May", "24 May", "25 May", "26 May", "27 May", "28 May", "29 May", "30 May", "31 May"],
-                // Information about the dataset
-                datasets: [{
-                    label: "Words Used",
-                    backgroundColor: '#18469815',
-                    borderColor: '#184698',
-                    borderWidth: "3",
-                    data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                    pointRadius: 5,
-                    pointHoverRadius: 5,
-                    pointHitRadius: 10,
-                    pointBackgroundColor: "#fff",
-                    pointHoverBackgroundColor: "#fff",
-                    pointBorderWidth: "2",
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-    </script>
 </body>
 </html>
