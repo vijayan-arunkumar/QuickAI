@@ -2175,6 +2175,7 @@
     <Content Include="img\layers icon.png" />
     <Content Include="img\logo.png" />
     <Content Include="img\testimonial user.png" />
+    <Content Include="jquery\jquery-3.6.0.min.js" />
     <Content Include="lifont\css\line-awesome.css" />
     <Content Include="lifont\css\line-awesome.min.css" />
     <Content Include="lifont\fonts\la-brands-400.svg" />
@@ -3727,11 +3728,13 @@
     <Content Include="lifont\svg\zhihu.svg" />
     <Content Include="Love.aspx" />
     <Content Include="new.aspx" />
+    <Content Include="scripts\AI-Chat.js" />
     <Content Include="scripts\membershipplan.js" />
     <Content Include="scripts\sidebarthings.js" />
     <Content Include="scripts\templates.js" />
     <Content Include="Speech-To-Text.aspx" />
     <Content Include="templates.aspx" />
+    <Content Include="TestResponsive.aspx" />
     <Content Include="Web.config" />
     <Content Include="login.aspx" />
     <Content Include="forgetpage.aspx" />
@@ -3887,6 +3890,13 @@
     <Compile Include="templates.aspx.designer.cs">
       <DependentUpon>templates.aspx</DependentUpon>
     </Compile>
+    <Compile Include="TestResponsive.aspx.cs">
+      <DependentUpon>TestResponsive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestResponsive.aspx.designer.cs">
+      <DependentUpon>TestResponsive.aspx</DependentUpon>
+    </Compile>
     <Compile Include="transaction.aspx.cs">
       <DependentUpon>transaction.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -4015,9 +4025,7 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="jquery\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

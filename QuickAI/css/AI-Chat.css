@@ -106,13 +106,13 @@
     .loading .icon {
         display: inline-block;
         color: #eee;
-        animation:spin 2s ;
+        animation:spin 1s ;
     }
 
 @keyframes spin {
- /*   0% {
-        transform: rotate(0deg);
-    }*/
+    0% {
+        transform: rotate(360deg);
+    }
 
     100% {
         transform: rotate(360deg);
@@ -122,7 +122,7 @@
     background-color: #fff;
 }
 .AI-chat-placeholder {
-    height: 200px;
+    min-height: 300px;
     width: 100%;
     overflow-y: scroll;
     background-color: #fff;
@@ -133,6 +133,7 @@
     padding: 20px 20px;
     background-color: #fff;
     width:100%;
+    display:block;
 }
 .AI-chat_iput-box {
     width:90%;
@@ -148,8 +149,55 @@
     color:#fff;
     border-style:none;
 }
-@media(min-width:1000px){
-    .icons{
+.user-chat-tex {
+    float: right;
+    width:100%;
+    padding: 20px 0px;
+}
+.user-txt {
+    min-height: 20px;
+    padding: 10px;
+    background-color: #184698;
+    color: #fff;
+    float: right;
+    border-radius: 10px 0px 10px 10px;
+    margin-right: 5px;
+}
+.user-txt p{
+    margin:0px;
+    padding:0px;
+}
+.user-img {
+    float: right;
+}
+.user-inimg{
+    height:40px;
+    width:40px;
+}
+.bot-chat-tex{
+    display:flex;
+    width:100%;
+}
+.bot-inimg {
+    height: 40px;
+    width: 40px;
+    border-radius: 40vh;
+}
+.bot-txt {
+    min-height: 20px;
+    padding: 10px;
+    background-color: #184660;
+    color: #fff;
+    border-radius:0px 10px 10px 10px; 
+    margin-left:5px;
+}
+    .bot-txt p {
+        margin: 0px;
+        padding: 0px;
+    }
+
+@media(min-width:1000px) {
+    .icons-2{
         float:right;
     }
 }

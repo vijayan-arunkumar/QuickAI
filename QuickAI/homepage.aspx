@@ -7,6 +7,7 @@
     <%-- javascript files --%>
     <script src="scripts/templates.js"></script>
     <script src="scripts/membershipplan.js"></script>
+    <script src="jquery/jquery.min.js"></script>
     <%-- javascript files ends here--%>
 
     <div class="container">
@@ -727,7 +728,7 @@
             <div class="goodlook1">
                 <div class="radform">
                     <div class="radio">
-                        <input type="radio" name="radio-buttons" value="monthly" onchange="enableInputField(5)" />
+                        <input type="radio" name="radio-buttons" value="monthly" onchange="enableInputField(5)" checked="" />
                         Monthly&nbsp; &nbsp; &nbsp;
               
                         <input type="radio" name="radio-buttons" value="yearly" onchange="enableInputField(50)" />
@@ -788,7 +789,7 @@
                             <center>
                                 <h3>Extended Plan</h3>
                             </center>
-                            <input class="labl" type="text" id="input-field" />
+                            <input class="labl" type="text" id="input-field" readonly="" />
                             <div class="planlist">
                                 <ul>
                                     <li><strong>Features of Extended Plan</strong></li>

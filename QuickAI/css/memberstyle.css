@@ -260,6 +260,8 @@ TableFooter {
     padding: 15px;
     margin: 0px 0;
     width: 100%;
+    outline:none;
+    cursor:default;
 }
 
 #input-field {

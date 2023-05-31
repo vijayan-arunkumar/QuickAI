@@ -21,26 +21,20 @@
     <%--ourstylesheet css--%>
     <link href="css/dashstyle.css" rel="stylesheet" />
     <link href="css/header-2-dashtype.css" rel="stylesheet" />
-    <link href="css/sidebar.css" rel="stylesheet" />
-
-    <%--jquery--%>
-    <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <link href="css/sidebar.css" rel="stylesheet" />   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <%--popper js--%>
     <script src="bootstrap/js/popper.min.js"></script>
     <%--bootstrap js--%>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
-    <%-- our custom javascript --%>
+    <%-- our custom javascript --%>     
     <script src="scripts/sidebarthings.js"></script>
-
-    <script src="jquery/jquery.min.js"></script>
-    <script src="bootstrap/js/jquery-3.6.0.min.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
 
 
 </head>

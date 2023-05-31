@@ -25,7 +25,7 @@
     <link href="css/templates_style.css" rel="stylesheet" />
     <link href="css/footertype1.css" rel="stylesheet" />
     <link href="css/memberstyle.css" rel="stylesheet" />
-
+    
 
     <%--jquery--%>
     <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>

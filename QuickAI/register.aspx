@@ -55,7 +55,7 @@
                     </div>
                         </div>
                 </div>
-                <div class="row">
+                <div class="row form-group">
                     <div class="co-lg-12">
                     <div style="display: flex" class="col">
                          <div class="input-icons"><i class="fa-solid fa-lock sub-icon"></i></div>
@@ -66,7 +66,7 @@
                 <div class="row">
                     <div class="co-lg-12">
                         <label>
-                            <asp:CheckBox ID="CheckBox1" runat="server"></asp:CheckBox>
+                            <asp:CheckBox ID="CheckBox1" runat="server" Required=""></asp:CheckBox>
                             <span class="checkbox-icon">By clicking on Register button you are agree to our Terms & Condition</span>
                         </label>
                         <div class="row">

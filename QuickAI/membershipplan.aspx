@@ -26,7 +26,7 @@
     <script src="bootstrap/js/popper.min.js"></script>
     <%--bootstrap js--%>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-
+    <script src="scripts/membershipplan.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -86,7 +86,7 @@
                 </div>
                 <div class="radform">
                     <div class="radio">
-                        <input type="radio" name="radio-buttons" value="monthly" onchange="enableInputField(5)" />
+                        <input type="radio" name="radio-buttons" value="monthly" onchange="enableInputField(5)" checked="checked"/>
                         Monthly&nbsp; &nbsp; &nbsp;
               
                         <input type="radio" name="radio-buttons" value="yearly" onchange="enableInputField(50)" />
@@ -148,7 +148,7 @@
                             <center>
                                 <h3>Extended Plan</h3>
                             </center>
-                            <input class="labl" type="text" id="input-field" />
+                            <input class="labl" type="text" id="input-field" Readonly=""/>
                             <div class="planlist">
                                 <ul>
                                     <li><strong>Features of Extended Plan</strong></li>

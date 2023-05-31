@@ -9,22 +9,22 @@
     <%--bootstrap css--%>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <%--datatables css--%>
-    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+   <%-- <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />--%>
     <%--fontawsomes css--%>
     <link href="fontawsome/css/all.css" rel="stylesheet" />
     <link href="fontawsome/css/fontawesome.min.css" rel="stylesheet" />
     <link href="lifont/css/line-awesome.css" rel="stylesheet" />
     <link href="lifont/css/line-awesome.min.css" rel="stylesheet" />
 
-    <script src="scripts/sidebarthings.js"></script>
-
+  <%--  <script src="scripts/sidebarthings.js"></script>--%>   
 
     <%--ourstylesheet css--%>
     <link href="css/dashstyle.css" rel="stylesheet" />
     <link href="css/header-2-dashtype.css" rel="stylesheet" />
     <link href="css/sidebar.css" rel="stylesheet" />
     <%--jquery--%>
-    <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>--%>
+  <%--  <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>--%>
     <%--popper js--%>
     <script src="bootstrap/js/popper.min.js"></script>
     <%--bootstrap js--%>

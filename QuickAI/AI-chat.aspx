@@ -29,8 +29,9 @@
 
     <%-- custom javascript --%>
     <script src="scripts/sidebarthings.js"></script>
+    <script src="scripts/AI-Chat.js"></script>
 
-    <script src="jquery/jquery.min.js"></script>
+<%--    <script src="jquery/jquery.min.js"></script>--%>
     <script src="bootstrap/js/jquery-3.6.0.min.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -178,21 +179,21 @@
                                                 <button class="AI-chat_dwnbtn" id="data1" type="button"><i class="fa-solid fa-download" style="color: #fff"></i></button>
                                             </span>
                                             <span class="ai-chat-span">
-                                                <button class="AI-chat_delbtn" id="data2" type="button"><i class="fa-solid fa-trash" style="color: #fff"></i></button>
+                                                <button class="AI-chat_delbtn" id="data2"  type="button"><i class="fa-solid fa-trash" style="color: #fff"></i></button>
                                             </span>
                                         </div>
                                     </div>
                                     <div class="AI-chat-2nd-div">
-                                        <div class="AI-chat-placeholder">
+                                        <div class="AI-chat-placeholder" id="AI-chat-input-holderid">
                                         </div>
                                         <div class="AI-chat-input-area">
-                                            <div class="AI-chat-input-holder">
+                                            <div class="AI-chat-input-holder" >  
                                                 <div class="row">
                                                     <div class="col-lg-11 col-md-10 col-sm-10">
-                                                        <asp:TextBox placeholder="Type your message here" CssClass="AI-chat_iput-box" ID="TextBox1" runat="server"></asp:TextBox>
+                                                        <asp:TextBox placeholder="Type your message here" CssClass="AI-chat_iput-box" id="TextBox1" runat="server" Required=""></asp:TextBox>
                                                     </div>
                                                     <div class="col-lg-1 col-md-1 col-sm-1">
-                                                        <button class="AI-chat-send-btn ripple-effect" id="ai-chat-sndbtn" type="button" text="Send">Send</button>
+                                                        <button class="AI-chat-send-btn ripple-effect" <%--onclick="click1()"--%> id="ai-chat-sndbtn" text="Send">Send</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -227,16 +228,21 @@
     
     </form>
     <script>
-        document.getElementById('data1').addEventListener("click", function(){
-    this.classList.add("loading");
-    this.innerHTML = "↻";
-});
+        document.getElementById('data1').addEventListener("click", function () {
+            this.classList.add("loading");
+            this.innerHTML = "↻";
+        });
     </script>
+
+
     <script>
         document.getElementById('data2').addEventListener("click", function() {
             this.classList.add("loading");
             this.innerHTML = "↻";
         });
     </script>
+
+
+    
 </body>
 </html>

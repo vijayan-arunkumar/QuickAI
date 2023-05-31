@@ -57,7 +57,7 @@ body {
 .join {
     float: right;
     border-left: 1px solid #e0e0e0;
-    padding: 30px;
+    padding: 25px 30px 25px 30px;
     height: 82px;
 }
 .join1 {

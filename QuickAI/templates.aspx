@@ -46,7 +46,7 @@
                 <img class="logoimg" src="img/hype.png" />
             </div>
             <div>
-                <span class="top-br-btn" id="btnHeader">&#9776;</span>
+                <span class="top-br-btn" id="btnHeader"><i class="fa-solid fa-bars"></i></span>
             </div>
             <div class="dropdown">
                 <a class="btn" id="avtrbtn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

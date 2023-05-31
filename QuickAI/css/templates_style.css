@@ -55,14 +55,10 @@
     border-radius: 40vh;
     border-style: none;
     padding: 10px;
-    box-shadow:0px 3px 25px 0px rgba(0,0,0,0.08)
+    box-shadow:0px 3px 25px 0px rgba(0,0,0,0.08);
+    border:1px solid #e0e0e0;
+    outline:none;
 }
-
-
-
-
-
-
 .templ-lis {
   width:100%;
    

@@ -7,12 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace QuickAI
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class TestResponsive : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-        
     }
 }
