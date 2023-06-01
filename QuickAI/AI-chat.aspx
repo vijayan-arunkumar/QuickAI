@@ -227,12 +227,12 @@
             </div>
     
     </form>
-    <script>
+    <%--<script>
         document.getElementById('data1').addEventListener("click", function () {
             this.classList.add("loading");
             this.innerHTML = "↻";
         });
-    </script>
+    </script>--%>
 
 
     <script>
@@ -242,7 +242,22 @@
         });
     </script>
 
+    <script>
+        //function downloadData() {
+        //    const dataDiv = document.getElementById("AI-chat-input-holderid").innerText;
+        //    const blob = new Blob([dataDiv], { type: "text/plain" });
+        //    const url = URL.createObjectURL(blob);
 
+        //    const a = document.createElement("a");
+        //    a.href = url;
+        //    a.download = "data.txt";
+        //    a.click();
+
+        //    URL.revokeObjectURL(url);
+        //}
+
+        //document.getElementById("data1").addEventListener("click", downloadData);
+    </script>
     
 </body>
 </html>

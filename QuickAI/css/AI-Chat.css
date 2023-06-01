@@ -123,17 +123,20 @@
 }
 .AI-chat-placeholder {
     min-height: 300px;
+    max-height: 300px;
     width: 100%;
-    overflow-y: scroll;
     background-color: #fff;
+    overflow-y: scroll;
+    
 }
 
 .AI-chat-input-holder {
     border-top: 1px solid rgba(0,0,0,0.08);
     padding: 20px 20px;
     background-color: #fff;
-    width:100%;
-    display:block;
+    width: 100%;
+    display: block;
+    
 }
 .AI-chat_iput-box {
     width:90%;

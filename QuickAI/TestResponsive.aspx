@@ -6,59 +6,54 @@
 <head runat="server">
    <%-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>--%>
     <title></title>
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+     <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <%--popper js--%>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <%--bootstrap js--%>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <%-- custom javascript --%>
+    <script src="scripts/sidebarthings.js"></script>
+    <script src="scripts/generel.js"></script>
+    <script src="bootstrap/js/jquery-3.6.0.min.js"></script>
+
 </head>
 <body>
-    
-          <div id="output"></div>
+<div id="dataDiv">
+  <p>This is the content of the div that will be downloaded.</p>
+  <p>You can add more paragraphs or any other content here.</p>
+</div>
+
+<button id="downloadBtn">Download</button>
 
 
- <label for="message">Enter your message:</label>
-              <input style="width:90%; background:none" id="message" placeholder="Type your message here..." type="text" /><button class="btn btn-primary" onclick="sendMessage()">Send</button>
-    
-    <script>
-        //async function sendMessage() {
+<script>
 
-        //    const message = document.getElementById('txtMsg').value;
+    function downloadData() {
+        const dataDiv = document.getElementById("dataDiv").innerText;
+        const blob = new Blob([dataDiv], { type: "text/plain" });
+        const url = URL.createObjectURL(blob);
 
-        //    const url = 'https://ai-chatbot.p.rapidapi.com/chat/free?message=' + message + '&uid=user1';
-        //    const options = {
-        //        method: 'GET',
-        //        headers: {
-        //            'X-RapidAPI-Key': '1b3f19185emshae66110816b76cdp19c3c4jsn8b753c68d364',
-        //            'X-RapidAPI-Host': 'ai-chatbot.p.rapidapi.com'
-        //        }
-        //    };
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "data.txt";
+        a.click();
 
-        //    try {
-        //        const response = await fetch(url, options);
-        //        const result = await response.text();
-        //       // console.log(result);
-        //       document.getElementById('output').innerText = result;
-        //    } catch (error) {
-        //        console.error(error);
-        //    }
-        //}
+        URL.revokeObjectURL(url);
+    }
 
-        async function sendMessage() {
-            const message = document.getElementById('message').value;
-            const url = `https://ai-chatbot.p.rapidapi.com/chat/free?message=${encodeURIComponent(message)}&uid=user1`;
-            const options = {
-                method: 'GET',
-                headers: {
-                    'X-RapidAPI-Key': 'b374b38677msh6e556f4a7c99bbbp15338ejsn98f86ce72667',
-                    'X-RapidAPI-Host': 'ai-chatbot.p.rapidapi.com'
-                }
-            };
+    document.getElementById("downloadBtn").addEventListener("click", downloadData);
 
-            try {
-                const response = await fetch(url, options);
-                const result = await response.json();
-                //const result = response.chatbot.response;
-                document.getElementById('output').innerText = result.chatbot.response;
-            } catch (error) {
-                console.error(error);
-            }
-        }
-    </script>
+
+</script>
+
+
+
+
+
+
+ <script></script>
 </body>
 </html>
