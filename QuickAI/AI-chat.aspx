@@ -6,6 +6,8 @@
 <head runat="server">
      <title>Quick AI</title>
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
     <%--bootstrap css--%>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <%--datatables css--%>
@@ -30,6 +32,7 @@
     <%-- custom javascript --%>
     <script src="scripts/sidebarthings.js"></script>
     <script src="scripts/AI-Chat.js"></script>
+    <script src="scripts/generel.js"></script>
 
 <%--    <script src="jquery/jquery.min.js"></script>--%>
     <script src="bootstrap/js/jquery-3.6.0.min.js"></script>
@@ -176,10 +179,10 @@
                                             <h7>AI Chat Bot</h7></span>
                                         <div class="AI-chat-bot-right">
                                             <span class="ai-chat-span">
-                                                <button class="AI-chat_dwnbtn" id="data1" type="button"><i class="fa-solid fa-download" style="color: #fff"></i></button>
+                                                <button class="AI-chat_dwnbtn" id="data1" type="button"><i class="fa-solid fa-download" style="color: #fff"></i><i id="buffer" class="fas fa-spinner fa-spin"></i></button>
                                             </span>
                                             <span class="ai-chat-span">
-                                                <button class="AI-chat_delbtn" id="data2"  type="button"><i class="fa-solid fa-trash" style="color: #fff"></i></button>
+                                                <button class="AI-chat_delbtn" id="data2"  type="button"><i class="fa-solid fa-trash" style="color: #fff"></i><i id="buffer1" class="fas fa-spinner fa-spin"></i></button>
                                             </span>
                                         </div>
                                     </div>
@@ -227,37 +230,6 @@
             </div>
     
     </form>
-    <%--<script>
-        document.getElementById('data1').addEventListener("click", function () {
-            this.classList.add("loading");
-            this.innerHTML = "↻";
-        });
-    </script>--%>
-
-
-    <script>
-        document.getElementById('data2').addEventListener("click", function() {
-            this.classList.add("loading");
-            this.innerHTML = "↻";
-        });
-    </script>
-
-    <script>
-        //function downloadData() {
-        //    const dataDiv = document.getElementById("AI-chat-input-holderid").innerText;
-        //    const blob = new Blob([dataDiv], { type: "text/plain" });
-        //    const url = URL.createObjectURL(blob);
-
-        //    const a = document.createElement("a");
-        //    a.href = url;
-        //    a.download = "data.txt";
-        //    a.click();
-
-        //    URL.revokeObjectURL(url);
-        //}
-
-        //document.getElementById("data1").addEventListener("click", downloadData);
-    </script>
-    
+   
 </body>
 </html>

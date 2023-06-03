@@ -22,6 +22,8 @@
     <link href="css/Speech-To-Text.css" rel="stylesheet" />
     <%--jquery--%>
     <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="bootstrap/js/jquery-3.6.0.min.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <%--popper js--%>
     <script src="bootstrap/js/popper.min.js"></script>
@@ -30,16 +32,12 @@
 
     <%-- custom javascript --%>
     <script src="scripts/sidebarthings.js"></script>
+    <script src="scripts/spech-to-txt.js"></script>
     <script src="scripts/generel.js"></script>
-    <script src="bootstrap/js/jquery-3.6.0.min.js"></script>
 
-    <%--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>--%>
-
-
-
+     <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 
 
 
@@ -221,60 +219,19 @@
                                         <h7 class="speech-text">Generated Result</h7>
                                     </span>
                                     <div class="speech-right-3btn">
-                                        <span><button data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Export As Word Document"  class="spech-right-btn" ><i class="fa-solid  fa-file-word"  ></i></button></span>
-                                        <span><button  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Export To Text File"  class="spech-right-btn"><i class="fa-solid fa-file"></i></button></span>
-                                        <span><button  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Copy The Text" class="spech-right-btn"><i class="las la-copy"></i></button></span>
+                                        <span><button data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Export As Word Document"  class="spech-right-btn" id="wordfrmt" ><i class="fa-solid  fa-file-word"  ></i></button></span>
+                                        <span><button  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Export To Text File"  class="spech-right-btn" id="textfrmt"><i class="fa-solid fa-file"></i></button></span>
+                                        <span><button  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Copy The Text" class="spech-right-btn" id="copyfrmt"><i class="las la-copy"></i></button></span>
                                     </div>
                                 </div>
                                 <div class="speech-right-sec-div">
-                                    <asp:TextBox CssClass="speech-word-doc-textbox" ID="TextBox2" runat="server" TextMode="MultiLine" Columns="2"></asp:TextBox>
-                                     <div class="speech-text-controls">
-                                         <div class="text-control-1st-div">
-                                             <div class="row" style="justify-content:space-between">
-                                                 <div class="col-sm-12 col-md-3 col-lg-3">
-                                                 <div class=" speech-size-dropdown  ">
-                                                     <asp:DropDownList CssClass="sp-drpdwn" ID="DropDownList1" runat="server" EnableTheming="True">
-                                                         <asp:ListItem>Paragraph</asp:ListItem>
-                                                         <asp:ListItem>Heading 1</asp:ListItem>
-                                                         <asp:ListItem>Heading 2</asp:ListItem>
-                                                         <asp:ListItem>Heading 3</asp:ListItem>
-                                                         <asp:ListItem>Heading 4</asp:ListItem>
-                                                         <asp:ListItem>Heading 5</asp:ListItem>
-                                                         <asp:ListItem>Heading 6</asp:ListItem>
-                                                         <asp:ListItem>Performatted</asp:ListItem>
-                                                     </asp:DropDownList>
-                                                 </div>
-                                                     </div>
-                                                 <div class="col-sm-12 col-md-3 col-lg-3">
-                                                     <div class=" speech-text-style">
-                                                         <div><i class="fa-solid fa-b sp-text-cntrl-1"></i></div>
-                                                         <div><i class="fa-solid fa-italic sp-text-cntrl-1"></i></div>
-                                                         <div><i class="fa-solid fa-underline sp-text-cntrl-1"></i></div>
-                                                         <div><i class="fa-solid fa-strikethrough sp-text-cntrl-1"></i></div>
-                                                     </div>
-                                                 </div>
-                                                 <div class="col-sm-12 col-md-3 col-lg-3">
-                                                     <div class=" sp-align">
-                                                         <div><i class="fa-solid fa-align-left sp-text-cntrl-2"></i></div>
-                                                         <div><i class="fa-solid fa-align-center sp-text-cntrl-2"></i></div>
-                                                         <div><i class="fa-solid fa-align-right sp-text-cntrl-2"></i></div>
-                                                     </div>
-                                                 </div>
-                                                 <div class="col-sm-12 col-md-3 col-lg-3">
-                                                     <div class="lint-quot">
-                                                         <div ><i class="fa-solid fa-link sp-text-cntrl-3"></i></div>
-                                                         <div><i class="fa-solid fa-quote-right sp-text-cntrl-3"></i></div>
-                                                     </div>
-                                                 </div>
-                                                 <div class="col-sm-12 col-md-3 col-lg-3">
-                                                     <div class="lint-quot">
-                                                         <div ><i class="fa-solid fa-link sp-text-cntrl-3"></i></div>
-                                                         <div><i class="fa-solid fa-quote-right sp-text-cntrl-3"></i></div>
-                                                     </div>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                     </div>
+                                      <div id="pc" style="min-height:400px;width:100%;padding-top:10px;background-color:white;border:none">
+                                           <div class="row justify-content-md-center mt-4 mb-4">
+                                               <div class="form-group">
+                                                   <textarea id="editor"></textarea>
+                                               </div>
+                                           </div>
+                                       </div>  
                                 </div>
                                  </div>
                             </div>
@@ -308,5 +265,11 @@
             </div>
         </div>
     </form>
+    <script>
+      
+    </script>
+
+
+
 </body>
 </html>

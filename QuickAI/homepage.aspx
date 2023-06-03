@@ -15,7 +15,7 @@
             <div style="padding-top: 60px; padding-bottom: 5px" class="text-center img-with-grtstrtbtn ">
                 <img class="" width="180" src="img/home-hero-icon.png" />
                 <h1 style="font-size: 65px;" class="margin-bottom-10 text_gradient_animation">
-                    Best AI Content Writer
+                    <strong>Best AI Content Writer</strong>
                 </h1>
             </div>
             <center>

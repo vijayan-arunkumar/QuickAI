@@ -9,6 +9,8 @@
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
      <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <%--popper js--%>
     <script src="bootstrap/js/popper.min.js"></script>
     <%--bootstrap js--%>
@@ -21,39 +23,109 @@
 
 </head>
 <body>
-<div id="dataDiv">
-  <p>This is the content of the div that will be downloaded.</p>
-  <p>You can add more paragraphs or any other content here.</p>
-</div>
+    <style>
+        #richTextEditor {
+  border: 1px solid #ccc;
+  padding: 10px;
+  min-height: 200px;
+}
 
-<button id="downloadBtn">Download</button>
+button {
+  margin-top: 10px;
+}
 
+    </style>
 
-<script>
+<!DOCTYPE html>
 
-    function downloadData() {
-        const dataDiv = document.getElementById("dataDiv").innerText;
-        const blob = new Blob([dataDiv], { type: "text/plain" });
-        const url = URL.createObjectURL(blob);
-
-        const a = document.createElement("a");
-        a.href = url;
-        a.download = "data.txt";
-        a.click();
-
-        URL.revokeObjectURL(url);
+ 
+  <style>
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
     }
-
-    document.getElementById("downloadBtn").addEventListener("click", downloadData);
-
-
-</script>
+  </style>
 
 
+  <div class="container">
+    <h2>Enter text:</h2>
+    <textarea id="text-input" rows="10"></textarea>
+    <br/>
+    <button id="download-btn">Download as Word</button>
+  </div>
+
+  <script src="script.js"></script>
 
 
 
 
- <script></script>
+
+
+
+    <script>
+        document.getElementById('download-btn').addEventListener('click', function (e) {
+            e.preventDefault();
+            var text = document.getElementById('text-input').value;
+
+            var element = document.createElement('a');
+            var file = new Blob([text], { type: 'application/msword' });
+            element.href = URL.createObjectURL(file);
+            element.download = 'document.doc';
+            element.click();
+        });
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <%--   <div id="myDiv">
+        Initial Content
+    </div>
+
+    <button id="refreshButton">Refresh</button>
+
+
+    <script>
+        var refreshButton = document.getElementById('refreshButton');
+
+        refreshButton.addEventListener('click', function () {
+            location.reload();
+        });
+
+
+    </script>--%>
 </body>
 </html>

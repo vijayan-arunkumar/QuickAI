@@ -3732,6 +3732,7 @@
     <Content Include="scripts\generel.js" />
     <Content Include="scripts\membershipplan.js" />
     <Content Include="scripts\sidebarthings.js" />
+    <Content Include="scripts\spech-to-txt.js" />
     <Content Include="scripts\templates.js" />
     <Content Include="Speech-To-Text.aspx" />
     <Content Include="templates.aspx" />

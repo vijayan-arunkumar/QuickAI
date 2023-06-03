@@ -246,7 +246,7 @@
     display: flex;
 }
 .sp-text-cntrl-2 {
-    padding: 5px 15px;
+    padding: 5px 10px;
     width: 100%;
 }
     .sp-text-cntrl-2:hover {
@@ -254,7 +254,7 @@
         border-radius: 5px;
     }
 .sp-text-cntrl-3 {
-    padding: 5px 15px;
+    padding: 5px 10px;
     justify-content: space-between;
 }
 .sp-text-cntrl-3:hover {
@@ -265,7 +265,19 @@
     display: flex;
     padding: 5px 10px ;
 }
+.tox-notifications-container{
+    display:none !important;
 
+}
+.tox .tox-notification--warn, .tox .tox-notification--warning{
+    display:none;
+}
+.tox .tox-statusbar__branding svg{
+display:none;
+}
+#pc{
+    padding:0px !important;
+}
 @media(max-width:1000px) {
     .footicon {
         text-align: center;
@@ -294,6 +306,10 @@
         float: right;
     }
 }   
-
+@media(max-width:500px){
+    .speech-right-3btn{
+        float:none;
+    }
+}
 
 
