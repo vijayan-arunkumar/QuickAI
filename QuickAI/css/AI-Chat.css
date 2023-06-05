@@ -127,8 +127,7 @@
     background-color: #fff;
 }
 .AI-chat-placeholder {
-    min-height: 300px;
-    /*max-height: 300px;*/
+    height: 300px;
     width: 100%;
     background-color: #fff;
     overflow-y: scroll;

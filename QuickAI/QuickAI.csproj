@@ -84,14 +84,12 @@
     <Content Include="bootstrap\js\jquery-3.3.1.slim.min.js" />
     <Content Include="bootstrap\js\jquery-3.6.0.min.js" />
     <Content Include="bootstrap\js\popper.min.js" />
-    <Content Include="check.aspx" />
     <Content Include="css\Affiliated-program.css" />
     <Content Include="css\AI-Chat.css" />
     <Content Include="css\AI-code.css" />
     <Content Include="css\AI-images.css" />
     <Content Include="css\AllAIimages.css" />
     <Content Include="css\alldocument.css" />
-    <Content Include="css\balajibro.css" />
     <Content Include="css\billingdetails.css" />
     <Content Include="css\dashstyle.css" />
     <Content Include="css\footertype1.css" />
@@ -3799,13 +3797,6 @@
     </Compile>
     <Compile Include="blog.aspx.designer.cs">
       <DependentUpon>blog.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="check.aspx.cs">
-      <DependentUpon>check.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="check.aspx.designer.cs">
-      <DependentUpon>check.aspx</DependentUpon>
     </Compile>
     <Compile Include="homepage.aspx.cs">
       <DependentUpon>homepage.aspx</DependentUpon>

@@ -33,12 +33,13 @@
     <form id="form1" runat="server">
         <div class="topbar">
             <div class="logo">
-                <img src="img/hype.png" />
+                <img class="logoimg" src="img/hype.png" />
             </div>
-            <div></div>
+            <div>
+            </div>
             <div class="dropdown">
-                <a class="btn " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img id="Image1" src="img/images.png" />
+                <a class="btn" id="avtrbtn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img class="avatarimg" id="Image1" src="img/images.png" />
                 </a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#"><i class="fa fa-dashboard icons"></i>DashBoard</a></li>
@@ -48,9 +49,9 @@
                     <li><a class="dropdown-item" href="#"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
                     <li><a class="dropdown-item" href="#"><i class="fa-solid fa-code"></i>AI Code</a></li>
                     <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file-lines"></i>All Documents</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gift"></i>Membership</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Account Setting</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-power-off"></i>Logout</a></li>
+                    <li><a class="dropdown-item" href="membership.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
+                    <li><a class="dropdown-item" href="accountsetting.aspx"><i class="fa-solid fa-arrow-right-from-bracket"></i>Account Setting</a></li>
+                    <li><a class="dropdown-item" href="homepage.aspx"><i class="fa-solid fa-power-off"></i>Logout</a></li>
                 </ul>
             </div>
             <div class="selectlang">

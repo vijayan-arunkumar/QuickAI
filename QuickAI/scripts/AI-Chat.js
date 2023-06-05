@@ -5,12 +5,23 @@
             return;
         }
         sendMessage();
+        scrollToLastLine();
     });
 
-    document.getElementById("data1").addEventListener("click", downloadData); //download button 
+    document.getElementById("data1").addEventListener("click", downloadData); //download button
+
+
+    var divElement = document.getElementById("AI-chat-input-holderid");
+    divElement.scrollTop = divElement.scrollHeight;
+    // Function to scroll to the last line
+    function scrollToLastLine() {
+        // Set the scrollTop property to scroll to the last line
+        divElement.scrollTop = divElement.scrollHeight;
+    }
+
+    
 });
 
-//
 async function sendMessage() {
     //creating a div
     const message = document.getElementById('TextBox1').value;
@@ -29,6 +40,7 @@ async function sendMessage() {
     chatUser.append(cD1);
     chatUser.append(cD2);
     $(".AI-chat-placeholder").append(chatUser);
+    $("#TextBox1").val("");
     //create div and asign that messge to that div row
 
     const url = `https://ai-chatbot.p.rapidapi.com/chat/free?message=${encodeURIComponent(message)}&uid=user1`;
@@ -62,12 +74,23 @@ async function sendMessage() {
         botChat.append(cD3);
         botChat.append(cD4);
         $(".AI-chat-placeholder").append(botChat);
-        $("#TextBox1").val("");
+
+        //AI chat bot scroll down
+        var divElement = document.getElementById("AI-chat-input-holderid");
+        divElement.scrollTop = divElement.scrollHeight;
+
+       // Function to scroll to the last line
+        scrollToLastLine();
+       // Function to scroll to the last line
+        function scrollToLastLine() {
+       // Set the scrollTop property to scroll to the last line
+            divElement.scrollTop = divElement.scrollHeight;
+        }
+
     } catch (error) {
         console.error(error);
     }
 }
-
 
 
 

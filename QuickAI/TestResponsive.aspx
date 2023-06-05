@@ -24,108 +24,68 @@
 </head>
 <body>
     <style>
-        #richTextEditor {
-  border: 1px solid #ccc;
-  padding: 10px;
-  min-height: 200px;
-}
-
-button {
-  margin-top: 10px;
-}
-
+        .one{
+            height:50px;
+            overflow:auto;
+        }
     </style>
 
-<!DOCTYPE html>
-
- 
-  <style>
-    .container {
-      max-width: 400px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-  </style>
-
-
-  <div class="container">
-    <h2>Enter text:</h2>
-    <textarea id="text-input" rows="10"></textarea>
-    <br/>
-    <button id="download-btn">Download as Word</button>
-  </div>
-
-  <script src="script.js"></script>
-
-
-
-
-
-
-
-    <script>
-        document.getElementById('download-btn').addEventListener('click', function (e) {
-            e.preventDefault();
-            var text = document.getElementById('text-input').value;
-
-            var element = document.createElement('a');
-            var file = new Blob([text], { type: 'application/msword' });
-            element.href = URL.createObjectURL(file);
-            element.download = 'document.doc';
-            element.click();
-        });
-
-
-
-    </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- <%--   <div id="myDiv">
-        Initial Content
+    <div class="one" id="myDiv">
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
     </div>
 
-    <button id="refreshButton">Refresh</button>
+
+
 
 
     <script>
-        var refreshButton = document.getElementById('refreshButton');
-
-        refreshButton.addEventListener('click', function () {
-            location.reload();
-        });
 
 
-    </script>--%>
+   var divElement = document.getElementById("myDiv");
+    divElement.scrollTop = divElement.scrollHeight;
+
+
+    // Get the <div> element
+var divElement = document.getElementById("myDiv");
+
+// Function to scroll to the last line
+function scrollToLastLine() {
+  // Set the scrollTop property to scroll to the last line
+  divElement.scrollTop = divElement.scrollHeight;
+}
+
+// Call the function to scroll to the last line
+scrollToLastLine();
+
+    </script>
+ 
+ 
+
+
+
 </body>
 </html>
