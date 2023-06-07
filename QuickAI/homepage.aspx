@@ -14,6 +14,8 @@
         <div style="padding-top: 100px; box-sizing: border-box;">
             <div style="padding-top: 60px; padding-bottom: 5px" class="text-center img-with-grtstrtbtn ">
                 <img class="" width="180" src="img/home-hero-icon.png" />
+            </div>
+            <div class="text-center text_gradient_animation">
                 <h1 style="font-size: 65px;" class="margin-bottom-10 text_gradient_animation">
                     <strong>Best AI Content Writer</strong>
                 </h1>
@@ -25,6 +27,7 @@
                     </p>
                 </div>
             </center>
+
         </div>
         <div class="getstrtbtn" style="text-align: center; padding: 10px;">
             <a href="register.aspx" class="popup-with-zoom-anim button ripple-effect" id="getbtn">Get Started For Free <i class="fa-solid fa-arrow-right"></i></a>

@@ -47,7 +47,7 @@ async function sendMessage() {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'b374b38677msh6e556f4a7c99bbbp15338ejsn98f86ce72667',
+            'X-RapidAPI-Key': '1b3f19185emshae66110816b76cdp19c3c4jsn8b753c68d364',
             'X-RapidAPI-Host': 'ai-chatbot.p.rapidapi.com'
         }
     };

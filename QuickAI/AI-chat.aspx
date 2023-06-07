@@ -196,7 +196,7 @@
                                                         <asp:TextBox placeholder="Type your message here" CssClass="AI-chat_iput-box" id="TextBox1" runat="server" Required=""></asp:TextBox>
                                                     </div>
                                                     <div class="col-lg-1 col-md-1 col-sm-1">
-                                                        <button class="AI-chat-send-btn ripple-effect" <%--onclick="click1()"--%> id="ai-chat-sndbtn" text="Send">Send</button>
+                                                        <button class="AI-chat-send-btn ripple-effect"  id="ai-chat-sndbtn" text="Send">Send</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -228,8 +228,6 @@
                     </div>
                 </div>
             </div>
-    
     </form>
-   
 </body>
 </html>

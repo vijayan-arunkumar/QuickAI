@@ -9,7 +9,6 @@
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
      <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <%--popper js--%>
     <script src="bootstrap/js/popper.min.js"></script>
@@ -23,68 +22,21 @@
 
 </head>
 <body>
-    <style>
-        .one{
-            height:50px;
-            overflow:auto;
-        }
-    </style>
+       
+    <!DOCTYPE html>
 
-    <div class="one" id="myDiv">
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
+
+<style>
+
+</style>
+
+ <div class="text_gradient_animation">
+    <h1 class="text_gradient_animation">Your Text</h1>
+  </div>
+    <div class="row">
+        <div class="col-lg-6 col-md-6">hi</div>
+        <div class="col-lg-6 col-md-6">hi</div>
     </div>
-
-
-
-
-
-    <script>
-
-
-   var divElement = document.getElementById("myDiv");
-    divElement.scrollTop = divElement.scrollHeight;
-
-
-    // Get the <div> element
-var divElement = document.getElementById("myDiv");
-
-// Function to scroll to the last line
-function scrollToLastLine() {
-  // Set the scrollTop property to scroll to the last line
-  divElement.scrollTop = divElement.scrollHeight;
-}
-
-// Call the function to scroll to the last line
-scrollToLastLine();
-
-    </script>
- 
- 
-
 
 
 </body>
