@@ -5,19 +5,20 @@
             return;
         }
         sendMessage();
-        scrollToLastLine();
+        var divElement = document.getElementById("AI-chat-input-holderid");
+        divElement.scrollTop = divElement.scrollHeight;
     });
 
     document.getElementById("data1").addEventListener("click", downloadData); //download button
 
 
-    var divElement = document.getElementById("AI-chat-input-holderid");
-    divElement.scrollTop = divElement.scrollHeight;
+    //var divElement = document.getElementById("AI-chat-input-holderid");
+    //divElement.scrollTop = divElement.scrollHeight;
     // Function to scroll to the last line
-    function scrollToLastLine() {
-        // Set the scrollTop property to scroll to the last line
-        divElement.scrollTop = divElement.scrollHeight;
-    }
+    //function scrollToLastLine() {
+    //    /* Set the scrollTop property to scroll to the last line*/
+    //    divElement.scrollTop = divElement.scrollHeight;
+    //}
 
     
 });
@@ -47,7 +48,7 @@ async function sendMessage() {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '1b3f19185emshae66110816b76cdp19c3c4jsn8b753c68d364',
+            'X-RapidAPI-Key': 'b374b38677msh6e556f4a7c99bbbp15338ejsn98f86ce72667',
             'X-RapidAPI-Host': 'ai-chatbot.p.rapidapi.com'
         }
     };
@@ -78,14 +79,6 @@ async function sendMessage() {
         //AI chat bot scroll down
         var divElement = document.getElementById("AI-chat-input-holderid");
         divElement.scrollTop = divElement.scrollHeight;
-
-       // Function to scroll to the last line
-        scrollToLastLine();
-       // Function to scroll to the last line
-        function scrollToLastLine() {
-       // Set the scrollTop property to scroll to the last line
-            divElement.scrollTop = divElement.scrollHeight;
-        }
 
     } catch (error) {
         console.error(error);

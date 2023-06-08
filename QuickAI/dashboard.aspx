@@ -75,7 +75,7 @@
         </div>
         <%------------------------- side bar --------------------%>
         <div class="containe-fluid">
-            <div class="row">
+            <div class="row" style="width:100%">
                 <div class="col-lg-2" id="side1">
                     <div class="sidebar" id="mySidebar">
                         <div style="margin-top: 30px;"></div>

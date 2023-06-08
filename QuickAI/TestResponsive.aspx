@@ -23,20 +23,82 @@
 </head>
 <body>
        
-    <!DOCTYPE html>
+   
 
 
 <style>
+    /* Style for the scrollable container */
+.scrollable-content {
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc #888;
+}
+
+/* Style for the scrollbar track */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Style for the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+/* Style for the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
 
 </style>
 
- <div class="text_gradient_animation">
-    <h1 class="text_gradient_animation">Your Text</h1>
-  </div>
-    <div class="row">
-        <div class="col-lg-6 col-md-6">hi</div>
-        <div class="col-lg-6 col-md-6">hi</div>
-    </div>
+    <div class="scrollable-content">
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>jo</h1>
+        <h1>jo</h1>
+        <h1>jo</h1>
+        <h1>jo</h1>
+        <h1>jo</h1>
+        <h1>jo</h1>
+        <h1>jo</h1>
+        <h1>jo</h1>
+        <h1>jo</h1>
+        <h1>jo</h1>
+        <h1>kk</h1>
+        <h1>kk</h1>
+        <h1>kk</h1>
+        <h1>kk</h1>
+        <h1>kk</h1>
+        <h1>kk</h1>
+        <h1>kk</h1>
+        <h1>kk</h1>
+        <h1>kk</h1>
+        <h1>kk</h1>
+  <!-- Your content here -->
+</div>
 
 
 </body>

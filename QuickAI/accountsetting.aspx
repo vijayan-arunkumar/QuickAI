@@ -5,42 +5,46 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Quick AI</title>
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
     <%--bootstrap css--%>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <%--datatables css--%>
-   <%-- <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />--%>
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
     <%--fontawsomes css--%>
     <link href="fontawsome/css/all.css" rel="stylesheet" />
     <link href="fontawsome/css/fontawesome.min.css" rel="stylesheet" />
     <link href="lifont/css/line-awesome.css" rel="stylesheet" />
     <link href="lifont/css/line-awesome.min.css" rel="stylesheet" />
-
-  <%--  <script src="scripts/sidebarthings.js"></script>--%>   
-
     <%--ourstylesheet css--%>
     <link href="css/dashstyle.css" rel="stylesheet" />
     <link href="css/header-2-dashtype.css" rel="stylesheet" />
     <link href="css/sidebar.css" rel="stylesheet" />
+
     <%--jquery--%>
-    <%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>--%>
-  <%--  <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>--%>
+    <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
     <%--popper js--%>
     <script src="bootstrap/js/popper.min.js"></script>
     <%--bootstrap js--%>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
+    <%-- our custom javascript --%>
+    <script src="scripts/sidebarthings.js"></script>
+
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/js/jquery-3.6.0.min.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
+
+    
 </head>
 <body>
     <form id="form1" runat="server">
        
 
             <%-------------------- top header ------------------%>
-        <div class="row">
+        <div class="row" style="width:100%">
             <div class="topbar">
             <div class="logo">
                 <img class="logoimg" src="img/hype.png" />
@@ -532,7 +536,7 @@
                 </div>
         </div>
     </form>
-    <script>
+    <%--<script>
         $("#btnHeader").on("click", function () {
             setTimeout(function () {
                 $("#side1").toggle()
@@ -543,6 +547,6 @@
 
 
         });
-    </script>
+    </script>--%>
 </body>
 </html>

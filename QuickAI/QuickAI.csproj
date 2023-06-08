@@ -92,6 +92,7 @@
     <Content Include="css\alldocument.css" />
     <Content Include="css\billingdetails.css" />
     <Content Include="css\dashstyle.css" />
+    <Content Include="css\feedback.css" />
     <Content Include="css\footertype1.css" />
     <Content Include="css\header-2-dashtype.css" />
     <Content Include="css\memberstyle.css" />
@@ -107,6 +108,7 @@
     <Content Include="css\worddoc.css" />
     <Content Include="datatables\css\jquery.dataTables.min.css" />
     <Content Include="datatables\js\jquery.dataTables.min.js" />
+    <Content Include="feedback.aspx" />
     <Content Include="fontawsome\css\all.css" />
     <Content Include="fontawsome\css\all.min.css" />
     <Content Include="fontawsome\css\brands.css" />
@@ -3797,6 +3799,13 @@
     </Compile>
     <Compile Include="blog.aspx.designer.cs">
       <DependentUpon>blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="feedback.aspx.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="feedback.aspx.designer.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
     </Compile>
     <Compile Include="homepage.aspx.cs">
       <DependentUpon>homepage.aspx</DependentUpon>
